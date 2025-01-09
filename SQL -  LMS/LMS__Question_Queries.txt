@@ -1,0 +1,34 @@
+LMS (Library Management System)
+*Basic Queries (1-10)*
+QUESTION 1 : Write a query to fetch all book titles and their corresponding author names.
+QUESTION 2 : Write a query to find all books published after the year 2015.
+QUESTION 3 : Write a query to list all members sorted by their registration date in descending order.
+QUESTION 4 : Write a query to calculate the total number of books in the library.
+QUESTION 5 : Write a query to display all book titles and their categories.
+QUESTION 6 : Write a query to find the details of a book with the title "Data Science for Beginners."
+QUESTION 7 : Write a query to fetch all members who registered in the last 6 months.
+QUESTION 8 : Write a query to count the number of distinct authors in the library.
+QUESTION 9 : Write a query to list all books priced above 1000 INR.
+QUESTION 10 : Write a query to display member names and the total fine amount they owe.
+*Intermediate Queries (11-20)*
+QUESTION 11 : Write a query to display book titles along with their supplier names.
+QUESTION 12 : Write a query to calculate the total number of books issued per member.
+QUESTION 13 : Write a query to find books where the price is between 500 and 1000.
+QUESTION 14 : Write a query to group books by category and calculate the total number of books in each category.
+QUESTION 15 : Write a query to find suppliers who have supplied more than 20 books.
+QUESTION 16 : Write a query to fetch the details of the book with the highest price.
+QUESTION 17 : Write a query to list all members who have issued at least one book.
+QUESTION 18 : Write a query to fetch book titles that have been issued more than 5 times.
+QUESTION 19 : Write a query to find the name and contact details of members who issued books in the last 30 days.
+QUESTION 20 : Write a query to find books that have never been issued.
+*Advanced Queries (21-30)*
+QUESTION 21 : Write a query to list all overdue books along with the member names who borrowed them.
+QUESTION 22 : Write a query to rank books based on their price in descending order using window functions.
+QUESTION 23 : Write a query using a CTE to find the total number of books issued per category.
+QUESTION 24 : Write a query to display book titles and a new column "Price Range" (Low, Medium, High) based on their price.
+QUESTION 25 : Write a recursive query to find all books under a specific category and its subcategories.***
+QUESTION 26 : Write a query to calculate the total fine amount collected for overdue books.
+QUESTION 27 : Write a query to find the top 3 members who have issued the most books.
+QUESTION 28 : Write a query to find suppliers who have supplied books in multiple categories.
+QUESTION 29 : Write a query to find members who issued the same book multiple times.***
+QUESTION 30 : Write a query to calculate the average price of books per category.
