@@ -21,7 +21,7 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
 
 ## Projects
 
-### Project 1: [Library Management System Analysis][(https://github.com/rotimi2020/sales-analysis)](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/SQL%20-%20%20LMS)
+### Project 1: [Library Management System Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/SQL%20-%20%20LMS)
 A detailed analysis of sales data to uncover trends and insights. Used Python (Pandas, Matplotlib) for data cleaning and visualization.
 
 ### Project 2: [Cervix Cancer](https://github.com/rotimi2020/customer-segmentation)
