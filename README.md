@@ -21,10 +21,10 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
 
 ## Projects
 
-### Project 1: [Sales Analysis](https://github.com/rotimi2020/sales-analysis)
+### Project 1: [Library Management System Analysis](https://github.com/rotimi2020/sales-analysis)
 A detailed analysis of sales data to uncover trends and insights. Used Python (Pandas, Matplotlib) for data cleaning and visualization.
 
-### Project 2: [Customer Segmentation](https://github.com/rotimi2020/customer-segmentation)
+### Project 2: [Cervix Cancer](https://github.com/rotimi2020/customer-segmentation)
 Performed customer segmentation using clustering algorithms in Python. Utilized Scikit-learn for modeling and Seaborn for visualization.
 
 ### Project 3: [Financial Dashboard](https://github.com/rotimi2020/financial-dashboard)
