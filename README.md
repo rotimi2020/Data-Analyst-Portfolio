@@ -22,7 +22,14 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
 ## Projects
 
 ### Project 1: [Library Management System Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/SQL%20-%20%20LMS)
-A detailed analysis of sales data to uncover trends and insights. Used Python (Pandas, Matplotlib) for data cleaning and visualization.
+#### ScienceQtech Employee Performance Mapping
+
+- **Code**: [Library Management System Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/LMS.md)
+- **Goal**: To analyze employee details, performance, and projects within ScienceQtech to derive insights for organizational improvement.
+- **Description**: This project focused on analyzing the employee database of ScienceQtech, a startup in the Data Science field. The dataset comprised employee information such as roles, departments, experience, salaries, performance ratings, and projects undertaken. Utilizing SQL queries, the analysis aimed to extract relevant insights on employee performance and project involvement. Key tasks included data importing, database creation, SQL queries execution, and performance optimization.
+- **Skills**: Data importing, Database management, SQL querying, Data analysis and reporting.
+- **Technology**: MySQL Workbench, SQL.
+- **Results**: The project provided insights into employee performance and project engagement within ScienceQtech. This included identifying high-performing employees, analyzing project contributions, and assessing performance trends. The analysis facilitated data-driven decision-making to enhance organizational effectiveness and identify areas for employee development.
 
 ### Project 2: [Cervix Cancer](https://github.com/rotimi2020/customer-segmentation)
 Performed customer segmentation using clustering algorithms in Python. Utilized Scikit-learn for modeling and Seaborn for visualization.
