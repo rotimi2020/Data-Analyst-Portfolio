@@ -22,14 +22,29 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
 ## Projects
 
 ### Project 1: [Library Management System Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/SQL%20-%20%20LMS)
-#### ScienceQtech Employee Performance Mapping
+#### Library Management System.
 
-- **Code**: [Library Management System Using SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/LMS.md)
-- **Goal**: To analyze employee details, performance, and projects within ScienceQtech to derive insights for organizational improvement.
-- **Description**: This project focused on analyzing the employee database of ScienceQtech, a startup in the Data Science field. The dataset comprised employee information such as roles, departments, experience, salaries, performance ratings, and projects undertaken. Utilizing SQL queries, the analysis aimed to extract relevant insights on employee performance and project involvement. Key tasks included data importing, database creation, SQL queries execution, and performance optimization.
-- **Skills**: Data importing, Database management, SQL querying, Data analysis and reporting.
-- **Technology**: MySQL Workbench, SQL.
-- **Results**: The project provided insights into employee performance and project engagement within ScienceQtech. This included identifying high-performing employees, analyzing project contributions, and assessing performance trends. The analysis facilitated data-driven decision-making to enhance organizational effectiveness and identify areas for employee development.
+- **Code** : [Library Management System Using SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/LMS.md)
+- **Goal** :<br>
+  *Extract Meaningful Insights :* Use SQL queries to retrieve critical information from the LMS database.<br>
+  *Enhance Data Understanding :* Answer specific questions posed by the library owner to gain a deeper understanding of the library's data.<br>
+  
+- **Description**: The project involves performing data analysis on the library management system database. The client has provided access to the database and a list of 30 queries that need to be answered. These queries cover various aspects of the library's operations, including book inventory, user activities, and financial metrics. The queries range from basic to advanced levels and will help uncover important trends and metrics to optimize library services.
+  
+- **Skills**:<br>
+*SQL :* Proficiency in writing complex SQL queries to extract and analyze data from relational databases.<br>
+*Data Analysis :* Ability to interpret data, identify trends, and generate meaningful insights.<br>
+*Report Generation :* Capability to create detailed and comprehensive reports based on the analysis.<br>
+*Database Management :* Knowledge of database structures and management to effectively access and manipulate data.<br>
+
+- **Technology**: <br>
+*Database Management System (DBMS) :* The LMS database, likely implemented using a relational DBMS such as MySQL, PostgreSQL, or SQL Server.<br>
+*SQL :* Structured Query Language for querying and managing the database.<br>
+
+- **Results**:<br>
+ *Insightful Reports :* Detailed reports that provide insights into various aspects of library operations, such as book inventory, user activities, and financial metrics.<br>
+ *Optimized Operations :* Identification of areas for improvement in inventory management, user engagement, and service delivery.<br>
+ *Informed Decision-Making :* Data-driven insights that support strategic decision-making by the library owner.<br>
 
 ### Project 2: [Cervix Cancer](https://github.com/rotimi2020/customer-segmentation)
 Performed customer segmentation using clustering algorithms in Python. Utilized Scikit-learn for modeling and Seaborn for visualization.
