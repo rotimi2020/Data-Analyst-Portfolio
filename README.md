@@ -26,24 +26,24 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
 
 - **Code** : [Library Management System Using SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/LMS.md)
 - **Goal** :<br>
-  *Extract Meaningful Insights :* Use SQL queries to retrieve critical information from the LMS database.<br>
+  *Extract Meaningful Insights :* Use SQL queries to retrieve critical information from the LMS database.<br><br>
   *Enhance Data Understanding :* Answer specific questions posed by the library owner to gain a deeper understanding of the library's data.<br>
   
 - **Description**: The project involves performing data analysis on the library management system database. The client has provided access to the database and a list of 30 queries that need to be answered. These queries cover various aspects of the library's operations, including book inventory, user activities, and financial metrics. The queries range from basic to advanced levels and will help uncover important trends and metrics to optimize library services.
   
 - **Skills**:<br>
-*SQL :* Proficiency in writing complex SQL queries to extract and analyze data from relational databases.<br>
-*Data Analysis :* Ability to interpret data, identify trends, and generate meaningful insights.<br>
-*Report Generation :* Capability to create detailed and comprehensive reports based on the analysis.<br>
+*SQL :* Proficiency in writing complex SQL queries to extract and analyze data from relational databases.<br><br>
+*Data Analysis :* Ability to interpret data, identify trends, and generate meaningful insights.<br><br>
+*Report Generation :* Capability to create detailed and comprehensive reports based on the analysis.<br><br>
 *Database Management :* Knowledge of database structures and management to effectively access and manipulate data.<br>
 
 - **Technology**: <br>
-*Database Management System (DBMS) :* The LMS database, likely implemented using a relational DBMS such as MySQL, PostgreSQL, or SQL Server.<br>
+*Database Management System (DBMS) :* The LMS database, likely implemented using a relational DBMS such as MySQL, PostgreSQL, or SQL Server.<br><br>
 *SQL :* Structured Query Language for querying and managing the database.<br>
 
 - **Results**:<br>
- *Insightful Reports :* Detailed reports that provide insights into various aspects of library operations, such as book inventory, user activities, and financial metrics.<br>
- *Optimized Operations :* Identification of areas for improvement in inventory management, user engagement, and service delivery.<br>
+ *Insightful Reports :* Detailed reports that provide insights into various aspects of library operations, such as book inventory, user activities, and financial metrics.<br><br>
+ *Optimized Operations :* Identification of areas for improvement in inventory management, user engagement, and service delivery.<br><br>
  *Informed Decision-Making :* Data-driven insights that support strategic decision-making by the library owner.<br>
 
 ### Project 2: [Cervix Cancer](https://github.com/rotimi2020/customer-segmentation)
