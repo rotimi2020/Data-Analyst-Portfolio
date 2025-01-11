@@ -24,7 +24,7 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
 ### Project 1: [Library Management System Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/SQL%20-%20%20LMS)
 #### ScienceQtech Employee Performance Mapping
 
-- **Code**: [Library Management System Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/LMS.md)
+- **Code**: [Library Management System Using SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/LMS.md)
 - **Goal**: To analyze employee details, performance, and projects within ScienceQtech to derive insights for organizational improvement.
 - **Description**: This project focused on analyzing the employee database of ScienceQtech, a startup in the Data Science field. The dataset comprised employee information such as roles, departments, experience, salaries, performance ratings, and projects undertaken. Utilizing SQL queries, the analysis aimed to extract relevant insights on employee performance and project involvement. Key tasks included data importing, database creation, SQL queries execution, and performance optimization.
 - **Skills**: Data importing, Database management, SQL querying, Data analysis and reporting.
