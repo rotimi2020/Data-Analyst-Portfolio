@@ -12,7 +12,7 @@ GROUP BY
   [AUTHOR];
 ```
 
-**QUESTIONS 2 :** Write a query to find all books published after the year 2015. 
+- **QUESTIONS 2 :** Write a query to find all books published after the year 2015. 
 ```
 SELECT
   *
@@ -22,7 +22,7 @@ WHERE
   YEAR([PUBLISH_DATE]) > 2015;
 ```
 
-**QUESTIONS 3 :** Write a query to list all members sorted by their registration date in descending order. 
+- **QUESTIONS 3 :** Write a query to list all members sorted by their registration date in descending order. 
 ```
 SELECT
   *
@@ -32,7 +32,7 @@ ORDER BY
   [DATE_REGISTER] DESC;
 ```
 
-**QUESTIONS 4 :** Write a query to calculate the total number of books in the library. 
+- **QUESTIONS 4 :** Write a query to calculate the total number of books in the library. 
 ```
 SELECT
   COUNT(*) AS TOTAL_NUMBER_OF_BOOK
@@ -40,7 +40,7 @@ FROM
   [dbo].[LMS_BOOK_DETAILS];
 ```
 
-**QUESTIONS 5 :** Write a query to display all book titles and their categories.
+- **QUESTIONS 5 :** Write a query to display all book titles and their categories.
 ```
 SELECT
   [BOOK_TITLE],
@@ -54,7 +54,7 @@ ORDER BY
   [CATEGORY];
 ```
 
-**QUESTION 6 :** Write a query to find the details of a book with the title "Data Science for Beginners." 
+- **QUESTION 6 :** Write a query to find the details of a book with the title "Data Science for Beginners." 
 ```
 SELECT
   *
@@ -64,7 +64,7 @@ WHERE
   [BOOK_TITLE] = 'Data Science for Beginners';
 ```
 
-**QUESTION 7 :** Write a query to fetch all members who registered in the last 6 months. 
+- **QUESTION 7 :** Write a query to fetch all members who registered in the last 6 months. 
 ```
 SELECT
   MAX([DATE_REGISTER]) AS MAX_DATE
@@ -86,7 +86,7 @@ WHERE
   [DATE_REGISTER] BETWEEN '2020-02-02' AND '2020-08-02' 
 ```  
 
-  **QUESTION 8 :** Write a query to count the number of distinct authors in the library. 
+- **QUESTION 8 :** Write a query to count the number of distinct authors in the library. 
 ```  
 SELECT
   [AUTHOR],
@@ -97,7 +97,7 @@ GROUP BY
   [AUTHOR];
 ```
 
-**QUESTION 9 :** Write a query to list all books priced above 1000 INR. 
+- **QUESTION 9 :** Write a query to list all books priced above 1000 INR. 
 ```
 SELECT
   *
@@ -107,8 +107,8 @@ WHERE
   [PRICE] > 1000;
 ```
 
-**QUESTION 10 :** Write a query to display member names and the total fine amount they owe. 
-
+- **QUESTION 10 :** Write a query to display member names and the total fine amount they owe. 
+```
 WITH
   MEMBER_NAME AS (
     SELECT
@@ -127,9 +127,9 @@ FROM
   MEMBER_NAME
 group by
   MEMBER_NAME;
-
+```
 **--------------------------------*Intermediate Queries (11-20)*-------------------------------------**
-**QUESTION 11 :** Write a query to display book titles along with their supplier names. 
+- **QUESTION 11 :** Write a query to display book titles along with their supplier names. 
 ```
 SELECT
   A.BOOK_TITLE AS [Book Title],
@@ -144,7 +144,7 @@ ORDER BY
   B.SUPPLIER_NAME;
 ```
 
-**QUESTION 12 :** Write a query to calculate the total number of books issued per member. 
+- **QUESTION 12 :** Write a query to calculate the total number of books issued per member. 
 ```
 SELECT
   A.MEMBER_ID AS [Member id],
@@ -158,7 +158,7 @@ GROUP BY
   B.MEMBER_NAME;
 ```
 
-**QUESTION 13 :** Write a query to find books where the price is between 500 and 1000. 
+- **QUESTION 13 :** Write a query to find books where the price is between 500 and 1000. 
 ```
 SELECT
   *
@@ -168,7 +168,7 @@ WHERE
   [PRICE] BETWEEN 500 AND 1000;
 ```
 
-**QUESTION 14 :** Write a query to group books by category and calculate the total number of books in each category. 
+- **QUESTION 14 :** Write a query to group books by category and calculate the total number of books in each category. 
 ```
 WITH
   Group_Book AS(
@@ -190,7 +190,7 @@ GROUP BY
   [Total Books];
 ```
 
-**QUESTION 15 :** Write a query to find suppliers who have supplied more than 20 books. 
+- **QUESTION 15 :** Write a query to find suppliers who have supplied more than 20 books. 
 ```
 SELECT
   B.SUPPLIER_NAME AS [Supplier Name],
@@ -204,7 +204,7 @@ having
   count(B.SUPPLIER_NAME) > 20
 ```
 
-**QUESTION 16 :** Write a query to fetch the details of the book with the highest price. 
+- **QUESTION 16 :** Write a query to fetch the details of the book with the highest price. 
 ```  
 SELECT
   TOP 1 *
@@ -214,7 +214,7 @@ order by
   PRICE desc;
 ```
 
-**QUESTION 17 :** Write a query to list all members who have issued at least one book. 
+- **QUESTION 17 :** Write a query to list all members who have issued at least one book. 
 ```
 SELECT
   B.MEMBER_NAME AS [Member Name],
@@ -228,7 +228,7 @@ having
   count(B.MEMBER_NAME) = 1 
 ```  
 
-  **QUESTION 18 :** Write a query to fetch book titles that have been issued more than 5 times. 
+- **QUESTION 18 :** Write a query to fetch book titles that have been issued more than 5 times. 
 ```  
 SELECT
   A.BOOK_TITLE AS [Book Titles],
@@ -242,7 +242,7 @@ having
   count(A.BOOK_TITLE) > 5;
 ```
 
-**QUESTION 19 :** Write a query to find the name and contact details of members who issued books in the last 30 days. 
+- **QUESTION 19 :** Write a query to find the name and contact details of members who issued books in the last 30 days. 
 ```
 SELECT
   MAX([DATE_ISSUE]) AS MAX_DATE
@@ -269,7 +269,7 @@ WHERE
   B.DATE_ISSUE BETWEEN '2020-03-17' AND '2020-04-16' --30 DAYS INTERVAL
 ```
 
-**QUESTION 20 :** Write a query to find books that have never been issued. 
+- **QUESTION 20 :** Write a query to find books that have never been issued. 
 ```  
 SELECT
   COUNT(BOOK_ISSUE_NO) AS [Nos Of Book Not Issued]
@@ -278,9 +278,9 @@ FROM
 WHERE
   [BOOK_ISSUE_NO] IS NULL;
 ```
---------------------------------*Advanced Queries (21-30)*-------------------------------------
-/* QUESTION 21 : Write a query to list all overdue books along with the member names who borrowed them. */
-
+**--------------------------------*Advanced Queries (21-30)*-------------------------------------**
+- **QUESTION 21 :** Write a query to list all overdue books along with the member names who borrowed them. 
+```
 SELECT
   B.BOOK_ISSUE_NO,
   A.MEMBER_NAME,
@@ -295,10 +295,10 @@ FROM
   LEFT JOIN [dbo].[LMS_BOOK_DETAILS] C ON C.BOOK_CODE = B.BOOK_CODE
 WHERE
   B.DATE_RETURNED > B.DATE_RETURN;
+```
 
---------------------------------*Advanced Queries (21-30)*-------------------------------------
-/* QUESTION 22 : Write a query to rank books based on their price in descending order using window functions. */
-
+- **QUESTION 22 :** Write a query to rank books based on their price in descending order using window functions. 
+```
 SELECT
   BOOK_CODE,
   BOOK_TITLE,
@@ -309,10 +309,10 @@ SELECT
   ) AS Rank
 FROM
   [DBO].LMS_BOOK_DETAILS;
+```
 
---------------------------------*Advanced Queries (21-30)*-------------------------------------
-/* QUESTION 23 : Write a query using a CTE to find the total number of books issued per category. */
-
+- **QUESTION 23 :** Write a query using a CTE to find the total number of books issued per category. 
+```
 WITH
   BOOK_ISSUE AS (
     SELECT
@@ -328,10 +328,10 @@ FROM
   BOOK_ISSUE
 GROUP BY
   CATEGORY;
+```
 
---------------------------------*Advanced Queries (21-30)*-------------------------------------
-/* QUESTION 24 : Write a query to display book titles and a new column "Price Range" (Low, Medium, High) based on their price. */
-
+- **QUESTION 24 :** Write a query to display book titles and a new column "Price Range" (Low, Medium, High) based on their price. 
+```
 SELECT
   MAX(PRICE) AS [Maximum Price]
 FROM
@@ -356,12 +356,12 @@ SELECT
   END AS [PRICE RANGE]
 FROM
   [dbo].[LMS_BOOK_DETAILS];
+```
 
---------------------------------*Advanced Queries (21-30)*-------------------------------------
-/* QUESTION 25 : Write a recursive query to find all books under a specific category and its subcategories. */
---------------------------------*Advanced Queries (21-30)*-------------------------------------
-/* QUESTION 26 : Write a query to calculate the total fine amount collected for overdue books. */
+- **QUESTION 25 :** Write a recursive query to find all books under a specific category and its subcategories. 
 
+**QUESTION 26 :** Write a query to calculate the total fine amount collected for overdue books. 
+```
 WITH
   OVERDUE_BOOK AS (
     SELECT
@@ -377,10 +377,10 @@ SELECT
   SUM(FINE_AMOUNT) AS [Total Fine Amount]
 FROM
   OVERDUE_BOOK;
+```
 
---------------------------------*Advanced Queries (21-30)*-------------------------------------
-/* QUESTION 27 : Write a query to find the top 3 members who have issued the most books. */
-
+- **QUESTION 27 :** Write a query to find the top 3 members who have issued the most books. 
+```
 SELECT
   TOP 3 B.MEMBER_NAME,
   count(B.MEMBER_ID) AS [Member Who issue Books]
@@ -391,10 +391,10 @@ GROUP BY
   B.MEMBER_NAME
 order by
   [Member Who issue Books] desc;
+```
 
---------------------------------*Advanced Queries (21-30)*-------------------------------------
-/* QUESTION 28 : Write a query to find suppliers who have supplied books in multiple categories. */
-
+- **QUESTION 28 :** Write a query to find suppliers who have supplied books in multiple categories. 
+```
 SELECT
   B.SUPPLIER_NAME,
   COUNT(B.SUPPLIER_NAME) AS [Nos Of Book Supplied]
@@ -405,10 +405,10 @@ GROUP BY
   B.SUPPLIER_NAME
 order by
   [Nos Of Book Supplied] desc 
-  
---------------------------------*Advanced Queries (21-30)*-------------------------------------
-  /* QUESTION 29 : Write a query to find members who issued the same book multiple times. */
-  
+ ``` 
+
+- **QUESTION 29 :** Write a query to find members who issued the same book multiple times. 
+```  
 SELECT
   MEMBER_ID,
   BOOK_CODE,
@@ -420,10 +420,10 @@ group by
   MEMBER_ID
 having
   COUNT(BOOK_ISSUE_NO) > 1 
-  
---------------------------------*Advanced Queries (21-30)*-------------------------------------
-/* QUESTION 30 : Write a query to calculate the average price of books per category. */
+```  
 
+- **QUESTION 30 :** Write a query to calculate the average price of books per category. 
+```
 SELECT
   CATEGORY,
   AVG(PRICE) AS [Average Price]
@@ -431,3 +431,4 @@ FROM
   [dbo].[LMS_BOOK_DETAILS]
 GROUP BY
   CATEGORY;
+```
