@@ -1,3 +1,29 @@
+# Library Management System using SQL
+
+## Project Overview
+This project demonstrates the implementation of a Library Management System using SQL. The project involves performing a comprehensive data analysis for a client who owns a library using a Library Management System (LMS). The client has provided database access and a set of 30 queries ranging from basic to advanced levels. The goal is to retrieve, analyze, and present data that will provide valuable insights into the library's operations, inventory, and user behavior.
+
+## Objectives 
+**Extract Meaningful Insights :** Use SQL queries to extract important information from the LMS database.<br>
+**Enhance Data Understanding :** Answer specific questions posed by the library owner to gain a deeper understanding of the library's data.<br>
+**Advanced SQL Queries :** Develop complex queries to analyze and retrieve specific data.<br>
+**Provide Comprehensive Reports :** Generate detailed reports that summarize key metrics and trends to support the library owner's decision-making.
+
+## Problem Definition
+The library owner needs a thorough analysis of the library's data to better understand various aspects such as book inventory, user activities, and financial metrics. The current system collects extensive data, but it lacks the insights needed to make data-driven decisions.
+
+## Problem Statement
+Develop a series of SQL queries to extract and analyze data from the Library Management System database. The queries will cover basic, intermediate, and advanced levels of complexity and will address various aspects of the library's operations.
+
+## Dataset
+The dataset includes various tables from the Library Management System database, such as:
+- **Book Details:** Information about books in the library, including book IDs, titles, authors, categories, prices, and publication dates.
+- **Members:** Information about library members, including member IDs, names, registration dates, and contact details.
+- **Fine Details:** Records of book loans, including Fine Range, return dates, and fine amounts.
+- **Suppliers:** Details about book suppliers, including supplier IDs, names, and contact information.
+- **Book Issue:** Information about member IDs,Book Code,Date Issue,Date Return,Date Returned and Fine Range.
+
+
 **--------------------------------*Basic Queries (1-10)*-------------------------------------**
 
 - **QUESTIONS 1 :** Write a query to fetch all book titles and their corresponding author names. 
@@ -128,6 +154,7 @@ FROM
 group by
   MEMBER_NAME;
 ```
+
 **--------------------------------*Intermediate Queries (11-20)*-------------------------------------**
 - **QUESTION 11 :** Write a query to display book titles along with their supplier names. 
 ```
@@ -360,7 +387,7 @@ FROM
 
 - **QUESTION 25 :** Write a recursive query to find all books under a specific category and its subcategories. 
 
-**QUESTION 26 :** Write a query to calculate the total fine amount collected for overdue books. 
+- **QUESTION 26 :** Write a query to calculate the total fine amount collected for overdue books. 
 ```
 WITH
   OVERDUE_BOOK AS (
@@ -431,4 +458,49 @@ FROM
   [dbo].[LMS_BOOK_DETAILS]
 GROUP BY
   CATEGORY;
+
 ```
+
+## Reports
+**Basic Reports:**
+
+- List of all book titles and their corresponding author names.
+- Books published after the year 2015.
+- Members sorted by their registration date.
+- Total number of books in the library.
+- Book titles and their categories.
+- Details of the book titled "Data Science for Beginners."
+- Members who registered in the last 6 months.
+- Number of distinct authors.
+- Books priced above 1000 INR.
+- Member names and the total fine amount they owe.
+  
+**Intermediate Reports:**
+
+- titles along with their supplier names.
+- Total number of books issued per member.
+- Books where the price is between 500 and 1000 INR.
+- Group books by category and calculate the total number of books in each category.
+- Suppliers who have supplied more than 20 books.
+- Details of the book with the highest price.
+- Members who have issued at least one book.
+- Book titles that have been issued more than 5 times.
+- Name and contact details of members who issued books in the last 30 days.
+- Books that have never been issued.
+
+  
+**Advanced Reports:**
+- Overdue books along with the member names who borrowed them.
+-  books based on their price in descending order using window functions.
+- Total number of books issued per category using a CTE.
+- Book titles and a new column "Price Range" (Low, Medium, High) based on their price.
+- Recursive query to find all books under a specific category and its subcategories.
+- Total fine amount collected for overdue books.
+- Top 3 members who have issued the most books.
+- Suppliers who have supplied books in multiple categories.
+- Members who issued the same book multiple times.
+- Average price of books per category.
+
+
+**Conclusion**
+The data analysis of the Library Management System will provide valuable insights into user behavior, inventory management, and overall library operations. By addressing the 30 queries provided by the library owner, we can uncover important trends and metrics that can help optimize library services, enhance user satisfaction, and support strategic decision-making. The comprehensive reports generated from the SQL queries will serve as a foundation for ongoing monitoring and improvement of the library's operations.
