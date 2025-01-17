@@ -21,7 +21,7 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
 
 ## Projects
 
-### Project 1: [Library Management System Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/SQL%20-%20%20LMS)
+### Project 1: [Library Management System Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/README.md)
 #### Library Management System.
 
 - **Code** : [Library Management System Using SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/LMS.md)
