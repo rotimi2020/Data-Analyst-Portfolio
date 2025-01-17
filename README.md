@@ -25,6 +25,7 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
 #### Library Management System.
 
 - **Code** : [Library Management System Using SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/LMS.md)
+- **E.R Diagram** : [E.R Diagram L.M.S](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/ER%20Diagram%20LMS.pdf)
 - **Goal** :<br>
   ***Extract Meaningful Insights :*** Use SQL queries to retrieve critical information from the LMS database.<br>
   ***Enhance Data Understanding :*** Answer specific questions posed by the library owner to gain a deeper understanding of the library's data.<br>
