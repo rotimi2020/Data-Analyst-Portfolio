@@ -72,7 +72,7 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
  ***Informed Decision-Making :*** Data-driven insights that support strategic decision-making by the library owner.<br>
 ### Project 3: [Financial Dashboard](https://github.com/rotimi2020/financial-dashboard)
 Developed an interactive financial dashboard using Tableau. The dashboard shows key financial metrics and trends over time.
-[ER Diagram]([https://github.com/rotimi2020/financial-dashboard](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/ER%20Diagram%20LMS.pdf])
+[ER Diagram](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/ER%20Diagram%20LMS.pdf)
 ## GitHub Stats
 
 ![Rotimi's GitHub stats](https://github-readme-stats.vercel.app/api?username=rotimi2020&show_icons=true&theme=radical)
