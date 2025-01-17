@@ -7,14 +7,14 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
 ## About Me
 
 - 🎓 B.Sc. in Computer Science
-- 🌱 I'm Currently learning Advanced Data Analytics
+- 🌱 I'm Currently learning R Programming,Tableau and Advanced Data Analytics
 - 💼 Expertise in data cleaning, exploratory data analysis (EDA), and data visualization
 - 🔭 Interested in Data Analytics,Data Visualization and Machine Learning
 - 📫 How to reach me: [omoseworotimi@gmail.com](mailto:omoseworotimi@gmail.com)
 
 ## Skills
 
-- **Languages:** Python, SQL, DAX
+- **Languages:** Python, SQL
 - **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
 - **Data Analysis:** Data Cleaning, Exploratory Data Analysis (EDA), Data Visualization
 - **Tools:** Excel, Power BI , Jupyter Notebook
