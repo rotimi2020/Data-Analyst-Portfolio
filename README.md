@@ -35,12 +35,6 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
 
 
 
-
-- **Languages:** Python, SQL
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
-- **Data Analysis:** Data Cleaning, Exploratory Data Analysis (EDA), Data Visualization
-- **Tools:** Excel, Power BI , Jupyter Notebook
-
 ## Projects
 
 ### Project 1: [Library Management System Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/README.md)
