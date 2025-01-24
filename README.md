@@ -41,7 +41,7 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
 #### Library Management System.
 
 - **Code** : [Library Management System Using SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/LMS.md)
-- **E.R Diagram** : [E.R Diagram L.M.S](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/ER%20Diagram%20LMS.pdf)
+  
 - **Goal** :<br>
   ***Extract Meaningful Insights :*** Use SQL queries to retrieve critical information from the LMS database.<br>
   ***Enhance Data Understanding :*** Answer specific questions posed by the library owner to gain a deeper understanding of the library's data.<br>
@@ -63,30 +63,32 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
  ***Optimized Operations :*** Identification of areas for improvement in inventory management, user engagement, and service delivery.<br>
  ***Informed Decision-Making :*** Data-driven insights that support strategic decision-making by the library owner.<br>
 
-### Project 2: [Cervix Cancer](https://github.com/rotimi2020/customer-segmentation)
-#### Library Management System.
+### Project 2: [Delaware's Credit Card Transaction Data](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/README.md)
+#### Financial Transaction Visualization.
 
-- **Code** : [Library Management System Using SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/LMS.md)
+- **Code** : [credit card transaction Using SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/LMS.md)
+ 
 - **Goal** :<br>
-  ***Extract Meaningful Insights :*** Use SQL queries to retrieve critical information from the LMS database.<br>
-  ***Enhance Data Understanding :*** Answer specific questions posed by the library owner to gain a deeper understanding of the library's data.<br>
+   - To analyze and report on the spending patterns of the State of Delaware.<br>
+   - To identify trends and anomalies in the financial transactions.<br>
+   - To provide actionable insights for better financial management.data.<br>
   
-- **Description**: The project involves performing data analysis on the library management system database. The client has provided access to the database and a list of 30 queries that need to be answered. These queries cover various aspects of the library's operations, including book inventory, user activities, and financial metrics. The queries range from basic to advanced levels and will help uncover important trends and metrics to optimize library services.
+- **Description :** This project involves analyzing the State of Delaware's credit card transaction data. The dataset includes various fields such as fiscal year, fiscal period, department name, division name, merchant name, category description, transaction date, and transaction amount.<br>
   
-- **Skills**:<br>
-***SQL :*** Proficiency in writing complex SQL queries to extract and analyze data from relational databases.<br>
-***Data Analysis :*** Ability to interpret data, identify trends, and generate meaningful insights.<br>
-***Report Generation :*** Capability to create detailed and comprehensive reports based on the analysis.<br>
-***Database Management :*** Knowledge of database structures and management to effectively access and manipulate data.<br>
+- **Skills :** <br>
+***SQL :*** Proficiency in writing complex SQL queries to extract and analyze data.<br>
+***Data Analysis :*** Ability to interpret data, identify trends, and generate insights.<br>
+***Data Visualization :*** Expertise in visualizing data using tools like Power BI and Excel.<br>
+***Reporting :*** Capability to create detailed and comprehensive reports based on the analysis.<br>
 
-- **Technology**: <br>
-***Database Management System (DBMS) :*** The LMS database, likely implemented using a relational DBMS such as MySQL, PostgreSQL, or SQL Server.<br>
+- **Technology :** <br>
 ***SQL :*** Structured Query Language for querying and managing the database.<br>
+***Power BI :*** For creating interactive dashboards and visualizations.<br>
 
-- **Results**:<br>
- ***Insightful Reports :*** Detailed reports that provide insights into various aspects of library operations, such as book inventory, user activities, and financial metrics.<br>
- ***Optimized Operations :*** Identification of areas for improvement in inventory management, user engagement, and service delivery.<br>
- ***Informed Decision-Making :*** Data-driven insights that support strategic decision-making by the library owner.<br>
+- **Results :** <br>
+  - Detailed reports providing insights into spending patterns, departmental expenditures, and vendor relationships.<br>
+  - Interactive dashboards highlighting key financial metrics and trends.<br>
+
 ### Project 3: [Financial Dashboard](https://github.com/rotimi2020/financial-dashboard)
 Developed an interactive financial dashboard using Tableau. The dashboard shows key financial metrics and trends over time.
 [ER Diagram](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/ER%20Diagram%20LMS.pdf)
