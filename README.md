@@ -64,7 +64,7 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
  ***Informed Decision-Making :*** Data-driven insights that support strategic decision-making by the library owner.<br>
 
 ### Project 2: [Delaware's Credit Card Transaction Data](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/README.md)
-#### Financial Transaction Visualization.
+#### Credit Card Transaction Visualization.
 
 - **Code** : [credit card transaction Using SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/SQL%20-%20%20LMS/LMS.md)
  
