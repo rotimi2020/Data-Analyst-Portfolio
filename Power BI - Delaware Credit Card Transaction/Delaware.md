@@ -1,4 +1,4 @@
-# Delaware Credit Card Transaction Visualization Using Power BI
+# Delaware Credit Card Transaction Using Power BI
 
 ## Project Overview
 The "State of Delaware Checkbook" project is an extensive analysis of the state’s credit card transactions. The goal is to derive meaningful insights from the data to enhance financial transparency and accountability.
