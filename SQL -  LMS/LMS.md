@@ -27,19 +27,16 @@ The dataset includes various tables from the Library Management System database,
 **--------------------------------*Basic Queries (1-10)*-------------------------------------**
 
 - **QUESTIONS 1 :** Write a query to fetch all book titles and their corresponding author names. 
-```
+```sql
 SELECT
   [BOOK_TITLE],
   ([AUTHOR])
 FROM
-  [dbo].[LMS_BOOK_DETAILS]
-GROUP BY
-  [BOOK_TITLE],
-  [AUTHOR];
+  [dbo].[LMS_BOOK_DETAILS];
 ```
 
 - **QUESTIONS 2 :** Write a query to find all books published after the year 2015. 
-```
+```sql
 SELECT
   *
 FROM
@@ -49,7 +46,7 @@ WHERE
 ```
 
 - **QUESTIONS 3 :** Write a query to list all members sorted by their registration date in descending order. 
-```
+```sql
 SELECT
   *
 FROM
@@ -59,7 +56,7 @@ ORDER BY
 ```
 
 - **QUESTIONS 4 :** Write a query to calculate the total number of books in the library. 
-```
+```sql
 SELECT
   COUNT(*) AS TOTAL_NUMBER_OF_BOOK
 FROM
@@ -67,7 +64,7 @@ FROM
 ```
 
 - **QUESTIONS 5 :** Write a query to display all book titles and their categories.
-```
+```sql
 SELECT
   [BOOK_TITLE],
   [CATEGORY]
@@ -81,7 +78,7 @@ ORDER BY
 ```
 
 - **QUESTION 6 :** Write a query to find the details of a book with the title "Data Science for Beginners." 
-```
+```sql
 SELECT
   *
 FROM
@@ -91,7 +88,7 @@ WHERE
 ```
 
 - **QUESTION 7 :** Write a query to fetch all members who registered in the last 6 months. 
-```
+```sql
 SELECT
   MAX([DATE_REGISTER]) AS MAX_DATE
 FROM
@@ -113,7 +110,7 @@ WHERE
 ```  
 
 - **QUESTION 8 :** Write a query to count the number of distinct authors in the library. 
-```  
+```sql  
 SELECT
   [AUTHOR],
   COUNT(DISTINCT([AUTHOR])) AS DISTINCT_COUNT
@@ -124,7 +121,7 @@ GROUP BY
 ```
 
 - **QUESTION 9 :** Write a query to list all books priced above 1000 INR. 
-```
+```sql
 SELECT
   *
 FROM
@@ -134,7 +131,7 @@ WHERE
 ```
 
 - **QUESTION 10 :** Write a query to display member names and the total fine amount they owe. 
-```
+```sql
 WITH
   MEMBER_NAME AS (
     SELECT
@@ -157,7 +154,7 @@ group by
 
 **--------------------------------*Intermediate Queries (11-20)*-------------------------------------**
 - **QUESTION 11 :** Write a query to display book titles along with their supplier names. 
-```
+```sql
 SELECT
   A.BOOK_TITLE AS [Book Title],
   B.SUPPLIER_NAME AS [Supplier Name]
@@ -172,7 +169,7 @@ ORDER BY
 ```
 
 - **QUESTION 12 :** Write a query to calculate the total number of books issued per member. 
-```
+```sql
 SELECT
   A.MEMBER_ID AS [Member id],
   B.MEMBER_NAME AS [Member Name],
@@ -186,7 +183,7 @@ GROUP BY
 ```
 
 - **QUESTION 13 :** Write a query to find books where the price is between 500 and 1000. 
-```
+```sql
 SELECT
   *
 FROM
@@ -196,7 +193,7 @@ WHERE
 ```
 
 - **QUESTION 14 :** Write a query to group books by category and calculate the total number of books in each category. 
-```
+```sql
 WITH
   Group_Book AS(
     SELECT
@@ -218,7 +215,7 @@ GROUP BY
 ```
 
 - **QUESTION 15 :** Write a query to find suppliers who have supplied more than 20 books. 
-```
+```sql
 SELECT
   B.SUPPLIER_NAME AS [Supplier Name],
   count(B.SUPPLIER_NAME) AS [Number Of Books]
@@ -232,7 +229,7 @@ having
 ```
 
 - **QUESTION 16 :** Write a query to fetch the details of the book with the highest price. 
-```  
+```sql  
 SELECT
   TOP 1 *
 FROM
@@ -242,7 +239,7 @@ order by
 ```
 
 - **QUESTION 17 :** Write a query to list all members who have issued at least one book. 
-```
+```sql
 SELECT
   B.MEMBER_NAME AS [Member Name],
   count(B.MEMBER_NAME) AS [Number Of Books Issued]
@@ -256,7 +253,7 @@ having
 ```  
 
 - **QUESTION 18 :** Write a query to fetch book titles that have been issued more than 5 times. 
-```  
+```sql  
 SELECT
   A.BOOK_TITLE AS [Book Titles],
   count(A.BOOK_TITLE) AS [Number Of Books Issued]
@@ -270,7 +267,7 @@ having
 ```
 
 - **QUESTION 19 :** Write a query to find the name and contact details of members who issued books in the last 30 days. 
-```
+```sql
 SELECT
   MAX([DATE_ISSUE]) AS MAX_DATE
 FROM
@@ -297,7 +294,7 @@ WHERE
 ```
 
 - **QUESTION 20 :** Write a query to find books that have never been issued. 
-```  
+```sql  
 SELECT
   COUNT(BOOK_ISSUE_NO) AS [Nos Of Book Not Issued]
 FROM
@@ -307,7 +304,7 @@ WHERE
 ```
 **--------------------------------*Advanced Queries (21-30)*-------------------------------------**
 - **QUESTION 21 :** Write a query to list all overdue books along with the member names who borrowed them. 
-```
+```sql
 SELECT
   B.BOOK_ISSUE_NO,
   A.MEMBER_NAME,
@@ -325,7 +322,7 @@ WHERE
 ```
 
 - **QUESTION 22 :** Write a query to rank books based on their price in descending order using window functions. 
-```
+```sql
 SELECT
   BOOK_CODE,
   BOOK_TITLE,
@@ -339,7 +336,7 @@ FROM
 ```
 
 - **QUESTION 23 :** Write a query using a CTE to find the total number of books issued per category. 
-```
+```sql
 WITH
   BOOK_ISSUE AS (
     SELECT
@@ -358,7 +355,7 @@ GROUP BY
 ```
 
 - **QUESTION 24 :** Write a query to display book titles and a new column "Price Range" (Low, Medium, High) based on their price. 
-```
+```sql
 SELECT
   MAX(PRICE) AS [Maximum Price]
 FROM
@@ -388,7 +385,7 @@ FROM
 - **QUESTION 25 :** Write a recursive query to find all books under a specific category and its subcategories. 
 
 - **QUESTION 26 :** Write a query to calculate the total fine amount collected for overdue books. 
-```
+```sql
 WITH
   OVERDUE_BOOK AS (
     SELECT
@@ -407,7 +404,7 @@ FROM
 ```
 
 - **QUESTION 27 :** Write a query to find the top 3 members who have issued the most books. 
-```
+```sql
 SELECT
   TOP 3 B.MEMBER_NAME,
   count(B.MEMBER_ID) AS [Member Who issue Books]
@@ -421,7 +418,7 @@ order by
 ```
 
 - **QUESTION 28 :** Write a query to find suppliers who have supplied books in multiple categories. 
-```
+```sql
 SELECT
   B.SUPPLIER_NAME,
   COUNT(B.SUPPLIER_NAME) AS [Nos Of Book Supplied]
@@ -435,7 +432,7 @@ order by
  ``` 
 
 - **QUESTION 29 :** Write a query to find members who issued the same book multiple times. 
-```  
+```sql  
 SELECT
   MEMBER_ID,
   BOOK_CODE,
@@ -450,7 +447,7 @@ having
 ```  
 
 - **QUESTION 30 :** Write a query to calculate the average price of books per category. 
-```
+```sql
 SELECT
   CATEGORY,
   AVG(PRICE) AS [Average Price]
