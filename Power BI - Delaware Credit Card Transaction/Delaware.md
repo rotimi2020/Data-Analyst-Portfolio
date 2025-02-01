@@ -97,5 +97,41 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   DupRows
   WHERE
   row_num > 1 
-  ```  
+  ```
+
+- **Remove Duplicate Rows**
+
+ - Another CTE to find duplicates, followed by deleting them from the table.
+```sql
+WITH
+  DupRows AS (
+    SELECT
+      *,
+      ROW_NUMBER() OVER (
+        PARTITION BY [FISCAL_YEAR],
+        [FISCAL_PERIOD],
+        [DEPT_NAME],
+        [DIV_NAME],
+        [MERCHANT],
+        [CAT_DESCR],
+        [TRANS_DT],
+        [MERCHANDISE_AMT]
+        ORDER BY
+          [FISCAL_YEAR],
+          [FISCAL_PERIOD],
+          [DEPT_NAME],
+          [DIV_NAME],
+          [MERCHANT],
+          [CAT_DESCR],
+          [TRANS_DT],
+          [MERCHANDISE_AMT]
+      ) AS row_num
+    FROM
+      [dbo].[Delaware_Checkbook]
+  )
+DELETE FROM
+  DupRows
+WHERE
+  row_num > 1 
+```
   
