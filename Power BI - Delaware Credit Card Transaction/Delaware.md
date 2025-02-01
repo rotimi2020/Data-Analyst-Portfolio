@@ -33,7 +33,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   Here's a concise summary of the SQL queries provided for analyzing the Delaware_Checkbook database
 
 ## Sections of the SQL Script
-- **View Data and Counts**
+- **View Data and Counts**<br>
 
   - Retrieve all records from Delaware_Checkbook.
    ```sql
@@ -53,9 +53,49 @@ The provided SQL script includes a series of operations aimed at analyzing finan
    [dbo].[Delaware_Checkbook];
   ```
 
-- **Table Description**
+- **Table Description**<br>
 
 - Execute sp_help to display the table structure and metadata.
   ```sql
-  EXEC sp_help '[dbo].[Delaware_Checkbook]' 
-  ```
+  EXEC sp_help '[dbo].[Delaware_Checkbook]'
+
+
+- **Check for Duplicates**<br>
+
+- Use a Common Table Expression (CTE) to identify duplicate records based on multiple columns.
+- Select duplicates for review.
+  ```sql
+  WITH
+  DupRows AS (
+    SELECT
+      *,
+      ROW_NUMBER() OVER (
+        PARTITION BY [FISCAL_YEAR],
+        [FISCAL_PERIOD],
+        [DEPT_NAME],
+        [DIV_NAME],
+        [MERCHANT],
+        [CAT_DESCR],
+        [TRANS_DT],
+        [MERCHANDISE_AMT]
+        ORDER BY
+          [FISCAL_YEAR],
+          [FISCAL_PERIOD],
+          [DEPT_NAME],
+          [DIV_NAME],
+          [MERCHANT],
+          [CAT_DESCR],
+          [TRANS_DT],
+          [MERCHANDISE_AMT]
+      ) AS row_num
+    FROM
+      [dbo].[Delaware_Checkbook]
+  )
+  SELECT
+  *
+  FROM
+  DupRows
+  WHERE
+  row_num > 1 
+  ```  
+  
