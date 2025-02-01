@@ -35,19 +35,27 @@ The provided SQL script includes a series of operations aimed at analyzing finan
 ## Sections of the SQL Script
 - **View Data and Counts**
 
-Retrieve all records from Delaware_Checkbook.
+  - Retrieve all records from Delaware_Checkbook.
    ```sql
-   SELECT *
-FROM
-[dbo].[Delaware_Checkbook];
+   SELECT
+   *
+   FROM
+   [dbo].[Delaware_Checkbook];
+   
+
    ```
 
-Count the total number of rows.
+  - Count the total number of rows.
    ```sql
-  SELECT
-COUNT(*) AS [TOTAL ROW]
-FROM
-[dbo].[Delaware_Checkbook];
+   SELECT
+   COUNT(*) AS [TOTAL ROW]
+   FROM
+   [dbo].[Delaware_Checkbook];
   ```
 
-  
+- **Table Description**
+
+- Execute sp_help to display the table structure and metadata.
+  ```sql
+  EXEC sp_help '[dbo].[Delaware_Checkbook]' 
+  ```
