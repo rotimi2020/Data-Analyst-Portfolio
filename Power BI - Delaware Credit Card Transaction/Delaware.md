@@ -27,3 +27,27 @@ The dataset contains the following columns:
 - **CAT_DESCR :** The category description of the transaction.
 - **TRANS_DT :** The date on which the transaction occurred.
 - **MERCHANDISE_AMT :** The monetary amount of the transaction.
+
+## Overview
+The provided SQL script includes a series of operations aimed at analyzing financial transaction data from the Delaware_Checkbook table. The queries cover data extraction, duplicate detection, data cleaning, the creation of new columns for categorization, and various analyses to assess expenditure trends.<br>
+  Here's a concise summary of the SQL queries provided for analyzing the Delaware_Checkbook database
+
+## Sections of the SQL Script
+- **View Data and Counts**
+
+Retrieve all records from Delaware_Checkbook.
+   ```sql
+   SELECT *
+FROM
+[dbo].[Delaware_Checkbook];
+   ```
+
+Count the total number of rows.
+   ```sql
+  SELECT
+COUNT(*) AS [TOTAL ROW]
+FROM
+[dbo].[Delaware_Checkbook];
+  ```
+
+  
