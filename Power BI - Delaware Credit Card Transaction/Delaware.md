@@ -334,14 +334,78 @@ The provided SQL script includes a series of operations aimed at analyzing finan
 
 This document outlines the key DAX measures used to calculate various expenditure metrics from the Delaware Checkbook data.  
 
-- **1. Total Transactions**  
+  **1. Total Transactions**  
   ```DAX  
   Total_Transactions = COUNTROWS(Delaware_Checkbook)
   ```
-- **2. Total Expenditure**
+  **2. Total Expenditure**
   ```DAX
   Total_Expenditure = SUM(Delaware_Checkbook[MERCHANDISE_AMT])
   ```
+  **3. Monthly Expenditure**
+  ```DAX
+  Monthly_Expenditure =   
+  CALCULATE(  
+    SUM(Delaware_Checkbook[MERCHANDISE_AMT]),  
+    ALLEXCEPT(Delaware_Checkbook, Delaware_Checkbook[FISCAL_PERIOD_MONTH])  
+           )
+  ```
   
+- **Yearly Expenditure**
+  ```DAX
+  Yearly_Expenditure =   
+  CALCULATE(  
+    SUM(Delaware_Checkbook[MERCHANDISE_AMT]),  
+    ALLEXCEPT(Delaware_Checkbook, Delaware_Checkbook[FISCAL_YEAR])  
+           )  
+  ```
+
+- **Seasonal Expenditure**
+  ```DAX
+  Seasonal_Expenditure =   
+  CALCULATE(  
+    SUM(Delaware_Checkbook[MERCHANDISE_AMT]),  
+    ALLEXCEPT(Delaware_Checkbook, Delaware_Checkbook[FISCAL_PERIOD_SEASON])  
+           )   
+  ```
+
+- **Department Expenditure**
+  ```DAX
+  Dept_Expenditure =   
+  CALCULATE(  
+    SUM(Delaware_Checkbook[MERCHANDISE_AMT]),  
+    ALLEXCEPT(Delaware_Checkbook, Delaware_Checkbook[DEPT_NAME])  
+           )  
+  ```  
+
+- ** Top Merchant Expenditure**
+  ```DAX
+  Top_Merchant_Expenditure =   
+  CALCULATE(  
+    SUM(Delaware_Checkbook[MERCHANDISE_AMT]),  
+    ALLEXCEPT(Delaware_Checkbook, Delaware_Checkbook[MERCHANT])  
+  ) 
+  ```
+
+- **Category Expenditure**
+  ```DAX
+  Category_Expenditure =   
+  CALCULATE(  
+    SUM(Delaware_Checkbook[MERCHANDISE_AMT]),  
+    ALLEXCEPT(Delaware_Checkbook, Delaware_Checkbook[CAT_DESCR])  
+           ) 
+  ```
+
+- **Expenditure Trend**
+  ```DAX
+  Expenditure_Trend =   
+  CALCULATE(  
+    SUM(Delaware_Checkbook[MERCHANDISE_AMT]),  
+    DATESYTD(Delaware_Checkbook[TRANS_DT])  
+           )
+  ```
+
+
+
 
 
