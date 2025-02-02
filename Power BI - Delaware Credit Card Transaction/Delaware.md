@@ -206,8 +206,97 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   WHERE
   row_num > 1
   ```
-  ## hello
+## Analysis
+- **Total number of transactions:** Count of all purchase transactions within the specified timeframe
+  ```sql
+  SELECT
+    COUNT(*) AS [Nos_Of_Transaction]
+  FROM
+    [dbo].[Delaware_Checkbook_Analysis] 
+  ```
+
+- **Total expenditure:** The aggregate amount spent across all transactions.
+  ```sql
+  SELECT
+  round(SUM([MERCHANDISE_AMT]), 2) AS [Total_Expenditure]
+  FROM
+  [dbo].[Delaware_Checkbook_Analysis] 
+ 
+  ```
+- **Yearly and monthly expenditure reporting:** Breakdown of spending by month and year for trend identification.
+  ```sql
+  SELECT
+  [FISCAL_YEAR],
+  round(SUM([MERCHANDISE_AMT]), 2) AS [Yearly_Expenditure]
+  FROM
+  [dbo].[Delaware_Checkbook_Analysis]
+  GROUP BY
+  [FISCAL_YEAR]
+  ORDER BY
+  [FISCAL_YEAR]
 
 
+  SELECT
+  [FISCAL_PERIOD_MONTH],
+  round(SUM([MERCHANDISE_AMT]), 2) AS [Monthly_Expenditure]
+  FROM
+  [dbo].[Delaware_Checkbook_Analysis]
+  GROUP BY
+  [FISCAL_PERIOD_MONTH]
+  ORDER BY
+  [Monthly_Expenditure] desc 
+  ``` 
+  
+- **Seasonal expenditure trends:** Analysis of spending variations across different seasons.
+  ```sql
+  SELECT
+  [FISCAL_PERIOD_SEASON],
+  round(SUM([MERCHANDISE_AMT]), 2) AS [Season_Expenditure]
+  FROM
+  [dbo].[Delaware_Checkbook_Analysis]
+  GROUP BY
+  [FISCAL_PERIOD_SEASON]
+  ORDER BY
+  [Season_Expenditure] desc 
+  ```
+
+- **Departmental and divisional spend analysis:** Assessment of spending by individual departments or divisions to identify   areas of high expenditure.
+  ```sql
+  SELECT
+  [DEPT_NAME],
+  [DIV_NAME],
+  round(SUM([MERCHANDISE_AMT]), 2) AS [Dept_Div_Expenditure]
+  FROM
+  [dbo].[Delaware_Checkbook_Analysis]
+  GROUP BY
+  [DEPT_NAME],
+  [DIV_NAME]
+  ORDER BY
+  [Dept_Div_Expenditure] desc;
+  ```
+
+- **Top merchants and category expenditures:** Identification of the largest suppliers and highest spending categories for    strategic insights.
+  ```sql
+  SELECT
+  MERCHANT,
+  round(SUM([MERCHANDISE_AMT]), 2) AS [Top_Merchant_Expenditure]
+  FROM
+  [dbo].[Delaware_Checkbook_Analysis]
+  GROUP BY
+  MERCHANT
+  ORDER BY
+  [Top_Merchant_Expenditure] desc
+
+
+  SELECT
+  [CAT_DESCR],
+  round(SUM([MERCHANDISE_AMT]), 2) AS [CAT_DESCR_Expenditure]
+  FROM
+  [dbo].[Delaware_Checkbook_Analysis]
+  GROUP BY
+  [CAT_DESCR]
+  ORDER BY
+  [CAT_DESCR_Expenditure] desc 
+  ```
 
 
