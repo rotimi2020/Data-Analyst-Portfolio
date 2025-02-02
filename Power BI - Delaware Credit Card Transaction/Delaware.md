@@ -1,5 +1,4 @@
-# Data cleaning and visualization: 
-## ***Using SQL and Power BI***
+# Data cleaning and visualization : Using SQL and Power BI
 
 ## Project Overview
 The "State of Delaware Checkbook" project is an extensive analysis of the state’s credit card transactions. The goal is to derive meaningful insights from the data to enhance financial transparency and accountability.
