@@ -329,4 +329,19 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [CAT_DESCR_Expenditure] desc 
   ```
 
+# Power BI
+## Expenditure DAX Measures  
+
+This document outlines the key DAX measures used to calculate various expenditure metrics from the Delaware Checkbook data.  
+
+- **1. Total Transactions**  
+  ```DAX  
+  Total_Transactions = COUNTROWS(Delaware_Checkbook)
+  ```
+- **2. Total Expenditure**
+  ```DAX
+  Total_Expenditure = SUM(Delaware_Checkbook[MERCHANDISE_AMT])
+  ```
+  
+
 
