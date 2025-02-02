@@ -338,11 +338,16 @@ This document outlines the key DAX measures used to calculate various expenditur
   ```DAX  
   Total_Transactions = COUNTROWS(Delaware_Checkbook)
   ```
-  **2. Total Expenditure**
+  **2. Average Expenditure**
+  ```DAX
+  Average_Expenditure = AVERAGE(Delaware_Checkbook[MERCHANDISE_AMT])
+  ```
+
+  **3. Total Expenditure**
   ```DAX
   Total_Expenditure = SUM(Delaware_Checkbook[MERCHANDISE_AMT])
   ```
-  **3. Monthly Expenditure**
+  **4. Monthly Expenditure**
   ```DAX
   Monthly_Expenditure =   
   CALCULATE(  
@@ -351,7 +356,7 @@ This document outlines the key DAX measures used to calculate various expenditur
            )
   ```
   
-  **4. Yearly Expenditure**
+  **5. Yearly Expenditure**
   ```DAX
   Yearly_Expenditure =   
   CALCULATE(  
@@ -360,7 +365,7 @@ This document outlines the key DAX measures used to calculate various expenditur
            )  
   ```
 
-  **5. Seasonal Expenditure**
+  **6. Seasonal Expenditure**
   ```DAX
   Seasonal_Expenditure =   
   CALCULATE(  
@@ -369,7 +374,7 @@ This document outlines the key DAX measures used to calculate various expenditur
            )   
   ```
 
-  **6. Department Expenditure**
+  **7. Department Expenditure**
   ```DAX
   Dept_Expenditure =   
   CALCULATE(  
@@ -378,7 +383,7 @@ This document outlines the key DAX measures used to calculate various expenditur
            )  
   ```  
 
-  **7. Top Merchant Expenditure**
+  **8. Top Merchant Expenditure**
   ```DAX
   Top_Merchant_Expenditure =   
   CALCULATE(  
@@ -387,7 +392,7 @@ This document outlines the key DAX measures used to calculate various expenditur
   ) 
   ```
 
-  **8. Category Expenditure**
+  **9. Category Expenditure**
   ```DAX
   Category_Expenditure =   
   CALCULATE(  
@@ -396,7 +401,7 @@ This document outlines the key DAX measures used to calculate various expenditur
            ) 
   ```
 
-  **9. Expenditure Trend**
+  **10. Expenditure Trend**
   ```DAX
   Expenditure_Trend =   
   CALCULATE(  
