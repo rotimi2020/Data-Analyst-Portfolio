@@ -67,17 +67,17 @@ The provided SQL script includes a series of operations aimed at analyzing finan
 
   - Update MERCHANDISE_AMT to eliminate negative signs and round the values.
     ```sql
-     SELECT
-     DISTINCT [MERCHANDISE_AMT],
-     COUNT(*) AS [COUNT ROWS],
-     round(replace([MERCHANDISE_AMT], '-', ''), 2)
-     FROM
-     [dbo].[Delaware_Checkbook]
-     GROUP BY
-     [MERCHANDISE_AMT]
-     ORDER BY
-     [MERCHANDISE_AMT],
-     [COUNT ROWS] ASC 
+    SELECT
+    DISTINCT [MERCHANDISE_AMT],
+    COUNT(*) AS [COUNT ROWS],
+    round(replace([MERCHANDISE_AMT], '-', ''), 2)
+    FROM
+    [dbo].[Delaware_Checkbook]
+    GROUP BY
+    [MERCHANDISE_AMT]
+    ORDER BY
+    [MERCHANDISE_AMT],
+    [COUNT ROWS] ASC 
     ```
 
   - **Create New Columns**
