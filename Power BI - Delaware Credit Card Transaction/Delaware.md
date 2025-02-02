@@ -88,17 +88,17 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   SELECT
   DISTINCT [FISCAL_PERIOD],
   CASE
-  WHEN [FISCAL_PERIOD] = 7 THEN 'January'
-  WHEN [FISCAL_PERIOD] = 8 THEN 'February'
-  WHEN [FISCAL_PERIOD] = 9 THEN 'March'
-  WHEN [FISCAL_PERIOD] = 10 THEN 'April'
-  WHEN [FISCAL_PERIOD] = 11 THEN 'May'
-  WHEN [FISCAL_PERIOD] = 12 THEN 'June'
-  WHEN [FISCAL_PERIOD] = 1 THEN 'July'
-  WHEN [FISCAL_PERIOD] = 2 THEN 'August'
-  WHEN [FISCAL_PERIOD] = 3 THEN 'September'
-  WHEN [FISCAL_PERIOD] = 4 THEN 'October'
-  WHEN [FISCAL_PERIOD] = 5 THEN 'November'
+    WHEN [FISCAL_PERIOD] = 7 THEN 'January'
+    WHEN [FISCAL_PERIOD] = 8 THEN 'February'
+    WHEN [FISCAL_PERIOD] = 9 THEN 'March'
+    WHEN [FISCAL_PERIOD] = 10 THEN 'April'
+    WHEN [FISCAL_PERIOD] = 11 THEN 'May'
+    WHEN [FISCAL_PERIOD] = 12 THEN 'June'
+    WHEN [FISCAL_PERIOD] = 1 THEN 'July'
+    WHEN [FISCAL_PERIOD] = 2 THEN 'August'
+    WHEN [FISCAL_PERIOD] = 3 THEN 'September'
+    WHEN [FISCAL_PERIOD] = 4 THEN 'October'
+    WHEN [FISCAL_PERIOD] = 5 THEN 'November'
   ELSE 'December'
   END AS [FISCAL_PERIOD]
   FROM
@@ -112,18 +112,18 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   SELECT
   DISTINCT [FISCAL_PERIOD_MONTH],
   CASE
-  WHEN [FISCAL_PERIOD_MONTH] = 'January' THEN 'Winter'
-  WHEN [FISCAL_PERIOD_MONTH] = 'February' THEN 'Winter'
-  WHEN [FISCAL_PERIOD_MONTH] = 'March' THEN 'Spring'
-  WHEN [FISCAL_PERIOD_MONTH] = 'April' THEN 'Spring'
-  WHEN [FISCAL_PERIOD_MONTH] = 'May' THEN 'Spring'
-  WHEN [FISCAL_PERIOD_MONTH] = 'June' THEN 'Summer'
-  WHEN [FISCAL_PERIOD_MONTH] = 'July' THEN 'Summer'
-  WHEN [FISCAL_PERIOD_MONTH] = 'August' THEN 'Summer'
-  WHEN [FISCAL_PERIOD_MONTH] = 'September' THEN 'Fall'
-  WHEN [FISCAL_PERIOD_MONTH] = 'October' THEN 'Fall'
-  WHEN [FISCAL_PERIOD_MONTH] = 'November' THEN 'Fall'
-  WHEN [FISCAL_PERIOD_MONTH] = 'December' THEN 'Winter'
+    WHEN [FISCAL_PERIOD_MONTH] = 'January' THEN 'Winter'
+    WHEN [FISCAL_PERIOD_MONTH] = 'February' THEN 'Winter'
+    WHEN [FISCAL_PERIOD_MONTH] = 'March' THEN 'Spring'
+    WHEN [FISCAL_PERIOD_MONTH] = 'April' THEN 'Spring'
+    WHEN [FISCAL_PERIOD_MONTH] = 'May' THEN 'Spring'
+    WHEN [FISCAL_PERIOD_MONTH] = 'June' THEN 'Summer'
+    WHEN [FISCAL_PERIOD_MONTH] = 'July' THEN 'Summer'
+    WHEN [FISCAL_PERIOD_MONTH] = 'August' THEN 'Summer'
+    WHEN [FISCAL_PERIOD_MONTH] = 'September' THEN 'Fall'
+    WHEN [FISCAL_PERIOD_MONTH] = 'October' THEN 'Fall'
+    WHEN [FISCAL_PERIOD_MONTH] = 'November' THEN 'Fall'
+    WHEN [FISCAL_PERIOD_MONTH] = 'December' THEN 'Winter'
   ELSE [FISCAL_PERIOD_MONTH]
   END AS season
   FROM
@@ -173,12 +173,12 @@ The provided SQL script includes a series of operations aimed at analyzing finan
 - **Remove Duplicate Rows**
 
   - Another CTE to find duplicates, followed by deleting them from the table.
-```sql
-WITH
+  ```sql
+  WITH
   DupRows AS (
-    SELECT
-      *,
-      ROW_NUMBER() OVER (
+  SELECT
+  *,
+  ROW_NUMBER() OVER (
         PARTITION BY [FISCAL_YEAR],
         [FISCAL_PERIOD],
         [DEPT_NAME],
@@ -200,9 +200,9 @@ WITH
     FROM
       [dbo].[Delaware_Checkbook]
   )
-DELETE FROM
+  DELETE FROM
   DupRows
-WHERE
+  WHERE
   row_num > 1 
 ```
 
