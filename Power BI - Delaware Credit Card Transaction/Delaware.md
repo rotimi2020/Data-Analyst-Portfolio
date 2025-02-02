@@ -80,55 +80,55 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [COUNT ROWS] ASC 
   ```
 
-  - **Create New Columns**
+- **Create New Columns**
 
-    - Add a new column for FISCAL_PERIOD_MONTH representing the month corresponding to the fiscal period.
-    - Populate this column based on the fiscal period values.
-    ```sql
-    SELECT
-    DISTINCT [FISCAL_PERIOD],
-    CASE
-    WHEN [FISCAL_PERIOD] = 7 THEN 'January'
-    WHEN [FISCAL_PERIOD] = 8 THEN 'February'
-    WHEN [FISCAL_PERIOD] = 9 THEN 'March'
-    WHEN [FISCAL_PERIOD] = 10 THEN 'April'
-    WHEN [FISCAL_PERIOD] = 11 THEN 'May'
-    WHEN [FISCAL_PERIOD] = 12 THEN 'June'
-    WHEN [FISCAL_PERIOD] = 1 THEN 'July'
-    WHEN [FISCAL_PERIOD] = 2 THEN 'August'
-    WHEN [FISCAL_PERIOD] = 3 THEN 'September'
-    WHEN [FISCAL_PERIOD] = 4 THEN 'October'
-    WHEN [FISCAL_PERIOD] = 5 THEN 'November'
-    ELSE 'December'
-    END AS [FISCAL_PERIOD]
-    FROM
-    [dbo].[Delaware_Checkbook];
-    ```
+  - Add a new column for FISCAL_PERIOD_MONTH representing the month corresponding to the fiscal period.
+  - Populate this column based on the fiscal period values.
+  ```sql
+  SELECT
+  DISTINCT [FISCAL_PERIOD],
+  CASE
+  WHEN [FISCAL_PERIOD] = 7 THEN 'January'
+  WHEN [FISCAL_PERIOD] = 8 THEN 'February'
+  WHEN [FISCAL_PERIOD] = 9 THEN 'March'
+  WHEN [FISCAL_PERIOD] = 10 THEN 'April'
+  WHEN [FISCAL_PERIOD] = 11 THEN 'May'
+  WHEN [FISCAL_PERIOD] = 12 THEN 'June'
+  WHEN [FISCAL_PERIOD] = 1 THEN 'July'
+  WHEN [FISCAL_PERIOD] = 2 THEN 'August'
+  WHEN [FISCAL_PERIOD] = 3 THEN 'September'
+  WHEN [FISCAL_PERIOD] = 4 THEN 'October'
+  WHEN [FISCAL_PERIOD] = 5 THEN 'November'
+  ELSE 'December'
+  END AS [FISCAL_PERIOD]
+  FROM
+  [dbo].[Delaware_Checkbook];
+  ```
 
-  - **Create a Season Column**
+- **Create a Season Column**
 
-    - Add another column for FISCAL_PERIOD_SEASON and populate it with the corresponding season based on month values.
-    ```sql
-    SELECT
-    DISTINCT [FISCAL_PERIOD_MONTH],
-    CASE
-    WHEN [FISCAL_PERIOD_MONTH] = 'January' THEN 'Winter'
-    WHEN [FISCAL_PERIOD_MONTH] = 'February' THEN 'Winter'
-    WHEN [FISCAL_PERIOD_MONTH] = 'March' THEN 'Spring'
-    WHEN [FISCAL_PERIOD_MONTH] = 'April' THEN 'Spring'
-    WHEN [FISCAL_PERIOD_MONTH] = 'May' THEN 'Spring'
-    WHEN [FISCAL_PERIOD_MONTH] = 'June' THEN 'Summer'
-    WHEN [FISCAL_PERIOD_MONTH] = 'July' THEN 'Summer'
-    WHEN [FISCAL_PERIOD_MONTH] = 'August' THEN 'Summer'
-    WHEN [FISCAL_PERIOD_MONTH] = 'September' THEN 'Fall'
-    WHEN [FISCAL_PERIOD_MONTH] = 'October' THEN 'Fall'
-    WHEN [FISCAL_PERIOD_MONTH] = 'November' THEN 'Fall'
-    WHEN [FISCAL_PERIOD_MONTH] = 'December' THEN 'Winter'
-    ELSE [FISCAL_PERIOD_MONTH]
-    END AS season
-    FROM
-    [dbo].[Delaware_Checkbook];
-    ```
+  - Add another column for FISCAL_PERIOD_SEASON and populate it with the corresponding season based on month values.
+  ```sql
+  SELECT
+  DISTINCT [FISCAL_PERIOD_MONTH],
+  CASE
+  WHEN [FISCAL_PERIOD_MONTH] = 'January' THEN 'Winter'
+  WHEN [FISCAL_PERIOD_MONTH] = 'February' THEN 'Winter'
+  WHEN [FISCAL_PERIOD_MONTH] = 'March' THEN 'Spring'
+  WHEN [FISCAL_PERIOD_MONTH] = 'April' THEN 'Spring'
+  WHEN [FISCAL_PERIOD_MONTH] = 'May' THEN 'Spring'
+  WHEN [FISCAL_PERIOD_MONTH] = 'June' THEN 'Summer'
+  WHEN [FISCAL_PERIOD_MONTH] = 'July' THEN 'Summer'
+  WHEN [FISCAL_PERIOD_MONTH] = 'August' THEN 'Summer'
+  WHEN [FISCAL_PERIOD_MONTH] = 'September' THEN 'Fall'
+  WHEN [FISCAL_PERIOD_MONTH] = 'October' THEN 'Fall'
+  WHEN [FISCAL_PERIOD_MONTH] = 'November' THEN 'Fall'
+  WHEN [FISCAL_PERIOD_MONTH] = 'December' THEN 'Winter'
+  ELSE [FISCAL_PERIOD_MONTH]
+  END AS season
+  FROM
+  [dbo].[Delaware_Checkbook];
+  ```
 
 
 - **Check for Duplicates**<br>
