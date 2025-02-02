@@ -10,11 +10,13 @@ The *primary objective* is to improve financial transparency and provide stakeho
 The problem is to analyze a large dataset of credit card transactions to identify spending patterns and provide insights for better financial management.
 
 ## Problem Statement
-The *State of Delaware Checkbook dataset* contains financial transaction data for various departments and divisions. This dataset includes key details such as the fiscal year, fiscal period, department and division names, merchant details, transaction dates, category descriptions, and transaction amounts.<br> The *primary goal* is to analyze this dataset to gain insights into financial transactions, identify spending patterns, and generate meaningful visualizations for better decision-making.
+The *State of Delaware Checkbook dataset* contains financial transaction data for various departments and divisions. This dataset includes key details such as the fiscal year, fiscal period, department and division names, merchant details, transaction dates, category descriptions, and transaction amounts.<br> <br>
+The *primary goal* is to analyze this dataset to gain insights into financial transactions, identify spending patterns, and generate meaningful visualizations for better decision-making.
 
 
 ## Dataset
-This dataset contains credit card transaction details for various departments within the State of Delaware. It includes a total of 1,539,693 records, with details about the fiscal year, department, vendor, transaction date, and amounts involved.<br>
+This dataset contains credit card transaction details for various departments within the State of Delaware. It includes a total of 1,539,693 records, with details about the fiscal year, department, vendor, transaction date, and amounts involved.<br> <br>
+The Delaware checkbook dataset, which includes credit card transactions, is quite large—approximately 180 MB. This file size makes it challenging to upload directly to GitHub.<br>
 
 - **Summary Statistics**
   - Total Number of Rows: *1,539,693*
@@ -22,6 +24,9 @@ This dataset contains credit card transaction details for various departments wi
   - Total Number of Rows After Removing Duplicates: *1,437,193*
   - Total Number of Anomaly Rows: *173,518*
   - Total Number of Rows After Removing Anomalies: *1,263,675* <br>
+
+
+
 
 ### Data Definition
 The dataset contains the following columns:
