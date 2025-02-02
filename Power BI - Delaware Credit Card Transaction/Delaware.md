@@ -68,7 +68,23 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   EXEC sp_help '[dbo].[Delaware_Checkbook]'
   ```
 
+- **Change Column Type**
+
+  - Change column's data type from SMALLINT to INT.
+  ```sql
+  ALTER TABLE
+  [dbo].[Delaware_Checkbook]
+  ALTER COLUMN
+  [FISCAL_YEAR] int;
+
+
+  ALTER TABLE
+  [dbo].[Delaware_Checkbook]
+  ALTER COLUMN
+  [FISCAL_PERIOD] int;
   
+  ```
+
 - **Check for Null Values**
 
   - Perform distinct counts of records for several key columns (e.g., FISCAL_YEAR, FISCAL_PERIOD, DEPT_NAME) to identify any null entries.No Null values are found
