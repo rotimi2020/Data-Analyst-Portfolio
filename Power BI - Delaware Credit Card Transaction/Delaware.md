@@ -207,10 +207,10 @@ The provided SQL script includes a series of operations aimed at analyzing finan
 ```
 
 - **Various Analyses**
-   - Perform analyses to extract insights, such as:
-    - Total number of transactions.
-    - Total expenditure.
-    - Yearly and monthly expenditure reporting.
-    - Seasonal expenditure trends.
-    - Departmental and divisional spend analysis.
-    - Top merchants and category expenditures.
+  - Perform analyses to extract insights, such as:
+  - Total number of transactions.
+  - Total expenditure.
+  - Yearly and monthly expenditure reporting.
+  - Seasonal expenditure trends.
+  - Departmental and divisional spend analysis.
+  - Top merchants and category expenditures.
