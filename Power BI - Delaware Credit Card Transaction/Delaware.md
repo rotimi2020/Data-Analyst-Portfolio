@@ -226,17 +226,6 @@ The provided SQL script includes a series of operations aimed at analyzing finan
 - **Yearly and monthly expenditure reporting:** Breakdown of spending by month and year for trend identification.
   ```sql
   SELECT
-  [FISCAL_YEAR],
-  round(SUM([MERCHANDISE_AMT]), 2) AS [Yearly_Expenditure]
-  FROM
-  [dbo].[Delaware_Checkbook_Analysis]
-  GROUP BY
-  [FISCAL_YEAR]
-  ORDER BY
-  [FISCAL_YEAR]
-
-
-  SELECT
   [FISCAL_PERIOD_MONTH],
   round(SUM([MERCHANDISE_AMT]), 2) AS [Monthly_Expenditure]
   FROM
@@ -245,6 +234,17 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [FISCAL_PERIOD_MONTH]
   ORDER BY
   [Monthly_Expenditure] desc 
+
+
+  SELECT
+  [FISCAL_YEAR],
+  round(SUM([MERCHANDISE_AMT]), 2) AS [Yearly_Expenditure]
+  FROM
+  [dbo].[Delaware_Checkbook_Analysis]
+  GROUP BY
+  [FISCAL_YEAR]
+  ORDER BY
+  [FISCAL_YEAR]
   ``` 
   
 - **Seasonal expenditure trends:** Analysis of spending variations across different seasons.
