@@ -351,7 +351,7 @@ This document outlines the key DAX measures used to calculate various expenditur
            )
   ```
   
-- **Yearly Expenditure**
+  **4. Yearly Expenditure**
   ```DAX
   Yearly_Expenditure =   
   CALCULATE(  
@@ -360,7 +360,7 @@ This document outlines the key DAX measures used to calculate various expenditur
            )  
   ```
 
-- **Seasonal Expenditure**
+  **5. Seasonal Expenditure**
   ```DAX
   Seasonal_Expenditure =   
   CALCULATE(  
@@ -369,7 +369,7 @@ This document outlines the key DAX measures used to calculate various expenditur
            )   
   ```
 
-- **Department Expenditure**
+  **6. Department Expenditure**
   ```DAX
   Dept_Expenditure =   
   CALCULATE(  
@@ -378,7 +378,7 @@ This document outlines the key DAX measures used to calculate various expenditur
            )  
   ```  
 
-- ** Top Merchant Expenditure**
+  **7. Top Merchant Expenditure**
   ```DAX
   Top_Merchant_Expenditure =   
   CALCULATE(  
@@ -387,7 +387,7 @@ This document outlines the key DAX measures used to calculate various expenditur
   ) 
   ```
 
-- **Category Expenditure**
+  **8. Category Expenditure**
   ```DAX
   Category_Expenditure =   
   CALCULATE(  
@@ -396,7 +396,7 @@ This document outlines the key DAX measures used to calculate various expenditur
            ) 
   ```
 
-- **Expenditure Trend**
+  **9. Expenditure Trend**
   ```DAX
   Expenditure_Trend =   
   CALCULATE(  
