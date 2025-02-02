@@ -1,19 +1,29 @@
 # Data cleaning and visualization : Using SQL and Power BI
 
 ## Project Overview
-The "State of Delaware Checkbook" project is an extensive analysis of the state’s credit card transactions. The goal is to derive meaningful insights from the data to enhance financial transparency and accountability.
+The *"State of Delaware Checkbook"* project is an extensive analysis of the state’s credit card transactions. The goal is to derive meaningful insights from the data to enhance financial transparency and accountability.
 
 ## Objectives 
-The primary objective is to improve financial transparency and provide stakeholders with a comprehensive view of the state’s expenditures.
+The *primary objective* is to improve financial transparency and provide stakeholders with a comprehensive view of the state’s expenditures.
 
 ## Problem Definition
 The problem is to analyze a large dataset of credit card transactions to identify spending patterns and provide insights for better financial management.
 
 ## Problem Statement
-The State of Delaware Checkbook dataset contains financial transaction data for various departments and divisions. This dataset includes key details such as the fiscal year, fiscal period, department and division names, merchant details, transaction dates, category descriptions, and transaction amounts. The primary goal is to analyze this dataset to gain insights into financial transactions, identify spending patterns, and generate meaningful visualizations for better decision-making.
+The *State of Delaware Checkbook dataset* contains financial transaction data for various departments and divisions. This dataset includes key details such as the fiscal year, fiscal period, department and division names, merchant details, transaction dates, category descriptions, and transaction amounts.<br> The *primary goal* is to analyze this dataset to gain insights into financial transactions, identify spending patterns, and generate meaningful visualizations for better decision-making.
+This
 
 
 ## Dataset
+This dataset contains credit card transaction details for various departments within the State of Delaware. It includes a total of 1,539,693 records, with details about the fiscal year, department, vendor, transaction date, and amounts involved.<br>
+
+- **Summary Statistics**
+  - Total Number of Rows: *1,539,693*
+  - Total Number of Duplicate Rows: *102,500*
+  - Total Number of Rows After Removing Duplicates: *1,437,193*
+  - Total Number of Anomaly Rows: *173,518*
+  - Total Number of Rows After Removing Anomalies: *1,263,675* <br>
+
 ### Data Definition
 The dataset contains the following columns:
 
@@ -62,7 +72,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   
 - **Check for Null Values**
 
-  - Perform distinct counts of records for several key columns (e.g., FISCAL_YEAR, FISCAL_PERIOD, DEPT_NAME) to identify any null entries.
+  - Perform distinct counts of records for several key columns (e.g., FISCAL_YEAR, FISCAL_PERIOD, DEPT_NAME) to identify any null entries.No Null values are found
 
 - **Remediate Data Issues**
 
