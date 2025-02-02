@@ -208,7 +208,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
 
 
 
-- **Various Analyses**
+ **Various Analyses**
 
   - Perform analyses to extract insights, such as:
   - Total number of transactions.
