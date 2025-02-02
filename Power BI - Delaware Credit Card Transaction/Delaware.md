@@ -57,6 +57,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   - Execute sp_help to display the table structure and metadata.
   ```sql
   EXEC sp_help '[dbo].[Delaware_Checkbook]'
+  ```
 
   
 - **Check for Null Values**
@@ -203,8 +204,10 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   DELETE FROM
   DupRows
   WHERE
-  row_num > 1 
-```
+  row_num > 1
+  ```
+  ## hello
+
 
 
 
