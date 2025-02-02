@@ -54,15 +54,15 @@ The provided SQL script includes a series of operations aimed at analyzing finan
 
 - **Table Description**<br>
 
-- Execute sp_help to display the table structure and metadata.
+  - Execute sp_help to display the table structure and metadata.
   ```sql
   EXEC sp_help '[dbo].[Delaware_Checkbook]'
 
 
 - **Check for Duplicates**<br>
 
-- Use a Common Table Expression (CTE) to identify duplicate records based on multiple columns.
-- Select duplicates for review.
+  - Use a Common Table Expression (CTE) to identify duplicate records based on multiple columns.
+  - Select duplicates for review.
   ```sql
   WITH
   DupRows AS (
@@ -100,7 +100,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
 
 - **Remove Duplicate Rows**
 
- - Another CTE to find duplicates, followed by deleting them from the table.
+  - Another CTE to find duplicates, followed by deleting them from the table.
 ```sql
 WITH
   DupRows AS (
