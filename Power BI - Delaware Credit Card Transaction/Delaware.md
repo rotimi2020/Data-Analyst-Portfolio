@@ -410,6 +410,96 @@ This document outlines the key DAX measures used to calculate various expenditur
            )
   ```
 
+## Delaware report
+### Delaware Checkbook Power BI Report Analysis
+
+
+### Key Findings
+
+- **1. Total Expenditure:**
+  - The **total recorded spending** is **$152.38 million**.
+  - The a**verage transaction amount** is **$120.60**.
+  - The dataset includes **over 1 million transactions**.
+
+
+- **2. Top Merchants Spending:**
+  - **Grainger** - $2.9M
+  - **Verizon** - $2.1M
+  - **Canon Financial** - $1.9M
+  - **Amazon** - $1.1M
+  - **Comcast** - $1.0M
+
+
+- **3. Top Categories Spending:**
+  - **Book Stores** - $12.7M
+  - **Airline Expenses** - $8.59M 
+  - **Lodging (Hotels)** - $7.86M
+  - **Stationery & Office Supplies** - $6.52M
+  - **Telecom Services** - $3.94M
+
+
+- **4. Departmental Expenditure:**
+  - The *highest spending department* recorded **$19M**.
+  - Several departments have expenses over **$10M**, including *legal, executive, and state services*.
+
+
+- **5. Seasonal and Monthly Trends:**
+  - The *highest expenditures* were recorded in **Fall Season ($42M)** and **Spring Season ($40M)**.
+  - **September, October, August, and March** each had over **$14M** in spending.
+  - The *lowest spending* occurred in **June and January**.
+ 
+
+### Insights
+- **Heavy spending on books, airlines, and lodging** suggests significant travel and education-related costs.
+- **Telecom and office supply expenses** indicate a major investment in communication and administrative needs.
+- **Consistent high spending across seasons** suggests ongoing operations rather than seasonal projects.
+- **Top merchants like Grainger and Verizon** imply recurring contracts for supplies and communication.
+
+
+
+### Potential Solutions
+
+ - **Budget Optimization:**
+
+   - Review high-spending categories like **travel**, **books**, and **telecom** to identify *cost-saving opportunities*.
+
+   - Implement bulk purchasing strategies for office supplies and telecom services.
+
+
+ - **Expense Justification:**
+
+   - Large transactions should be audited for necessity and efficiency.
+
+   - Departmental spending reports should highlight essential vs. discretionary costs.
+
+
+ - **Seasonal Adjustments:**
+
+   - Lower spending during **winter** suggests potential budget reallocation strategies to balance yearly expenses.
+
+
+### Conclusion
+
+ - The **Delaware state budget** is significantly allocated to telecom, office supplies, books, and travel.
+
+ - Spending is fairly consistent throughout the year, with peaks in fall and spring.
+
+ - Key merchants and categories indicate ongoing operational costs rather than one-time expenditures.
+
+
+### Recommendations
+
+ - **1. Audit Top Categories Spending:**
+   - Focus on **travel, lodging, and telecom** expenses for potential reductions.
+
+ - **2. Improve Procurement Strategies:**
+   - Negotiate better deals with frequent vendors like Grainger and Verizon.
+
+ - **3. Seasonal Budget Planning:**
+   - Balance **fall and spring spending** by distributing expenses more evenly across the year.
+
+ - **4. Transparency & Reporting:**
+   - Publish **detailed reports** on high-value transactions to improve accountability.
 
 
 
