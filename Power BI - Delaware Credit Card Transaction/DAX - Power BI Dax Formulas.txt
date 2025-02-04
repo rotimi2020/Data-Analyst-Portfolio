@@ -1,0 +1,58 @@
+Power BI DAX Formulas for Delaware Credit Card Transaction Analysis
+
+Average_Expenditure = AVERAGE(Delaware_Checkbook[MERCHANDISE_AMT]) 
+
+
+Category_Expenditure = 
+CALCULATE(  
+    SUM(Delaware_Checkbook[MERCHANDISE_AMT]),  
+    ALLEXCEPT(Delaware_Checkbook, Delaware_Checkbook[CAT_DESCR])  
+)
+
+
+Dept_Expenditure = 
+CALCULATE(  
+    SUM(Delaware_Checkbook[MERCHANDISE_AMT]),  
+    ALLEXCEPT(Delaware_Checkbook, Delaware_Checkbook[DEPT_NAME])  
+)
+
+
+Expenditure_Trend = 
+CALCULATE(  
+    SUM(Delaware_Checkbook[MERCHANDISE_AMT]),  
+    DATESYTD(Delaware_Checkbook[TRANS_DT])  
+)
+
+
+Monthly_Expenditure = 
+CALCULATE(  
+    SUM(Delaware_Checkbook[MERCHANDISE_AMT]),  
+    ALLEXCEPT(Delaware_Checkbook, Delaware_Checkbook[FISCAL_PERIOD_MONTH])  
+)
+
+
+Seasonal_Expenditure = 
+CALCULATE(  
+    SUM(Delaware_Checkbook[MERCHANDISE_AMT]),  
+    ALLEXCEPT(Delaware_Checkbook, Delaware_Checkbook[FISCAL_PERIOD_SEASON])  
+)
+
+
+Top_Merchant_Expenditure = 
+CALCULATE(  
+    SUM(Delaware_Checkbook[MERCHANDISE_AMT]),  
+    ALLEXCEPT(Delaware_Checkbook, Delaware_Checkbook[MERCHANT])  
+)
+
+
+Total_Expenditure = SUM(Delaware_Checkbook[MERCHANDISE_AMT])
+
+
+Total_Transactions = COUNTROWS(Delaware_Checkbook)
+
+
+Yearly_Expenditure = 
+CALCULATE(  
+    SUM(Delaware_Checkbook[MERCHANDISE_AMT]),  
+    ALLEXCEPT(Delaware_Checkbook, Delaware_Checkbook[FISCAL_YEAR])  
+)
