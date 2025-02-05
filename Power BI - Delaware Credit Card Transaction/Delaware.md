@@ -419,9 +419,14 @@ Power BI Dax [Code](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/ma
 ![power b report2] <img width="575" alt="REPORT - Expenditure Analysis Report" src="https://github.com/user-attachments/assets/1376020c-a851-48ca-a08f-ed5850a8663b" /> <br>
 ![power b report3] (<img width="575" alt="REPORT - Expenditure Analysis Report" src="https://github.com/user-attachments/assets/1376020c-a851-48ca-a08f-ed5850a8663b" />) <br>
 ![power b report3] (<img src = "images/REPORT - Expenditure Analysis Report.PNG" width="500" alt="power b report3" />) <br>
-![pdf](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Power%20BI%20-%20Delaware%20Credit%20Card%20Transaction/Delaware_Checkbook.pdf)
+![pdf](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Power%20BI%20-%20Delaware%20Credit%20Card%20Transaction/Delaware_Checkbook.pdf)<br>
 
-[rp](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Power%20BI%20-%20Delaware%20Credit%20Card%20Transaction/Delaware_Checkbook.pdf)
+![rp](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Power%20BI%20-%20Delaware%20Credit%20Card%20Transaction/Delaware_Checkbook.pdf)<br>
+[Delaware_Checkbook.pdf](https://github.com/user-attachments/files/18672240/Delaware_Checkbook.pdf) <br>
+![Delaware_Checkbook.pdf](https://github.com/user-attachments/files/18672240/Delaware_Checkbook.pdf) <br>
+![Delaware_Checkbook.pdf](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Power%20BI%20-%20Delaware%20Credit%20Card%20Transaction/Delaware_Checkbook.pdf)<br>
+[Delaware_Checkbook.pdf](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Power%20BI%20-%20Delaware%20Credit%20Card%20Transaction/Delaware_Checkbook.pdf)<br>
+
 
 
 
