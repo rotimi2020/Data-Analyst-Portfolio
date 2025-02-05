@@ -414,9 +414,12 @@ Power BI Dax [Code](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/ma
 
 ## Delaware report
 ### Delaware Checkbook Power BI Report Analysis
-![report] (https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Power%20BI%20-%20Delaware%20Credit%20Card%20Transaction/images/REPORT%20-%20Expenditure%20Analysis%20Report.PNG)
+![power b report0] (images/REPORT - Expenditure Analysis Report.PNG) <br>
+![power b report1] (REPORT - Expenditure Analysis Report.PNG)<br>
+![power b report2] <img width="575" alt="REPORT - Expenditure Analysis Report" src="https://github.com/user-attachments/assets/1376020c-a851-48ca-a08f-ed5850a8663b" /> <br>
+![power b report3] (<img width="575" alt="REPORT - Expenditure Analysis Report" src="https://github.com/user-attachments/assets/1376020c-a851-48ca-a08f-ed5850a8663b" />) <br>
+![power b report3] (<img src = "images/REPORT - Expenditure Analysis Report.PNG" width="500" alt="power b report3" />) <br>
 
-![report] <img width="575" alt="REPORT - Expenditure Analysis Report" src="https://github.com/user-attachments/assets/2360fa84-147a-4b36-9592-00d274c28ed8" />
 
 
 ### Key Findings
