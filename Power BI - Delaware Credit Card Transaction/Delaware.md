@@ -421,6 +421,9 @@ Power BI Dax [Code](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/ma
 ![power b report3] (<img src = "images/REPORT - Expenditure Analysis Report.PNG" width="500" alt="power b report3" />) <br>
 ![pdf](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Power%20BI%20-%20Delaware%20Credit%20Card%20Transaction/Delaware_Checkbook.pdf)
 
+[rp](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Power%20BI%20-%20Delaware%20Credit%20Card%20Transaction/Delaware_Checkbook.pdf)
+
+
 
 ### Key Findings
 
