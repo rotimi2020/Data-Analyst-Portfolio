@@ -414,8 +414,7 @@ Power BI Dax [Code](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/ma
 
 ## Delaware report
 ### Delaware Checkbook Power BI Report Analysis
-![report] (https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Power%20BI%20-%20Delaware%20Credit%20Card%20Transaction/REPORT%20-%20Expenditure%20Analysis%20Report.PNG)
-
+![report] (https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Power%20BI%20-%20Delaware%20Credit%20Card%20Transaction/images/REPORT%20-%20Expenditure%20Analysis%20Report.PNG)
 
 ### Key Findings
 
