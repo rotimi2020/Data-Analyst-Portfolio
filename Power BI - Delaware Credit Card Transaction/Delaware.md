@@ -334,6 +334,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
 ## Expenditure DAX Measures  
 
 This document outlines the key DAX measures used to calculate various expenditure metrics from the Delaware Checkbook data.  
+Power BI Dax [Code](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Power%20BI%20-%20Delaware%20Credit%20Card%20Transaction/DAX%20-%20Power%20BI%20Dax%20Formulas.txt)
 
   **1. Total Transactions**  
   ```DAX  
