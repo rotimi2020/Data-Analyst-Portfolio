@@ -43,7 +43,7 @@ The dataset contains the following columns:
 
 ## Overview
 The provided SQL script includes a series of operations aimed at analyzing financial transaction data from the Delaware_Checkbook table. The queries cover data extraction, duplicate detection, data cleaning, the creation of new columns for categorization, and various analyses to assess expenditure trends.<br>
-  Here's a concise summary of the SQL queries provided for analyzing the Delaware_Checkbook database
+  Here's a concise summary of the SQL queries provided for analyzing the Delaware_Checkbook database.
   Get the full [Code here](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Power%20BI%20-%20Delaware%20Credit%20Card%20Transaction/SQL%20-%20Delaware_Checkbook_SQL.sql)
 
 ### Sections of the SQL Script
