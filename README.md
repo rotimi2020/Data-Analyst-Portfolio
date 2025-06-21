@@ -86,9 +86,9 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
  ***Optimized Operations :*** Identification of areas for improvement in inventory management, user engagement, and service delivery.<br>
  ***Informed Decision-Making :*** Data-driven insights that support strategic decision-making by the library owner.<br>
 
-### Project 3: [Delaware Credit Card Financial Records](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Delaware%20Credit%20Card%20Transaction/Delaware.md)
+### Project 3: [Delaware Credit Card Financial Records](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/delaware_credit_card_transaction)
 
-- **Code** : [SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Delaware%20Credit%20Card%20Transaction/SQL%20-%20Delaware_Checkbook_SQL.sql),[DAX](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Delaware%20Credit%20Card%20Transaction/DAX%20-%20Power%20BI%20Dax%20Formulas.txt)
+- **Code** : [SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/sql/delaware_checkbook.sql),[DAX](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/dax/powerbi_%20dax_formulas.txt)
  
 - **Goal** :<br>
    - To analyze and report on the spending patterns of the State of Delaware.<br>
