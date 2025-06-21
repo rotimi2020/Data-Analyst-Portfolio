@@ -62,7 +62,7 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
  ***Informed Decision-Making :*** Data-driven insights that support strategic decision-making by the library owner.<br>
 
 
-### Project 2: [Library Management System Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Library%20Management%20System/LMS.md)
+### Project 2: [Library Management System Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/library_management_system)
 - **Code** : [SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/Library%20Management%20System/SQL%20-%20LMS.sql)
   
 - **Goal** :<br>
