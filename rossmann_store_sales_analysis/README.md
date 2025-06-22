@@ -27,6 +27,39 @@ and complex patterns due to promotions, holidays, and store-specific factors.
 ## Dataset
 **Source:** [Kaggle - Rossmann Store Sales](https://www.kaggle.com/competitions/rossmann-store-sales/data)
 
+---
+
+## Files Included
+- `train.csv`: Historical sales data (~1 million rows, approximately 36.2 MB)
+- `test.csv`: Recent or upcoming sales data (~41k rows)
+- `store.csv`: Store information (~1,115 rows)
+- `sample_submission.csv`: Format template for submissions
+
+---
+
+## File Sizes
+| File                 | Approximate Size  | Description                                           |
+|---------------------|-------------------|-------------------------------------------------------|
+| `train.csv`        | 36.2 MB           | Contains daily store sales and transaction details  |
+| `test.csv`         | 2 MB              | Data for prediction (future sales)                   |
+| `store.csv`        | < 1 MB            | Static store-specific attributes                     |
+| `sample_submission.csv` | < 1 KB         | Example submission format                            |
+
+---
+
+## Important Notes
+- Due to size constraints (GitHub maximum upload size is 25MB), the `train.csv` file cannot be directly uploaded here since it exceeds this limit.
+- The dataset has been imported into SQL Server Management Studio (SSMS) for data cleaning and exploratory analysis.
+- You can download the datasets directly from Kaggle using their platform or API.
+
+---
+
+## Usage
+- Use this dataset for predictive modeling, data analysis, or feature engineering.
+- Refer to `store.csv` for static store info to enhance your models.
+
+---
+
 ### Files
 - `train.csv`: Historical sales data (~1 million rows)
 - `test.csv`: Data for prediction (~41k rows)
