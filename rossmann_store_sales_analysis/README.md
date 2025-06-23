@@ -72,7 +72,8 @@ You can download the dataset<br>**Source:** [Kaggle - Rossmann Store Sales](http
 ## Usage
 - Use this dataset for predictive modeling, data analysis, or feature engineering.
 - Refer to `store.csv` for static store info to enhance your models.
-- Utilize this data to identify sales patterns, forecast future sales, or optimize promotional strategies
+- Utilize this data to identify sales patterns, forecast future sales, or optimize promotional strategies<br>
+  You can download the dataset<br>**Source:** [Kaggle - Rossmann Store Sales](https://www.kaggle.com/competitions/rossmann-store-sales/data)
 ---
 
 ## Data Processing & Cleaning
