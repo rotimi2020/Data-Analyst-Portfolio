@@ -216,6 +216,38 @@ This notebook serves as the foundation for building machine learning models and 
 facilitating data-driven decision-making for Rossmann stores.
 
 ---
+
+### Notebooks and Resources  
+
+Below are the key Jupyter notebooks developed as part of this project. You can download them directly using the links provided:  
+
+- **rossmann_sales.ipynb**: [Download Rossmann Sales Data Analysis and Forecasting](path-to-your-repository/rossmann_sales.ipynb)  
+  This notebook contains the data extraction, cleaning, feature engineering, visualization, and initial modeling steps.  
+
+- **machine_learning_using_pycaret.ipynb**: [Download Machine Learning with PyCaret](path-to-your-repository/machine_learning_using_pycaret.ipynb)  
+  Demonstrates the use of PyCaret for building and tuning ML models to forecast sales.  
+
+- **machine_learning_using_xgboost.ipynb**: [Download XGBoost Modeling](path-to-your-repository/machine_learning_using_xgboost.ipynb)  
+  Implements XGBoost for sales prediction, emphasizing hyperparameter tuning and model evaluation.  
+
+- **prophet_forecasting_with_extra_regressors.ipynb**: [Download Prophet with Extra Regressors](path-to-your-repository/prophet_forecasting_with_extra_regressors.ipynb)  
+  Uses Facebook Prophet model incorporating additional regressors like promotions and holidays for improved forecasts.  
+
+- **prophet_forecasting_with_holiday_effects.ipynb**: [Download Prophet with Holiday Effects](path-to-your-repository/prophet_forecasting_with_holiday_effects.ipynb)  
+  Demonstrates how holiday effects are integrated into Prophet models for better seasonal forecasting.  
+
+- **prophet_forecasting_without_holidays_or_regressors.ipynb**: [Download Prophet without Regressors](path-to-your-repository/prophet_forecasting_without_holidays_or_regressors.ipynb)  
+  Showcases a baseline Prophet model without special regressors to compare forecast performance.  
+
+---  
+
+### Notes:  
+- Replace `path-to-your-repository` with the actual location or URL where your notebooks are stored (e.g., GitHub repository link).  
+- Including meaningful descriptions helps users understand the purpose of each notebook quickly.  
+
+---  
+
+### Do you want me to draft the exact markdown block with placeholder links or suggest a way to organize your GitHub README?
 ## 🔍 Sections of Python Scripts
 
 Below are selected SQL snippets from the project on data cleaning.
