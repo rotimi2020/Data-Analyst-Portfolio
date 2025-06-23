@@ -128,9 +128,10 @@ Below are selected SQL snippets from the project.
 
 ### 1. 📊 Total Sales by Store
 ```sql
-SELECT Store, SUM(Sales) AS TotalSales
-FROM train_cleaned
-GROUP BY Store;
+select Date, sum(Sales) AS Total_sales  
+from Rossmann_sale  
+group by Date  
+order by Date ;
 
 ```
 ---
