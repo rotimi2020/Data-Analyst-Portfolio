@@ -81,7 +81,7 @@ You can download the dataset, which features the following key data fields:
 - **Lag Features**: `Sales_Lag_7`, `Sales_Lag_30`
 - **Moving Averages**: `Sales_MA_7`
 - **Categorical Encoding**: `StoreType`, `Assortment`
-- **Holiday & Promo Effects`
+- **Holiday & Promotion Effects**: Capture the impact of holidays and promotions on sales, considering how these events influence customer behavior and sales patterns.
 
 ---
 
