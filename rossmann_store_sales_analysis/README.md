@@ -132,6 +132,7 @@ SELECT Store, SUM(Sales) AS TotalSales
 FROM train_cleaned
 GROUP BY Store;
 
+```
 ---
 
 ## Insights & Key Findings
