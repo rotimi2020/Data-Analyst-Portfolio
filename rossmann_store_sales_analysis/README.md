@@ -221,7 +221,7 @@ facilitating data-driven decision-making for Rossmann stores.
 
 Below are the key Jupyter notebooks developed as part of this project. You can download them directly using the links provided:  
 
-- **rossmann_sales.ipynb**: [Download Rossmann Sales Data Analysis and Forecasting](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/notebooks/rossmann_sales.ipynb)  
+- **rossmann_sales.ipynb**: [Download Rossmann Sales Data Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/notebooks/rossmann_sales.ipynb)  
   This notebook contains the data extraction, cleaning, feature engineering, visualization, and initial modeling steps.  
 
 - **machine_learning_using_pycaret.ipynb**: [Download Machine Learning with PyCaret](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/notebooks/machine_learning_using_pycaret.ipynb)  
