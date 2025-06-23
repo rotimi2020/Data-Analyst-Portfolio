@@ -128,7 +128,7 @@ Below are selected SQL snippets from the project on data cleaning.
 - Replacement of null values
 - Change type
 
-### 1. 📊 Total Sales by Store
+### 1. Replacement of null values
 ```sql
 UPDATE store_cleaned
 SET [CompetitionDistance] = (SELECT AVG([CompetitionDistance]) FROM store)
@@ -136,7 +136,7 @@ WHERE [CompetitionDistance] IS NULL;
 
 ```
 
-### 2. 📊 Yearly Sales Trend
+### 2. Change type
 ```sql
 alter table [train_cleaned]
 alter column [Store] int;
