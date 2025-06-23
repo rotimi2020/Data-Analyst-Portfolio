@@ -125,21 +125,21 @@ Key objectives:
 ## 🔍 Sections of SQL Scripts
 
 Below are selected SQL snippets from the project on data cleaning.
+- Replacement of null values
+- Change type
 
 ### 1. 📊 Total Sales by Store
 ```sql
-select Date, sum(Sales) AS Total_sales  
-from Rossmann_sale  
-group by Date  
-order by Date ;
+UPDATE store_cleaned
+SET [CompetitionDistance] = (SELECT AVG([CompetitionDistance]) FROM store)
+WHERE [CompetitionDistance] IS NULL;
 
 ```
 
 ### 2. 📊 Yearly Sales Trend
 ```sql
-select year(Date) As Year, sum(Sales) AS Total_sales
-from Rossmann_sale
-group by year(Date);
+alter table [train_cleaned]
+alter column [Store] int;
 
 ```
 ---
