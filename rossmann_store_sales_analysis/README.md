@@ -196,6 +196,34 @@ Key objectives:
 
 ---
 
+### Python Data Analysis and Modeling
+
+The script `rossmann_sale.ipynb` is a comprehensive Python notebook used in the analysis, cleaning, and feature engineering of the Rossmann sales data. 
+This notebook was developed after extracting the cleaned dataset from SQL Server Management Studio (SSMS). 
+
+Key processes include:
+
+- **Data Exploration and Analysis:**  
+  Exploring the dataset, understanding distributions, and summarizing statistical attributes to gain initial insights.
+
+- **Data Cleaning and Preparation:**  
+  Handling missing values, converting date columns to datetime format, and ensuring data consistency.
+
+- **Feature Engineering:**  
+  Creating new features based on temporal aspects such as day, month, year, and identifying special events like holidays or promotions.  
+  Generating lag features to capture sales trends over time and merging datasets 
+(training and testing sets) with store information for comprehensive analysis.
+
+- **Multicollinearity Check:**  
+  Using Variance Inflation Factor (VIF) to identify and mitigate multicollinearity among features, ensuring model stability.
+
+- **Visualization:**  
+  Plotting sales trends, correlation matrices, and feature importance to support understanding of data relationships and guide model development.
+
+This notebook serves as the foundation for building machine learning models and conducting in-depth analyses to forecast sales accurately, 
+facilitating data-driven decision-making for Rossmann stores.
+
+---
 ## 🔍 Sections of Python Scripts
 
 Below are selected SQL snippets from the project on data cleaning.
