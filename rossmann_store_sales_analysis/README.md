@@ -27,7 +27,19 @@ and complex patterns due to promotions, holidays, and store-specific factors.
 ## Dataset
 **Source:** [Kaggle - Rossmann Store Sales](https://www.kaggle.com/competitions/rossmann-store-sales/data)
 
-
+### Key Data Fields
+- **Id:** Unique ID for each store-date pair (test set)
+- **Store:** Store identifier
+- **Sales:** Target variable — daily sales
+- **Customers:** Number of customers each day
+- **Open:** Store open indicator (0 or 1)
+- **StateHoliday:** Holidays affecting store operations
+- **SchoolHoliday:** Impact of school holidays
+- **StoreType:** Type classification
+- **Assortment:** Product assortment level
+- **CompetitionDistance:** Distance to nearest competitor
+- **Promo, Promo2:** Promotion indicators
+- **Date:** Observation date
 
 ## Files Included
 - `train.csv`: Historical sales data (~1 million rows, approximately 36.2 MB)
@@ -56,23 +68,7 @@ and complex patterns due to promotions, holidays, and store-specific factors.
 ## Usage
 - Use this dataset for predictive modeling, data analysis, or feature engineering.
 - Refer to `store.csv` for static store info to enhance your models.
-
-
-
-### Key Data Fields
-- **Id:** Unique ID for each store-date pair (test set)
-- **Store:** Store identifier
-- **Sales:** Target variable — daily sales
-- **Customers:** Number of customers each day
-- **Open:** Store open indicator (0 or 1)
-- **StateHoliday:** Holidays affecting store operations
-- **SchoolHoliday:** Impact of school holidays
-- **StoreType:** Type classification
-- **Assortment:** Product assortment level
-- **CompetitionDistance:** Distance to nearest competitor
-- **Promo, Promo2:** Promotion indicators
-- **Date:** Observation date
-
+- 
 ---
 
 ## 🧪 Feature Engineering
