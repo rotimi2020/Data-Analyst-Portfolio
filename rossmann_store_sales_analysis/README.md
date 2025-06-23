@@ -33,6 +33,7 @@ The goal is to build an integrated solution that leverages both Business Intelli
 - Developing **Python-based machine learning models** to forecast daily sales at each store with high precision, enabling proactive decision-making.
 
 By combining these approaches, Rossmann aims to improve inventory planning, reduce stockouts, minimize excess inventory, and enhance overall customer satisfaction through data-driven operational strategies.
+
 ---
 
 # Rossmann Store Sales Dataset Overview
