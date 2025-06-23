@@ -109,6 +109,31 @@ Utilized SQL and Python to clean and transform data:
 
 ---
 
+## 🧾 SQL Overview
+
+This project uses SQL to clean, transform, and extract insights from the Rossmann Store Sales dataset.  
+The SQL queries were used for data preprocessing, calculating key metrics, and preparing data for Power BI and forecasting models.
+
+Key objectives:
+- Cleaning and transforming raw data
+- Creating features for analysis (e.g., holidays, promo effects)
+- Generating KPIs (e.g., daily sales, average per store)
+- Preparing time-series ready data
+
+---
+
+## 🔍 Sections of SQL Scripts
+
+Below are selected SQL snippets from the project.
+
+### 1. 📊 Total Sales by Store
+```sql
+SELECT Store, SUM(Sales) AS TotalSales
+FROM train_cleaned
+GROUP BY Store;
+
+---
+
 ## Insights & Key Findings
 - Sales exhibit strong seasonal patterns tied to holidays and promotions.
 - Store-specific factors influence sales volume.
