@@ -75,16 +75,6 @@ You can download the dataset, which features the following key data fields:
 - Utilize this data to identify sales patterns, forecast future sales, or optimize promotional strategies
 ---
 
-## 🧪 Feature Engineering
-
-- **Date Features**: Year, Month, Day, IsWeekend, Season
-- **Lag Features**: `Sales_Lag_7`, `Sales_Lag_30`
-- **Moving Averages**: `Sales_MA_7`
-- **Categorical Encoding**: `StoreType`, `Assortment`
-- **Holiday & Promotion Effects**: Capture the impact of holidays and promotions on sales, considering how these events influence customer behavior and sales patterns.
-
----
-
 ## Data Processing & Cleaning
 Utilized SQL and Python to clean and transform data:
 - Removed duplicates (172,132 entries)
@@ -94,6 +84,15 @@ Utilized SQL and Python to clean and transform data:
   - StoreType and Assortment encoding
   - Normalized and discretized PromoInterval
 - Outlier detection and removal (30,778 outliers)
+
+---
+## 🧪 Feature Engineering
+
+- **Date Features**: Year, Month, Day, IsWeekend, Season
+- **Lag Features**: `Sales_Lag_7`, `Sales_Lag_30`
+- **Moving Averages**: `Sales_MA_7`
+- **Categorical Encoding**: `StoreType`, `Assortment`
+- **Holiday & Promotion Effects**: Capture the impact of holidays and promotions on sales, considering how these events influence customer behavior and sales patterns.
 
 ---
 
