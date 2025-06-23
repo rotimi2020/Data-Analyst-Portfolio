@@ -28,7 +28,7 @@ and complex patterns due to promotions, holidays, and store-specific factors.
 ## Dataset
 This dataset contains daily sales data for Rossmann stores across various locations. 
 with details about the store, date, sales, customer counts, promotional activities, and other relevant factors influencing sales. 
-You can download the dataset<br>**Source:** [Kaggle - Rossmann Store Sales](https://www.kaggle.com/competitions/rossmann-store-sales/data), which features the following key data fields:
+you can download the dataset which features the following key data fields:
 
 - **Id**: Unique identifier for each store-date pair (only in test set).
 - **Store**: Store identification number.
@@ -73,7 +73,7 @@ You can download the dataset<br>**Source:** [Kaggle - Rossmann Store Sales](http
 - Use this dataset for predictive modeling, data analysis, or feature engineering.
 - Refer to `store.csv` for static store info to enhance your models.
 - Utilize this data to identify sales patterns, forecast future sales, or optimize promotional strategies<br>
-  You can download the dataset<br>**Source:** [Kaggle - Rossmann Store Sales](https://www.kaggle.com/competitions/rossmann-store-sales/data)
+  **[Download the dataset here](https://www.kaggle.com/competitions/rossmann-store-sales/data)**
 ---
 
 ## Data Processing & Cleaning
