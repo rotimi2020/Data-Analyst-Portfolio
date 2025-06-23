@@ -15,6 +15,15 @@ The goal is to generate actionable insights and accurate sales predictions for s
 - Visualize insights and communicate findings effectively.
 
 ---
+## 📌 Problem Definition
+Rossmann operates over 3,000 stores, each with unique characteristics like promotions, holidays, competition, and store type. However, the company lacks a system to accurately forecast store-level daily sales. This creates challenges in planning inventory, staffing, and operations.
+
+---
+
+## 🎯 Problem Statement
+Build a machine learning and BI-driven solution to forecast daily sales for each Rossmann store using historical transaction and store data. Use Power BI and SQL to analyze and visualize insights, and use Python modeling to deliver accurate forecasts.
+
+---
 
 ## Problem Definition
 Rossmann, a major drugstore chain, aims to optimize its inventory and 
