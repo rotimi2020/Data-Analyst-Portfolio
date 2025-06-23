@@ -241,12 +241,6 @@ Below are the key Jupyter notebooks developed as part of this project. You can d
 
 ---  
 
-### Notes:  
-- Replace `path-to-your-repository` with the actual location or URL where your notebooks are stored (e.g., GitHub repository link).  
-- Including meaningful descriptions helps users understand the purpose of each notebook quickly.  
-
----  
-
 ### Do you want me to draft the exact markdown block with placeholder links or suggest a way to organize your GitHub README?
 ## 🔍 Sections of Python Scripts
 
