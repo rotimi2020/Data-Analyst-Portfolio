@@ -170,6 +170,68 @@ You can download the complete SQL script file from the link below:<br>
  **[Download the SQL script here](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/sql/rossmann_sales.sql)**
 
 ---
+
+## 🧾 Python Overview
+
+This project uses SQL to clean, transform, and extract insights from the Rossmann Store Sales dataset.  
+The SQL queries were used for data preprocessing, calculating key metrics, and preparing data for Power BI and forecasting models.
+
+Key objectives:
+- Cleaning and transforming raw data
+- Creating features for analysis (e.g., holidays, promo effects)
+- Generating KPIs (e.g., daily sales, average per store)
+- Preparing time-series ready data
+
+---
+
+## 🔍 Sections of Python Scripts
+
+Below are selected SQL snippets from the project on data cleaning.
+- Replacement of null values
+- Change type
+
+### 1. Replacement of null values
+```sql
+UPDATE store_cleaned
+SET [CompetitionDistance] = (SELECT AVG([CompetitionDistance]) FROM store)
+WHERE [CompetitionDistance] IS NULL;
+
+```
+
+### 2. Change type
+```sql
+alter table [train_cleaned]
+alter column [Store] int;
+
+```
+---
+Below are selected SQL snippets from the project on data analysis queries.
+- Aggregating total sales for each date to analyze daily sales performance
+- aggregating sales by year
+### 1. 📊 Daily Sales Trend
+```sql
+select Date, sum(Sales) AS Total_sales  
+from Rossmann_sale  
+group by Date  
+order by Date ;
+
+```
+
+### 2. 📊 Yearly Sales Trend
+```sql
+select year(Date) As Year, sum(Sales) AS Total_sales
+from Rossmann_sale
+group by year(Date);
+
+```
+---
+## Summary of SQL Sections
+This section covers essential SQL scripts used in the project for data cleaning and analysis. It includes techniques like null value replacement, type conversion, and aggregation of sales data—key steps for preparing and deriving insights from the Rossmann dataset.
+
+You can download the complete SQL script file from the link below:<br>
+ **[Download the SQL script here](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/sql/rossmann_sales.sql)**
+
+---
 ## Insights & Key Findings
 - Sales exhibit strong seasonal patterns tied to holidays and promotions.
 - Store-specific factors influence sales volume.
