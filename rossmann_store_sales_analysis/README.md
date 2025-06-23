@@ -124,8 +124,26 @@ Key objectives:
 
 ## 🔍 Sections of SQL Scripts
 
-Below are selected SQL snippets from the project.
+Below are selected SQL snippets from the project on data cleaning.
 
+### 1. 📊 Total Sales by Store
+```sql
+select Date, sum(Sales) AS Total_sales  
+from Rossmann_sale  
+group by Date  
+order by Date ;
+
+```
+
+### 2. 📊 Yearly Sales Trend
+```sql
+select year(Date) As Year, sum(Sales) AS Total_sales
+from Rossmann_sale
+group by year(Date);
+
+```
+---
+Below are selected SQL snippets from the project on data analysis queries.
 ### 1. 📊 Total Sales by Store
 ```sql
 select Date, sum(Sales) AS Total_sales  
