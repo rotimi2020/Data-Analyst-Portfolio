@@ -136,6 +136,16 @@ order by Date ;
 ```
 ---
 
+### 2. 📊 Total Sales by Store
+```sql
+select Date, sum(Sales) AS Total_sales  
+from Rossmann_sale  
+group by Date  
+order by Date ;
+
+```
+---
+
 ## Insights & Key Findings
 - Sales exhibit strong seasonal patterns tied to holidays and promotions.
 - Store-specific factors influence sales volume.
