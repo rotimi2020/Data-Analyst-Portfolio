@@ -135,22 +135,11 @@ order by Date ;
 
 ```
 
-### 3. 📊 Total Sales by Store
+### 2. 📊 Yearly Sales Trend
 ```sql
-select Date, sum(Sales) AS Total_sales  
-from Rossmann_sale  
-group by Date  
-order by Date ;
-
-```
----
-
-### 2. 📊 Total Sales by Store
-```sql
-select Date, sum(Sales) AS Total_sales  
-from Rossmann_sale  
-group by Date  
-order by Date ;
+select year(Date) As Year, sum(Sales) AS Total_sales
+from Rossmann_sale
+group by year(Date);
 
 ```
 ---
