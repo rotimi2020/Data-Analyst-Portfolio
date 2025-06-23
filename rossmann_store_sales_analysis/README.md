@@ -221,7 +221,7 @@ facilitating data-driven decision-making for Rossmann stores.
 
 Below are the key Jupyter notebooks developed as part of this project. You can download them directly using the links provided:  
 
-- **rossmann_sales.ipynb**: [Download Rossmann Sales Data Analysis and Forecasting]([path-to-your-repository/rossmann_sales.ipynb](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/notebooks/rossmann_sales.ipynb))  
+- **rossmann_sales.ipynb**: [Download Rossmann Sales Data Analysis and Forecasting](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/notebooks/rossmann_sales.ipynb)  
   This notebook contains the data extraction, cleaning, feature engineering, visualization, and initial modeling steps.  
 
 - **machine_learning_using_pycaret.ipynb**: [Download Machine Learning with PyCaret](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/notebooks/machine_learning_using_pycaret.ipynb)  
@@ -230,13 +230,13 @@ Below are the key Jupyter notebooks developed as part of this project. You can d
 - **machine_learning_using_xgboost.ipynb**: [Download XGBoost Modeling](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/notebooks/machine_learning_using_xgboost.ipynb)  
   Implements XGBoost for sales prediction, emphasizing hyperparameter tuning and model evaluation.  
 
-- **prophet_forecasting_with_extra_regressors.ipynb**: [Download Prophet with Extra Regressors]([path-to-your-repository/prophet_forecasting_with_extra_regressors.ipynb](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/notebooks/prophet_forecasting_with_adding_extra_regressors.ipynb))  
+- **prophet_forecasting_with_extra_regressors.ipynb**: [Download Prophet with Extra Regressors](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/notebooks/prophet_forecasting_with_adding_extra_regressors.ipynb)  
   Uses Facebook Prophet model incorporating additional regressors like promotions and holidays for improved forecasts.  
 
 - **prophet_forecasting_with_holiday_effects.ipynb**: [Download Prophet with Holiday Effects](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/notebooks/prophet_forecasting_with_holiday_effects.ipynb)  
   Demonstrates how holiday effects are integrated into Prophet models for better seasonal forecasting.  
 
-- **prophet_forecasting_without_holidays_or_regressors.ipynb**: [Download Prophet without Regressors](path-to-your-repository/prophet_forecasting_without_holidays_or_regressors.ipynb)  
+- **prophet_forecasting_without_holidays_or_regressors.ipynb**: [Download Prophet without Regressors](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/notebooks/prophet_forecasting_without_holidays_or_regressors.ipynb)  
   Showcases a baseline Prophet model without special regressors to compare forecast performance.  
 
 ---  
