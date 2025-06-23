@@ -144,7 +144,9 @@ alter column [Store] int;
 ```
 ---
 Below are selected SQL snippets from the project on data analysis queries.
-### 1. 📊 Total Sales by Store
+- Aggregating total sales for each date to analyze daily sales performance
+- aggregating sales by year
+### 1. 📊 Daily Sales Trend
 ```sql
 select Date, sum(Sales) AS Total_sales  
 from Rossmann_sale  
