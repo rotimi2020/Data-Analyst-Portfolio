@@ -184,9 +184,6 @@ You can download the complete SQL script file from the link below:<br>
 ---
 
 ## 🧾 Python Overview
-
-### Python Overview
-
 This project utilizes Python for extensive data analysis, feature engineering, and visualization tasks. The Python scripts and Jupyter notebooks facilitate exploration of the dataset, creation of new predictive features, handling missing data, and performing statistical checks such as multicollinearity analysis with VIF. Additionally, Python is used for visualizing sales trends and relationships within the data, which supports the development of accurate machine learning models for sales forecasting. This integration of Python modules enables a streamlined and efficient approach to preparing data for predictive modeling.
 
 ---
