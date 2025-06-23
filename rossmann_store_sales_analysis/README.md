@@ -163,7 +163,13 @@ group by year(Date);
 
 ```
 ---
+## Summary of SQL Sections
+This section covers essential SQL scripts used in the project for data cleaning and analysis. It includes techniques like null value replacement, type conversion, and aggregation of sales data—key steps for preparing and deriving insights from the Rossmann dataset.
 
+You can download the complete SQL script file from the link below:
+ **[Download the SQL script here](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/sql/rossmann_sales.sql)**
+
+---
 ## Insights & Key Findings
 - Sales exhibit strong seasonal patterns tied to holidays and promotions.
 - Store-specific factors influence sales volume.
