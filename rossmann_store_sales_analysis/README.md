@@ -134,6 +134,15 @@ group by Date
 order by Date ;
 
 ```
+
+### 3. 📊 Total Sales by Store
+```sql
+select Date, sum(Sales) AS Total_sales  
+from Rossmann_sale  
+group by Date  
+order by Date ;
+
+```
 ---
 
 ### 2. 📊 Total Sales by Store
