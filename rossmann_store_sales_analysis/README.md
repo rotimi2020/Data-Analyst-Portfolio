@@ -24,22 +24,26 @@ and complex patterns due to promotions, holidays, and store-specific factors.
 
 ---
 
+# Rossmann Store Sales Dataset Overview
 ## Dataset
-**Source:** [Kaggle - Rossmann Store Sales](https://www.kaggle.com/competitions/rossmann-store-sales/data)
+This dataset contains daily sales data for Rossmann stores across various locations. 
+with details about the store, date, sales, customer counts, promotional activities, and other relevant factors influencing sales. 
+You can download the dataset, which features the following key data fields:
 
-### Key Data Fields
-- **Id:** Unique ID for each store-date pair (test set)
-- **Store:** Store identifier
-- **Sales:** Target variable — daily sales
-- **Customers:** Number of customers each day
-- **Open:** Store open indicator (0 or 1)
-- **StateHoliday:** Holidays affecting store operations
-- **SchoolHoliday:** Impact of school holidays
-- **StoreType:** Type classification
-- **Assortment:** Product assortment level
-- **CompetitionDistance:** Distance to nearest competitor
-- **Promo, Promo2:** Promotion indicators
-- **Date:** Observation date
+- **Id**: Unique identifier for each store-date pair (only in test set).
+- **Store**: Store identification number.
+- **Sales**: The target variable representing total sales for each day.
+- **Customers**: The number of customers visiting the store on that day.
+- **Open**: Indicator whether the store was open (1) or closed (0).
+- **Promo**: Whether the store was participating in a promotion on that day.
+- **StateHoliday**: Indicator of public holidays affecting sales.
+- **SchoolHoliday**: Whether schools were on holiday, influencing customer traffic.
+- **StoreType**: Classification of store type.
+- **Assortment**: Level of product assortment available.
+- **CompetitionDistance**: Distance to the nearest competing store.
+- **Promo2**: Ongoing promotional campaigns.
+- **Date**: The specific date of observation.
+
 
 ## Files Included
 - `train.csv`: Historical sales data (~1 million rows, approximately 36.2 MB)
