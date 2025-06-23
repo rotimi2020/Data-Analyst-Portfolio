@@ -72,7 +72,7 @@ You can download the dataset, which features the following key data fields:
 ## Usage
 - Use this dataset for predictive modeling, data analysis, or feature engineering.
 - Refer to `store.csv` for static store info to enhance your models.
-- 
+- Utilize this data to identify sales patterns, forecast future sales, or optimize promotional strategies
 ---
 
 ## 🧪 Feature Engineering
