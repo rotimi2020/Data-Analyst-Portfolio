@@ -16,21 +16,23 @@ The goal is to generate actionable insights and accurate sales predictions for s
 
 ---
 ## 📌 Problem Definition
-Rossmann operates over 3,000 stores, each with unique characteristics like promotions, holidays, competition, and store type. However, the company lacks a system to accurately forecast store-level daily sales. This creates challenges in planning inventory, staffing, and operations.
+Rossmann, a major drugstore chain, aims to optimize its inventory and staffing by accurately forecasting daily sales at individual stores. The challenge involves managing large datasets, addressing missing data and outliers, and capturing complex sales patterns influenced by promotions, holidays, and store-specific factors. Effective forecasting will help Rossmann improve operational efficiency and customer satisfaction.
 
 ---
 
 ## 🎯 Problem Statement
-Build a machine learning and BI-driven solution to forecast daily sales for each Rossmann store using historical transaction and store data. Use Power BI and SQL to analyze and visualize insights, and use Python modeling to deliver accurate forecasts.
 
----
+Rossmann, a leading drugstore chain, faces the challenge of ensuring optimal inventory levels and efficient staffing across its numerous store locations. To achieve this, the company seeks to develop a robust forecasting system capable of predicting daily sales at each individual store with high accuracy. 
 
-## Problem Definition
-Rossmann, a major drugstore chain, aims to optimize its inventory and 
-staffing by accurately forecasting daily sales at individual stores. 
-Challenges include handling large datasets, missing data, outliers, 
-and complex patterns due to promotions, holidays, and store-specific factors.
+This task involves analyzing extensive historical transaction data combined with store-specific information. The key challenges include handling large volumes of data, dealing with missing values and outliers, and capturing complex temporal patterns influenced by various factors such as promotions, holidays, weather conditions, and store-specific characteristics.
 
+The goal is to build an integrated solution that leverages both Business Intelligence and Machine Learning techniques. This includes:
+
+- Using **SQL** for data extraction, cleaning, and transformation to prepare datasets suitable for analysis.
+- Applying **Power BI** for interactive data visualization, trend analysis, and KPI tracking to gain actionable insights.
+- Developing **Python-based machine learning models** to forecast daily sales at each store with high precision, enabling proactive decision-making.
+
+By combining these approaches, Rossmann aims to improve inventory planning, reduce stockouts, minimize excess inventory, and enhance overall customer satisfaction through data-driven operational strategies.
 ---
 
 # Rossmann Store Sales Dataset Overview
