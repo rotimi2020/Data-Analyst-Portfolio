@@ -270,6 +270,31 @@ For detailed insights, code implementation, and further analysis, you can access
 ***Note:** All files, including `.ipynb` notebooks, are available for download for review and reproduction.*
 
 ---
+
+# DAX Overview for Rossmann Store Sales Analysis
+
+**Data Analysis Expressions (DAX)** are formulas used in Power BI to create dynamic measures and calculated columns, enabling sophisticated data analysis and reporting.
+
+In this project, DAX was essential for calculating key metrics such as total sales, customer counts, and promotional impacts, which are visualized in our Power BI dashboard.
+
+## Key DAX Measures
+Here are some of the core measures used:
+
+- **Total Sales:** Calculates the sum of all sales amount.
+- **Total Customers:** Counts the total number of customers.
+- **Average Daily Sales:** Computes the average sales per day.
+- **Sales with Promotion:** Sum of sales made during promotional days.
+
+*Note:* For a complete list of all DAX measures and calculated columns, [click here to see the full formulas](DAX_formulas.md).
+
+---
+
+## Full DAX Formulas
+
+For detailed insights and all the formulas used, please refer to the separate document: [DAX Formulas for Rossmann Dataset](DAX_formulas.md). This file contains every measure and calculated column utilized in the analysis.
+
+---
+
 ## Insights & Key Findings
 - Sales exhibit strong seasonal patterns tied to holidays and promotions.
 - Store-specific factors influence sales volume.
