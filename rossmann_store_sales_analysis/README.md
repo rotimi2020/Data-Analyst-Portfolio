@@ -260,6 +260,15 @@ Below is the detailed comparison:
 
 *Note:* The models with the lowest RMSE in each category are considered the best performers. The table highlights the impact of different input features and methods on model accuracy.
 
+### Conclusion
+This table presents the final comparative results obtained after extensive experimentation. The **best models** in each category are those with the **lowest RMSE**, indicating superior predictive accuracy.
+
+For detailed insights, code implementation, and further analysis, you can access the full project files (.ipynb) via the link below. Feel free to explore the notebooks:
+
+[Download all project files (.ipynb)](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/rossmann_store_sales_analysis/notebooks)
+
+***Note:** All files, including `.ipynb` notebooks, are available for download for review and reproduction.*
+
 ---
 ## Insights & Key Findings
 - Sales exhibit strong seasonal patterns tied to holidays and promotions.
