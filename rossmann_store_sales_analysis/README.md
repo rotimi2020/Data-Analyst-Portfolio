@@ -285,13 +285,7 @@ Here are some of the core measures used:
 - **Average Daily Sales:** Computes the average sales per day.
 - **Sales with Promotion:** Sum of sales made during promotional days.
 
-*Note:* For a complete list of all DAX measures and calculated columns, [click here to see the full formulas](DAX_formulas.md).
-
----
-
-## Full DAX Formulas
-
-For detailed insights and all the formulas used, please refer to the separate document: [DAX Formulas for Rossmann Dataset](DAX_formulas.md). This file contains every measure and calculated column utilized in the analysis.
+*Note:* For a complete list of all DAX measures and calculated columns, [click here to see the full formulas](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/dax/dax_formulas.txt).
 
 ---
 
