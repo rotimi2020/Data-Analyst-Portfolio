@@ -240,7 +240,27 @@ Below are the key Jupyter notebooks developed as part of this project. You can d
   Showcases a baseline Prophet model without special regressors to compare forecast performance.  
 
 ---  
+# Model Performance Comparison on the Rossmann Dataset
 
+This table presents a comparison of various machine learning and forecasting models evaluated on the Rossmann dataset. The primary metric used for comparison is RMSE (Root Mean Square Error), which helps identify the most accurate models in terms of forecast error. The table is divided into two categories: **Machine Learning** and **Forecasting**. The models are ranked and evaluated to highlight the best performing algorithms within each category based on their RMSE values.
+
+Below is the detailed comparison:
+
+| Category           | Algorithm                               | Input Features                          | RMSE       | MAE        | MAPE (%) | R²  | Notes                                           |
+|--------------------|-----------------------------------------|----------------------------------------|------------|------------|----------|-----|------------------------------------------------|
+| Machine Learning   | CatBoost                              | Store, Sales, Lag features             | 624.41     | 451.96     | 0.075    | 0.93| Best machine learning model                     |
+| Machine Learning   | XGBoost                               | Store, Lag features, Season, etc.      | 642.07     | 461.66     | 4.69     | 0.93| Close second to CatBoost                        |
+| Machine Learning   | LSTM                                   | Promo, Open, Holiday, etc.             | 916.26     | 578.53     | 6.91     | 0.76| Deep learning                                   |
+| Forecasting        | Prophet - adding regressors            | Date, Promo, Open                      | 525,387.66 | 393,867.04 | 0.4      | 0.97| Best Prophet model                              |
+| Forecasting        | PyCaret - with multiple regressors     | Date, Promo, SchoolHoliday             | 1,073,553.77 | 815,817.18 | 0.14     | 0.83| Best forecast among PyCaret                     |
+| Forecasting        | PyCaret - with holidays                  | Date, SchoolHoliday                    | 1,311,587.28 | 933,883.02 | 0.15     | 0.74| Better performance                              |
+| Forecasting        | Prophet - with holiday effects           | Date, StateHoliday                     | 1,344,410.84 | 1,105,479.77 | 1.12     | 0.77| Improved by holidays                            |
+| Forecasting        | PyCaret - without holidays               | Date                                   | 1,671,506.98 | 1,181,608.54 | 0.17     | 0.59| Baseline PyCaret                                |
+| Forecasting        | Prophet - without holidays               | Date                                   | 1,760,578.81 | 1,312,009.26 | 2.31     | 0.61| Baseline model                                  |
+
+*Note:* The models with the lowest RMSE in each category are considered the best performers. The table highlights the impact of different input features and methods on model accuracy.
+
+---
 ## Insights & Key Findings
 - Sales exhibit strong seasonal patterns tied to holidays and promotions.
 - Store-specific factors influence sales volume.
