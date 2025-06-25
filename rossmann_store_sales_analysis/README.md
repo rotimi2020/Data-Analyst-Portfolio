@@ -472,14 +472,6 @@ Include visuals in your README:
 
 ---
 
-## Insights & Key Findings
-- Sales exhibit strong seasonal patterns tied to holidays and promotions.
-- Store-specific factors influence sales volume.
-- Outliers and missing data, if unaddressed, skew insights and models.
-- Promotion periods correlate with spikes in sales.
-
----
-
 # DAX Overview for Rossmann Store Sales Analysis
 
 **Data Analysis Expressions (DAX)** are formulas used in Power BI to create dynamic measures and calculated columns, enabling sophisticated data analysis and reporting.
