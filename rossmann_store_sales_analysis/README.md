@@ -456,7 +456,9 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 
 Include visuals in your README:
 
-## 📷 Dashboard Previews
+## 📷 PowerBI Dashboard Previews
+Below are preview images of the Power BI dashboards developed for this project. They illustrate key visualizations, insights, and the overall layout of the report. 
+Feel free to explore the visuals to understand the data story.
 
 | Sales Overview | Sales Analysis |
 |----------------|----------------|
