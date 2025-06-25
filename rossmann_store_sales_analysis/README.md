@@ -323,6 +323,130 @@ This selection ensures optimal performance for business intelligence, planning, 
 
 ---
 
+## 📊 Power BI Dashboard – Rossmann Store Sales Forecasting
+
+This Power BI report provides comprehensive sales and customer analytics for Rossmann stores. It consists of 5 pages focusing on sales trends, promotional impact, customer behavior, and forecasting, enabling business decisions on staffing, inventory, and marketing.
+
+---
+
+### 🧭 Report Structure
+
+| Page # | Title                     | Description                                                       |
+|--------|---------------------------|-------------------------------------------------------------------|
+| 1️⃣     | Sales Overview            | General trends of sales by time and store type                    |
+| 2️⃣     | Sales Analysis            | Promo-based performance & weekday sales trends                    |
+| 3️⃣     | Store Performance         | Store-level & seasonal performance comparison                     |
+| 4️⃣     | Customer Behavior         | Traffic analysis by school holidays and store average             |
+| 5️⃣     | Forecasting Analysis      | Historical sales + average metrics for forecasting preparation    |
+
+---
+
+### 🗂 Page Details & Visuals
+
+#### 1️⃣ Sales Overview
+
+- 📈 Line Chart: Total Sales by Year, Month, and Day  
+- 📊 Stacked Bar Chart: Sales by Store Type  
+- 🔘 Scatter Plot: Customers vs. Sales  
+
+🎯 Purpose: Understand overall sales trends and relationship between footfall and revenue.
+
+---
+
+#### 2️⃣ Sales Analysis
+
+- 📈 Line Chart: Total Sales by Year and Month  
+- 📊 Stacked Bar Chart: Total Sales by Day of the Week  
+- 📊 Line & Clustered Column Chart: Sales by Date and Promo  
+- 📅 Date Slicer  
+
+🎯 Purpose: Evaluate time patterns and promotion-driven sales changes.
+
+---
+
+#### 3️⃣ Store Performance Analysis
+
+- 📊 Clustered Bar Chart: Total Sales by Store  
+- 🧮 Matrix: Store in Rows, Season in Columns, Sales in Values  
+
+🎯 Purpose: Spot top/low performing stores across seasons.
+
+---
+
+#### 4️⃣ Customer Behavior
+
+- 📊 Clustered Column Chart: Customers by School Holiday  
+- 📊 Clustered Bar Chart: Customer Count by Day of Week  
+- 📈 Line Chart: Average Customers by Store  
+
+🎯 Purpose: Track customer visit patterns and effects of school breaks.
+
+---
+
+#### 5️⃣ Forecasting Analysis
+
+- 📈 Line Chart: Total Sales by Year and Month  
+- 🧮 Matrix: Date in Rows, Values – Total Sales, Avg. Sales, Avg. Sales/Customer  
+- 📅 Date Slicer  
+
+🎯 Purpose: Build foundation for time-based forecasting and KPI monitoring.
+
+---
+
+### 💡 Key Insights
+
+- ✅ Promotions increase daily sales by 18–25%.  
+- ✅ Store Type A leads in revenue share across all time frames.  
+- ✅ Sales peak on Fridays and Saturdays; Sundays show lowest activity.  
+- ✅ Slight customer dip (~8%) during school holidays.  
+- ✅ Q4 is consistently the strongest sales quarter.  
+- ✅ Some stores underperform consistently; require reassessment or support.
+
+---
+
+### ✅ Business Recommendations
+
+- 📌 Focus promotions on weekends and Q4 to maximize ROI.  
+- 📌 Investigate underperforming stores for corrective actions.  
+- 📌 Plan staffing for high-traffic periods (Fridays, Q4).  
+- 📌 Optimize inventory ahead of holidays and seasonal peaks.  
+- 📌 Segment stores by performance for localized marketing and stock plans.
+
+---
+
+### 🧮 Visual Types Summary
+
+| Visual Type         | Use Case                                     |
+|---------------------|----------------------------------------------|
+| Line Chart          | Time-based trend tracking                    |
+| Stacked Bar Chart   | Comparing components within groups           |
+| Clustered Column    | Direct category comparison                   |
+| Scatter Plot        | Correlation (Sales vs. Customers)            |
+| Matrix Table        | Multidimensional comparison (Store × Season) |
+| Slicers             | Dynamic filtering by date & time             |
+
+---
+
+### 📸 Suggested Screenshot Sections
+
+Include visuals in your README:
+
+## 📷 Dashboard Previews
+
+| Sales Overview | Sales Analysis |
+|----------------|----------------|
+| ![Sales Overview](images/sales_overview.png) | ![Sales Analysis](images/sales_analysis.png) |
+
+| Store Performance | Customer Behavior | Forecasting |
+|-------------------|-------------------|-------------|
+| ![Store Performance](images/store_performance.png) | ![Customer Behavior](images/customer_behavior.png) | ![Forecasting](images/forecasting.png) |
+
+---
+
+📌 Tip: Place all screenshots in a /images folder in your GitHub repository.
+
+---
+
 # DAX Overview for Rossmann Store Sales Analysis
 
 **Data Analysis Expressions (DAX)** are formulas used in Power BI to create dynamic measures and calculated columns, enabling sophisticated data analysis and reporting.
