@@ -271,35 +271,55 @@ For detailed insights, code implementation, and further analysis, you can access
 
 ---
 
-Best Model Selection and Analysis
-Best Overall Model:
-The CatBoost Regressor shows the lowest RMSE of 624.41 and high R² score of 0.9338, indicating excellent predictive accuracy and variance explanation. It also has a very low MAPE (7.5%), making it the most reliable for precise forecasts.
+# Best Model Selection and Analysis
 
-Close Contenders:
+## Best Overall Model
+**CatBoost Regressor** demonstrates the most accurate predictions with:
+- **Lowest RMSE:** 624.41
+- **High R² score:** 0.9338
+- **MAPE:** 7.5%
 
-XGBoost Regressor closely follows with RMSE of 642.07, and an R² of 0.93.
-The PyCaret (adding multiple regressors) forecast also performs well with an RMSE of 1,073,553.77, but it’s significantly higher than CatBoost and XGBoost, suggesting less precision despite a good R².
-Forecasting Models:
+This combination indicates excellent predictive accuracy and strong variance explanation, making CatBoost the most reliable model for precise sales forecasting.
 
-The Prophet with additional regressors (promo, holidays, etc.) outperforms others with an RMSE of 525,387.66, indicating better seasonal and event modeling.
-Prophet with holiday effects also performs well, but not as well as the regressors-enhanced version.
-Deep Learning:
+## Close Contenders
+- **XGBoost Regressor:**  
+  RMSE of 642.07 and R² of 0.93 , closely following CatBoost, showing competitive performance in capturing data relationships.
+- **PyCaret (with multiple regressors):**  
+  RMSE of 1,073,553.77, though higher than boosting models, still provides valuable insights but with less precision, despite a good R² score.
 
-The LSTM model shows a promising RMSE of 916.26, but still higher than the top boosting models. It indicates potential but may require tuning for better accuracy.
+## Forecasting Models
+- **Prophet with Additional Regressors (promos, holidays, etc.):**  
+  Outperforms other models with an impressive RMSE of **525,387.66**, indicating improved modeling of seasonal patterns and events.
+- **Prophet with Holiday Effects Only:**  
+  Also performs well but doesn't match the accuracy of the regressors-enhanced version.
 
+## Deep Learning
+- **LSTM Model:**  
+  Achieves an RMSE of **916.26**, indicating potential but still higher than the top boosting models. It suggests that further tuning or utilizing more data could improve its performance.
 
+---
 
-Explanation & Analysis
-RMSE as a metric:
-RMSE is prioritized because it penalizes large errors more heavily, fitting for sales forecasting where large deviations can significantly impact business decisions.
+## Explanation & Analysis
 
-Best tools:
+### RMSE as a Metric
+- **Prioritized** because it penalizes large errors heavily, which is critical in sales forecasting to avoid costly mispredictions.
 
-Tree-based ensemble models (CatBoost, XGBoost) excel in handling structured data and capturing complex relationships.
-Prophet demonstrates good seasonality handling, especially with regressors.
-Deep learning (LSTM), while promising, might need further tuning or more data to outperform traditional models.
-Conclusion:
-Overall, CatBoost appears to be the most reliable predictor based on the lowest RMSE and high R², making it the recommended model for deployment.
+### Best Tools & Techniques
+- **Tree-based ensemble models (CatBoost, XGBoost):**  
+  Excel at handling structured, tabular data and capturing complex relationships.
+- **Prophet:**  
+  Demonstrates excellent seasonality and event modeling, especially when augmented with regressors.
+- **LSTM (Deep Learning):**  
+  Offers promising results but may require further tuning, more data, or architectural adjustments for better accuracy.
+
+---
+
+## Conclusion
+Based on the analysis:
+- **CatBoost** is the most reliable and accurate predictor owing to its lowest RMSE and high R² score.
+- It is recommended for deployment to ensure precise and stable sales forecasts.
+
+This selection ensures optimal performance for business intelligence, planning, and strategic decision-making.
 
 ---
 
