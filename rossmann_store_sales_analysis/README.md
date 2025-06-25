@@ -468,7 +468,10 @@ Include visuals in your README:
 
 ---
 
-📌 Tip: Place all screenshots in a /images folder in your GitHub repository.
+### Download the Full Power BI Report as PDF
+
+You can **download the complete Power BI report** in PDF format:  
+**[Download PDF Report](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/reports/rossmann_sale_reports.pdf)**
 
 ---
 
