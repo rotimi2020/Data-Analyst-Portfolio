@@ -452,7 +452,7 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 
 ---
 
-## 📷 PowerBI Reports Previews
+## 📷 PowerBI Report Previews
 Below are preview images of the Power BI reports developed for this project. They illustrate key visualizations, insights, and the overall layout of the report. 
 Feel free to explore the visuals to understand the data story.
 
