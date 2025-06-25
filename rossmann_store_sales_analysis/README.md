@@ -460,7 +460,7 @@ Include visuals in your README:
 
 | Sales Overview | Sales Analysis |
 |----------------|----------------|
-| ![Sales Overview](images/sales_overview.png) | ![Sales Analysis](images/sales_analysis.png) |
+| ![Sales Overview](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/report_screenshots/sales_overview_reports.PNG) | ![Sales Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/report_screenshots/sales_analysis_reports.PNG) |
 
 | Store Performance | Customer Behavior | Forecasting |
 |-------------------|-------------------|-------------|
