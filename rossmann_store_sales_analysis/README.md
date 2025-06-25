@@ -464,7 +464,7 @@ Include visuals in your README:
 
 | Store Performance | Customer Behavior | Forecasting |
 |-------------------|-------------------|-------------|
-| ![Store Performance](images/store_performance.png) | ![Customer Behavior](images/customer_behavior.png) | ![Forecasting](images/forecasting.png) |
+| ![Store Performance](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/report_screenshots/store_performance_analysis_reports.PNG) | ![Customer Behavior](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/report_screenshots/customer_behavior_reports.PNG) | ![Forecasting](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/report_screenshots/forecasting_reports.PNG) |
 
 ---
 
