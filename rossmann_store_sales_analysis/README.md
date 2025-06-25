@@ -352,7 +352,21 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 🎯 Purpose: Understand overall sales trends and relationship between footfall and revenue.
 
 ---
+### 📂 Page-by-Page Report Breakdown
 
+#### 1️⃣ Sales Overview Page
+
+📌 Visualizations:
+- 📈 Line Chart: Total Sales by Year, Month, and Day
+- 📈 Stacked Bar Chart: Total Sales by Store Type
+- 🔘 Scatter Chart: Customers vs. Sales Relationship
+
+🌟 Purpose:
+- Understand overall sales growth over time.
+- Identify which store types generate the most revenue.
+- Detect correlation between customer volume and sales output.
+
+---
 #### 2️⃣ Sales Analysis
 
 - 📈 Line Chart: Total Sales by Year and Month  
