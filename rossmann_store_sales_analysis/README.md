@@ -349,24 +349,13 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 - 📊 Stacked Bar Chart: Sales by Store Type  
 - 🔘 Scatter Plot: Customers vs. Sales  
 
-🎯 Purpose: Understand overall sales trends and relationship between footfall and revenue.
-
----
-### 📂 Page-by-Page Report Breakdown
-
-#### 1️⃣ Sales Overview Page
-
-📌 Visualizations:
-- 📈 Line Chart: Total Sales by Year, Month, and Day
-- 📈 Stacked Bar Chart: Total Sales by Store Type
-- 🔘 Scatter Chart: Customers vs. Sales Relationship
-
 🌟 Purpose:
 - Understand overall sales growth over time.
 - Identify which store types generate the most revenue.
 - Detect correlation between customer volume and sales output.
 
 ---
+
 #### 2️⃣ Sales Analysis
 
 - 📈 Line Chart: Total Sales by Year and Month  
@@ -374,7 +363,10 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 - 📊 Line & Clustered Column Chart: Sales by Date and Promo  
 - 📅 Date Slicer  
 
-🎯 Purpose: Evaluate time patterns and promotion-driven sales changes.
+🌟 Purpose:
+- Analyze temporal sales patterns.
+- Understand which weekdays perform best.
+- Measure impact of promotions on daily sales volume.
 
 ---
 
@@ -383,7 +375,9 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 - 📊 Clustered Bar Chart: Total Sales by Store  
 - 🧮 Matrix: Store in Rows, Season in Columns, Sales in Values  
 
-🎯 Purpose: Spot top/low performing stores across seasons.
+🌟 Purpose:
+- Identify top and bottom performing stores.
+- Evaluate how seasonality impacts store-level sales.
 
 ---
 
@@ -393,7 +387,10 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 - 📊 Clustered Bar Chart: Customer Count by Day of Week  
 - 📈 Line Chart: Average Customers by Store  
 
-🎯 Purpose: Track customer visit patterns and effects of school breaks.
+🌟 Purpose:
+- Measure school holidays’ effect on footfall.
+- Identify busiest days for customer visits.
+- Compare average customer flow across stores.
 
 ---
 
@@ -403,7 +400,9 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 - 🧮 Matrix: Date in Rows, Values – Total Sales, Avg. Sales, Avg. Sales/Customer  
 - 📅 Date Slicer  
 
-🎯 Purpose: Build foundation for time-based forecasting and KPI monitoring.
+🌟 Purpose:
+- Understand past trends and seasonal averages.
+- Provide foundational metrics for future sales forecasting.
 
 ---
 
