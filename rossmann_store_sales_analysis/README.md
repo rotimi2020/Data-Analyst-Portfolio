@@ -271,6 +271,38 @@ For detailed insights, code implementation, and further analysis, you can access
 
 ---
 
+Best Model Selection and Analysis
+Best Overall Model:
+The CatBoost Regressor shows the lowest RMSE of 624.41 and high R² score of 0.9338, indicating excellent predictive accuracy and variance explanation. It also has a very low MAPE (7.5%), making it the most reliable for precise forecasts.
+
+Close Contenders:
+
+XGBoost Regressor closely follows with RMSE of 642.07, and an R² of 0.93.
+The PyCaret (adding multiple regressors) forecast also performs well with an RMSE of 1,073,553.77, but it’s significantly higher than CatBoost and XGBoost, suggesting less precision despite a good R².
+Forecasting Models:
+
+The Prophet with additional regressors (promo, holidays, etc.) outperforms others with an RMSE of 525,387.66, indicating better seasonal and event modeling.
+Prophet with holiday effects also performs well, but not as well as the regressors-enhanced version.
+Deep Learning:
+
+The LSTM model shows a promising RMSE of 916.26, but still higher than the top boosting models. It indicates potential but may require tuning for better accuracy.
+
+
+
+Explanation & Analysis
+RMSE as a metric:
+RMSE is prioritized because it penalizes large errors more heavily, fitting for sales forecasting where large deviations can significantly impact business decisions.
+
+Best tools:
+
+Tree-based ensemble models (CatBoost, XGBoost) excel in handling structured data and capturing complex relationships.
+Prophet demonstrates good seasonality handling, especially with regressors.
+Deep learning (LSTM), while promising, might need further tuning or more data to outperform traditional models.
+Conclusion:
+Overall, CatBoost appears to be the most reliable predictor based on the lowest RMSE and high R², making it the recommended model for deployment.
+
+---
+
 # DAX Overview for Rossmann Store Sales Analysis
 
 **Data Analysis Expressions (DAX)** are formulas used in Power BI to create dynamic measures and calculated columns, enabling sophisticated data analysis and reporting.
