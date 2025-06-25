@@ -99,6 +99,15 @@ Utilized SQL and Python to clean and transform data:
 - Outlier detection and removal (30,778 outliers)
 
 ---
+
+**Tools & Technologies:**
+- SQL (Data Cleaning & Queries)
+- Python (Pandas, Scikit-Learn, XGBoost, Prophet)
+- Power BI (Data Visualization)
+- Jupyter Notebook
+
+---
+
 ## 🧪 Feature Engineering
 
 - **Date Features**: Year, Month, Day, IsWeekend, Season
@@ -271,6 +280,13 @@ For detailed insights, code implementation, and further analysis, you can access
 
 ---
 
+## Predictive Modeling
+- Developed machine learning models such as XGBoost and Prophet.
+- Used feature engineering to enhance model accuracy.
+- Hyperparameter tuning and cross-validation ensured robustness.
+- Achieved promising forecasting accuracy (e.g., RMSE, MAE metrics).
+
+---
 # Best Model Selection and Analysis
 
 ## Best Overall Model
@@ -406,18 +422,14 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 
 ---
 
-### 💡 Key Insights
+## ✅ Insights & Key Findings
+- 📌 Sales exhibit strong seasonal patterns tied to holidays and promotions.
+- 📌 Store-specific factors influence sales volume.
+- 📌 Outliers and missing data, if unaddressed, skew insights and models.
+- 📌 Promotion periods correlate with spikes in sales.
+  
 
-- ✅ Promotions increase daily sales by 18–25%.  
-- ✅ Store Type A leads in revenue share across all time frames.  
-- ✅ Sales peak on Fridays and Saturdays; Sundays show lowest activity.  
-- ✅ Slight customer dip (~8%) during school holidays.  
-- ✅ Q4 is consistently the strongest sales quarter.  
-- ✅ Some stores underperform consistently; require reassessment or support.
-
----
-
-### ✅ Business Recommendations
+## ✅ Business Recommendations
 
 - 📌 Focus promotions on weekends and Q4 to maximize ROI.  
 - 📌 Investigate underperforming stores for corrective actions.  
@@ -460,6 +472,14 @@ Include visuals in your README:
 
 ---
 
+## Insights & Key Findings
+- Sales exhibit strong seasonal patterns tied to holidays and promotions.
+- Store-specific factors influence sales volume.
+- Outliers and missing data, if unaddressed, skew insights and models.
+- Promotion periods correlate with spikes in sales.
+
+---
+
 # DAX Overview for Rossmann Store Sales Analysis
 
 **Data Analysis Expressions (DAX)** are formulas used in Power BI to create dynamic measures and calculated columns, enabling sophisticated data analysis and reporting.
@@ -475,22 +495,6 @@ Here are some of the core measures used:
 - **Sales with Promotion:** Sum of sales made during promotional days.
 
 *Note:* For a complete list of all DAX measures and calculated columns, [click here to see the full formulas](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/dax/dax_formulas.txt).
-
----
-
-## Insights & Key Findings
-- Sales exhibit strong seasonal patterns tied to holidays and promotions.
-- Store-specific factors influence sales volume.
-- Outliers and missing data, if unaddressed, skew insights and models.
-- Promotion periods correlate with spikes in sales.
-
----
-
-## Predictive Modeling
-- Developed machine learning models such as XGBoost and Prophet.
-- Used feature engineering to enhance model accuracy.
-- Hyperparameter tuning and cross-validation ensured robustness.
-- Achieved promising forecasting accuracy (e.g., RMSE, MAE metrics).
 
 ---
 
@@ -512,13 +516,5 @@ The models and insights support business strategies to enhance sales performance
 - All code, queries, and analysis documented in Jupyter notebooks.
 - Data stored securely with links to external datasets for large files.
 - Visualization dashboards created in Power BI for executive reporting.
-
----
-
-**Tools & Technologies:**
-- SQL (Data Cleaning & Queries)
-- Python (Pandas, Scikit-Learn, XGBoost, Prophet)
-- Power BI (Data Visualization)
-- Jupyter Notebook / Google Colab
 
 ---
