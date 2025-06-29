@@ -1,0 +1,74 @@
+📄 dax_formulas.txt — Rossmann Store Sales Analysis
+
+Power BI DAX Formulas – Rossmann Store Sales Analysis
+This document contains all DAX Measures and Calculated Columns used in the Rossmann Power BI dashboard.
+
+──────────────────────
+📊 MEASURES
+──────────────────────
+
+# 📐 DAX Formulas for Rossmann Store Sales Dashboard
+
+## ✅ DAX Formulas Used in Visuals
+
+1. Total Sales = SUM(Sales[SalesAmount])
+2. Best Store Name = 
+CALCULATE (
+    VALUES(Sales[Store]),
+    TOPN (
+        1,
+        SUMMARIZE(Sales, Sales[Store], "TotalSales", SUM(Sales[Sales])),
+        [TotalSales],
+        DESC
+    )
+)
+
+3. Customers Count = CALCULATE(COUNT(Sales[Customers]),ALLEXCEPT(Sales,Sales[Day of Week]))
+4. Average Customers per Day = 
+AVERAGEX(
+    VALUES(Sales[Date]),
+    CALCULATE(SUM(Sales[Customers]))
+)
+5. Average Sales = AVERAGE(Sales[Sales])
+6. Average Sales per Customer = DIVIDE(SUM(Sales[Sales]),SUM(Sales[Customers]))
+7. Total Customers = SUM(Sales[Customers])
+8. Average Daily Sales = AVERAGEX(VALUES(Sales[Date]),CALCULATE(SUM(Sales[Sales])))
+9. Number Of Store = DISTINCTCOUNT(Sales[Store])
+10. Best Store Sales = 
+CALCULATE(
+    MAX(Sales[Sales]),
+    ALLEXCEPT(Sales, Sales[Store])
+)
+
+
+─────────────────────────────
+📘 CALCULATED COLUMNS
+─────────────────────────────
+11. School Holiday Label =  ## Calculated Column
+IF('Sales'[SchoolHoliday] = 1, "School Holiday", "Regular Day")
+
+
+
+
+## 🧪 Additional DAX Formulas Created (Not Used in Final Visuals)
+
+12. Average Customers per Store = 
+AVERAGEX(
+    VALUES(Sales[Store]),
+    CALCULATE(SUM(Sales[Customers]))
+)
+13. Avg Sales per Store = [Total Sales] / [Number Of Store]
+14. Lowest Store Sales = 
+CALCULATE(
+    MIN(Sales[Sales]),
+    ALLEXCEPT(Sales, Sales[Store])
+)
+15. Sales With Promo = CALCULATE(SUM(Sales[Sales]), Sales[Promo] = 1)
+16. Sales Without Promo = CALCULATE(SUM(Sales[Sales]), Sales[Promo] = 0)
+17. Total Open Days = CALCULATE(COUNT(Sales[Sales]), Sales[Open] = 1)
+18. Total Transactions = COUNTROWS(Sales)
+
+
+─────────────────────────────
+✅ End of DAX Formulas
+─────────────────────────────
