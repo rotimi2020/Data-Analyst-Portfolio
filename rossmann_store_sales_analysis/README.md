@@ -166,21 +166,58 @@ alter column [Store] int;
 ---
 Below are selected SQL snippets from the project on data analysis queries.
 - Aggregating total sales for each date to analyze daily sales performance
+- Total Sales by Day of the Week
+- Chronological Sales by Month
 - aggregating sales by year
+
 ### 1. 📊 Daily Sales Trend
 ```sql
-select Date, sum(Sales) AS Total_sales  
-from Rossmann_sale  
-group by Date  
-order by Date ;
+select
+  Date,
+  sum(Sales) AS Total_sales
+from
+  Rossmann_sale
+group by
+  Date
+order by
+  Date  ;
 
 ```
-
-### 2. 📊 Yearly Sales Trend
+### 2. 📊 Weekly Sales Trend
 ```sql
-select year(Date) As Year, sum(Sales) AS Total_sales
-from Rossmann_sale
-group by year(Date);
+select
+  DATENAME(W, Date) AS Week,
+  sum(Sales) AS Total_sale
+from
+  Rossmann_sale
+group by
+  DATENAME(W, Date)
+order by
+  Total_sale DESC ;
+```
+
+### 3. 📊 Monthly Sales Trend
+```sql
+select
+  DATENAME(M, Date) AS Month,
+  sum(Sales) AS Total_sale
+from
+  Rossmann_sale
+group by
+  DATENAME(M, Date)
+order by
+  Total_sale DESC ;
+
+```
+### 4. 📊 Yearly Sales Trend
+```sql
+select
+  year(Date) As Year,
+  sum(Sales) AS Total_sales
+from
+  Rossmann_sale
+group by
+  year(Date) ;
 
 ```
 ---
@@ -361,14 +398,15 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 
 #### 1️⃣ Sales Overview
 
-- 📈 Line Chart: Total Sales by Year, Month, and Day  
+- 📈 Line Chart: Total Sales by Month 
 - 📊 Stacked Bar Chart: Sales by Store Type  
-- 🔘 Scatter Plot: Customers vs. Sales  
+- 📊 Clustered Bar Chart: Sales and Customer Distribution by Season  
 
 🌟 Purpose:
-- Understand overall sales growth over time.
-- Identify which store types generate the most revenue.
-- Detect correlation between customer volume and sales output.
+- *Track* overall sales trends and growth over time.
+- *Compare* revenue contributions across different store types.
+- *Analyze* the relationship between customer traffic and sales performance seasonally.
+
 
 ---
 
@@ -376,37 +414,39 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 
 - 📈 Line Chart: Total Sales by Year and Month  
 - 📊 Stacked Bar Chart: Total Sales by Day of the Week  
-- 📊 Line & Clustered Column Chart: Sales by Date and Promo  
+- 📊 Clustered Column Chart: Sales by Year and Promo  
 - 📅 Date Slicer  
 
 🌟 Purpose:
-- Analyze temporal sales patterns.
-- Understand which weekdays perform best.
-- Measure impact of promotions on daily sales volume.
-
+- *Identify* long-term and monthly sales trends.
+- *Evaluate* weekday performance to optimize staffing and inventory.
+- *Assess* the effectiveness of promotions on sales volume.
 ---
 
 #### 3️⃣ Store Performance Analysis
 
-- 📊 Clustered Bar Chart: Total Sales by Store  
-- 🧮 Matrix: Store in Rows, Season in Columns, Sales in Values  
+- 🏆 Donut Chart: Top 5 Stores by Total Sales
+- 📉 Donut Chart: Bottom 5 Stores by Total Sales
+- 📊 Matrix: Sales Performance by Store and Season
 
 🌟 Purpose:
-- Identify top and bottom performing stores.
-- Evaluate how seasonality impacts store-level sales.
-
+- *Pinpoint* top and bottom-performing stores to reward excellence or address underperformance.
+- *Evaluate* how seasonality impacts store-level sales for targeted planning.
+- *Optimize* resource allocation based on seasonal trends and store rankings.
 ---
 
 #### 4️⃣ Customer Behavior
 
 - 📊 Clustered Column Chart: Customers by School Holiday  
-- 📊 Clustered Bar Chart: Customer Count by Day of Week  
-- 📈 Line Chart: Average Customers by Store  
+- 📊 Clustered Bar Chart: Customer Count by Day of Week 
+- 📊 Clustered Column Chart: Customer Distribution by Store Type
+- 📈 Line Chart: Average Customers by Date  
 
 🌟 Purpose:
-- Measure school holidays’ effect on footfall.
-- Identify busiest days for customer visits.
-- Compare average customer flow across stores.
+- *Measure* the impact of school holidays on foot traffic patterns.
+- *Identify* peak visitation days to optimize staffing and promotions.
+- *Compare* customer distribution across store types for targeted marketing.
+- *Track* long-term trends in average customer visits to forecast demand.
 
 ---
 
@@ -417,25 +457,187 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 - 📅 Date Slicer  
 
 🌟 Purpose:
-- Understand past trends and seasonal averages.
-- Provide foundational metrics for future sales forecasting.
+- *Analyze* historical sales trends and seasonal fluctuations to identify patterns.
+- *Calculate* key performance metrics (e.g., average sales per customer) for benchmarking.
+- *Enable* dynamic filtering to drill down into specific time periods for granular insights.
+- *Support* data-driven decision-making for inventory planning and sales forecasting.
+---
+
+## 📊 Sales Dashboard – Executive Summary – Key Insights at a Glance
+
+This dashboard presents a high-level view of Rossmann store sales, customer behavior, store performance, and forecasting patterns. Below is a summarized breakdown of key insights for easier understanding:
 
 ---
 
+### 📅 Sales Overview
+
+- 🟢 March had the strongest sales month; September was the weakest.
+- 🟡 Sales were stable during January, April, and May, suggesting steady demand during those months.
+- 🛒 Store Type A is the top performer, driving most of the revenue.
+- 🌸 Spring recorded the highest seasonal sales and customer visits — likely due to public holidays.
+
+---
+
+### 📦 Sales Patterns
+
+- 📉 Sundays had the lowest sales across the week; weekdays performed consistently well.
+- 🧪 Promo-related sales insights are pending further data review.
+
+---
+
+### 🏆 Store Performance
+
+- 🥇 A few top stores drive the majority of revenue, while bottom stores underperform significantly.
+- 🧭 Store performance varies by season, though more analysis is needed.
+
+---
+
+### 👥 Customer Behavior
+
+- 👥 Over half of the customers prefer Store Type A.
+- 🏬 Store Type B has very low customer traffic and needs improvement.
+
+---
+
+### 🔮 Forecasting Trends
+
+- 📈 Sales show clear seasonal patterns with consistent peaks in March every year.
+
+---
+
+## 📊 Detailed Dashboard Analysis – Chart-Level Insights
+
+This section breaks down insights directly from the Power BI charts to show how key sales metrics were derived.
+
+### 📅 Sales Overview Page
+
+#### 📈 Total Sales by Month (Line Chart)
+- March recorded the highest sales ($545.3M), while September saw the lowest ($312.1M).
+- January, April, and May displayed consistent mid-level sales, indicating stable demand.
+
+#### 🏬 Total Sales by StoreType (Stacked Bar Chart)
+- Store Type A dominated with $2.72B in sales — the key revenue driver.
+
+#### 🌸 Sales and Customers by Season (Clustered Bar Chart)
+- Spring generated the highest total sales ($159B) and customer visits (0.17B), likely due to Easter and Good Friday.
+
+---
+
+### 📦 Sales Analysis
+
+#### 📆 Day of Week vs. Total Sales (Line or Bar Chart)
+- Sunday posted the lowest total sales ($17.5M); weekdays performed consistently better.
+
+#### 🎯 Total Sales by Year and Promo (Clustered Column Chart)
+- (Data pending – placeholder for further promo impact evaluation.)
+
+---
+
+### 🏆 Store Performance Analysis
+
+#### 🥇 Top vs. Bottom 5 Stores (Donut Charts)
+- Significant performance gap observed: Top 5 stores contribute disproportionately to total sales vs. bottom 5.
+
+#### 🧭 Sales by Store and Season (Matrix)
+- (Data pending – placeholder for combined seasonal/store trends.)
+
+---
+
+### 👥 Customer Behavior Analysis
+
+#### 🛍️ Customer Distribution by Store Type (Clustered Bar Chart)
+- Store Type A attracted 56% of all customers (313.8M), while Type B only 3.4% (19M).
+
+---
+
+### 🔮 Forecasting Analysis
+
+#### 📈 6-Month Sales Forecast (Forecast Matrix)
+- Recurring seasonality observed, including annual March peaks.
+
+---
+
+# 📊 Sales Dashboard Analysis – Business Recommendations 
+
+## 📅 Sales Overview Page
+
+### 📈 Total Sales by Month (Line Chart)
+- Replicate March’s promotional strategies in September to lift sales performance.
+- Maintain operational consistency during stable months (Jan–Apr–May) to preserve margin.
+
+### 🏬 Total Sales by StoreType (Stacked Bar Chart)
+- Standardize and scale Store Type A's best practices across other formats.
+- Audit underperforming store types for layout, staffing, and assortment gaps.
+
+### 🌸 Sales and Customers by Season (Clustered Bar Chart)
+- Introduce spring-themed promotions and extended store hours.
+- Prioritize inventory preparation and staffing during spring holidays.
+
+---
+
+## 📦 Sales Analysis
+
+### 📆 Day of Week vs. Total Sales (Line or Bar Chart)
+- Pilot “Sunday Specials” or family events to improve weekend foot traffic.
+- Consider optimizing Sunday staffing based on traffic patterns.
+
+### 🎯 Total Sales by Year and Promo (Clustered Column Chart)
+- Implement POS-level tagging for promotions to track ROI more effectively.
+- Pilot and measure high-impact promotional strategies before wider rollout.
+
+---
+
+## 🏆 Store Performance Analysis
+
+### 🥇 Top vs. Bottom 5 Stores (Donut Charts)
+- Deploy performance improvement teams to underperforming stores.
+- Create an incentive and recognition program for top performers.
+
+### 🧭 Sales by Store and Season (Matrix)
+- Empower local managers to customize seasonal merchandising and promotions.
+
+---
+
+## 👥 Customer Behavior Analysis
+
+### 🛍️ Customer Distribution by Store Type (Clustered Bar Chart)
+- Investigate customer preferences and layout effectiveness in Type A.
+- Redesign Type B stores and gather customer feedback via exit surveys.
+
+---
+
+## 🔮 Forecasting Analysis
+
+### 📈 6-Month Sales Forecast (Forecast Matrix)
+- Use forecast trends for seasonal inventory planning and logistics.
+- Consider dynamic pricing or bundled offers during expected low-sales periods.
+
+--- 
+
 ## ✅ Insights & Key Findings
-- 📌 Sales exhibit strong seasonal patterns tied to holidays and promotions.
-- 📌 Store-specific factors influence sales volume.
-- 📌 Outliers and missing data, if unaddressed, skew insights and models.
-- 📌 Promotion periods correlate with spikes in sales.
-  
+
+- 📌 Sales show strong seasonal patterns, especially around holidays like Easter and peak months such as March.
+- 📌 Store Type A is the dominant contributor to both sales and customer traffic; Store Type B performs poorly.
+- 📌 Sundays consistently underperform, while weekdays show steady sales performance.
+- 📌 Top 5 stores significantly outperform bottom 5, indicating location or operational gaps.
+- 📌 Customer behavior favors certain store types and varies by season.
+- 📌 Forecasting shows clear recurring annual patterns that can guide strategic planning.
+- 📌 Missing values and outliers, if not treated, could affect dashboard accuracy and forecasting models.
+
+---
 
 ## ✅ Business Recommendations
 
-- 📌 Focus promotions on weekends and Q4 to maximize ROI.  
-- 📌 Investigate underperforming stores for corrective actions.  
-- 📌 Plan staffing for high-traffic periods (Fridays, Q4).  
-- 📌 Optimize inventory ahead of holidays and seasonal peaks.  
-- 📌 Segment stores by performance for localized marketing and stock plans.
+- 📌 Replicate successful promotional strategies from March in lower-performing months like September.
+- 📌 Prioritize promotional campaigns during weekends and Q4 to maximize ROI.
+- 📌 Review and restructure underperforming stores through diagnostics and targeted interventions.
+- 📌 Standardize Store Type A’s successful practices across other store types.
+- 📌 Improve Sunday sales through themed events or operational adjustments.
+- 📌 Optimize staffing plans around high-traffic periods, especially Fridays and seasonal peaks.
+- 📌 Segment stores based on performance and adapt stock/inventory strategies accordingly.
+- 📌 Prepare inventory and marketing ahead of spring and holiday seasons to meet increased demand.
+- 📌 Implement POS-level promotion tagging to better track ROI and plan future campaigns.
+- 📌 Use forecast insights to guide dynamic pricing, bundling, and logistics ahead of demand cycles.
 
 ---
 
