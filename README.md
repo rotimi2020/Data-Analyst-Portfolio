@@ -91,9 +91,13 @@ This project involves analyzing Rossmann’s sales database to address key busin
 
 ---
 
-### Project 2: [Library Management System Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/library_management_system)
-- **Code** : [SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/sql/library_management_system.sql)
-  
+## 📚 Project 2: [Library Management System Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/library_management_system)
+
+### 📂 Code Components
+| Technology | Link |
+|------------|------|
+| **🔹 SQL** | [Library Analysis Queries](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/sql/library_management_system.sql) |
+
 # 📚 Library Management System Analysis
 
 ## 🎯 Goal
