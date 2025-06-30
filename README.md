@@ -153,6 +153,13 @@ The queries range from **basic to advanced**, helping uncover trends to optimize
 - **Code** : [SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/sql/delaware_checkbook.sql),[DAX](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/dax/powerbi_%20dax_formulas.txt)
  
 # 💰 State of Delaware Financial Analysis
+## 🚀 Project 3: [Delaware Credit Card Financial Records](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/delaware_credit_card_transaction)
+
+### 📂 Code Components
+| Technology | Link |
+|------------|------|
+| **🔹 SQL** | [SQL Analysis Queries](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/sql/delaware_checkbook.sql) |
+| **🔹 DAX** | [Power BI Measures](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/dax/powerbi_%20dax_formulas.txt) |
 
 ## 🎯 Goal
 - **🔹 Analyze Spending Patterns**: Examine the State of Delaware's financial transactions to uncover trends and anomalies.
