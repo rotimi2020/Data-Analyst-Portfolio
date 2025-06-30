@@ -82,26 +82,55 @@ This project involves analyzing Rossmann’s sales database to address key busin
 ### Project 2: [Library Management System Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/library_management_system)
 - **Code** : [SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/sql/library_management_system.sql)
   
-- **Goal** :<br>
-  ***Extract Meaningful Insights :*** Use SQL queries to retrieve critical information from the LMS database.<br>
-  ***Enhance Data Understanding :*** Answer specific questions posed by the library owner to gain a deeper understanding of the library's data.<br>
-  
-- **Description**: The project involves performing data analysis on the library management system database. The client has provided access to the database and a list of 30 queries that need to be answered. These queries cover various aspects of the library's operations, including book inventory, user activities, and financial metrics. The queries range from basic to advanced levels and will help uncover important trends and metrics to optimize library services.
-  
-- **Skills**:<br>
-***SQL :*** Proficiency in writing complex SQL queries to extract and analyze data from relational databases.<br>
-***Data Analysis :*** Ability to interpret data, identify trends, and generate meaningful insights.<br>
-***Report Generation :*** Capability to create detailed and comprehensive reports based on the analysis.<br>
-***Database Management :*** Knowledge of database structures and management to effectively access and manipulate data.<br>
+# 📚 Library Management System Analysis
 
-- **Technology**: <br>
-***Database Management System (DBMS) :*** The LMS database, likely implemented using a relational DBMS such as MySQL, PostgreSQL, or SQL Server.<br>
-***SQL :*** Structured Query Language for querying and managing the database.<br>
+## 🎯 Goal
+- **🔹 Extract Meaningful Insights**: Use SQL queries to retrieve critical information from the LMS database.
+- **🔹 Enhance Data Understanding**: Answer specific questions posed by the library owner to gain a deeper understanding of the library's data.
 
-- **Results**:<br>
- ***Insightful Reports :*** Detailed reports that provide insights into various aspects of library operations, such as book inventory, user activities, and financial metrics.<br>
- ***Optimized Operations :*** Identification of areas for improvement in inventory management, user engagement, and service delivery.<br>
- ***Informed Decision-Making :*** Data-driven insights that support strategic decision-making by the library owner.<br>
+## 📝 Description
+This project involves performing data analysis on the library management system database. The client has provided:
+- Access to the LMS database.
+- A list of **30 queries** covering:
+  - Book inventory (e.g., availability, popular genres).
+  - User activities (e.g., borrowing patterns, overdue items).
+  - Financial metrics (e.g., revenue from late fees, membership trends).
+
+The queries range from **basic to advanced**, helping uncover trends to optimize library services.
+
+---
+
+## 🛠 Skills
+| Skill                  | Application                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| **🔹 SQL**             | Writing complex queries to extract and analyze relational database data.    |
+| **🔹 Data Analysis**   | Interpreting trends in book usage, user behavior, and financial metrics.    |
+| **🔹 Report Generation** | Creating detailed reports for library staff and stakeholders.             |
+| **🔹 Database Management** | Understanding schema design and optimizing queries.                      |
+
+---
+
+## 💻 Technology Stack
+- **🔹 Database Management System (DBMS)**: 
+  - MySQL / PostgreSQL / SQL Server (relational databases for LMS).
+- **🔹 SQL**: 
+  - For querying, joining tables, and aggregating metrics.
+
+---
+
+## 📊 Expected Results
+1. **🔹 Insightful Reports**:
+   - Book inventory turnover rates.
+   - User engagement metrics (e.g., frequent borrowers).
+   - Financial performance (e.g., late fee revenue trends).
+2. **🔹 Optimized Operations**:
+   - Identify underutilized books for reallocation.
+   - Improve overdue item recovery processes.
+3. **🔹 Informed Decision-Making**:
+   - Data-backed recommendations for collection expansion.
+   - Membership drive strategies based on user demographics.
+
+---
 
 ### Project 3: [Delaware Credit Card Financial Records](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/delaware_credit_card_transaction)
 
