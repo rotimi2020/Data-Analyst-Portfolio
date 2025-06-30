@@ -404,6 +404,7 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 ---
 
 ### 🗂 Page Details & Visuals
+
 #### 🔹 Slicer Implementation Strategy  
 🔹 Slicers were added selectively on interactive pages (e.g., Store Performance & Time Series Forecasting) to allow user-driven filtering.  
 
