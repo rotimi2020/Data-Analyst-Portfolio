@@ -694,9 +694,21 @@ In this project, DAX was essential for calculating key metrics such as total sal
 Here are some of the core measures used:
 
 - **Total Sales:** Calculates the sum of all sales amount.
+```sql
+Total Sales = SUM(Sales[Sales])
+```
 - **Total Customers:** Counts the total number of customers.
+```sql
+Customers Count = CALCULATE(COUNT(Sales[Customers]),ALLEXCEPT(Sales,Sales[Day of Week]))
+```
 - **Average Daily Sales:** Computes the average sales per day.
+```sql
+Average Daily Sales = AVERAGEX(VALUES(Sales[Date]),CALCULATE(SUM(Sales[Sales])))
+```
 - **Sales with Promotion:** Sum of sales made during promotional days.
+```sql
+Sales With Promo = CALCULATE(SUM(Sales[Sales]), Sales[Promo] = 1)
+```
 
 *Note:* For a complete list of all DAX measures and calculated columns, [click here to see the full formulas](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/dax/dax_formulas.txt).
 
