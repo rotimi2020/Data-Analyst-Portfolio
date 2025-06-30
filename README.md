@@ -136,26 +136,57 @@ The queries range from **basic to advanced**, helping uncover trends to optimize
 
 - **Code** : [SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/sql/delaware_checkbook.sql),[DAX](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/dax/powerbi_%20dax_formulas.txt)
  
-- **Goal** :<br>
-   - To analyze and report on the spending patterns of the State of Delaware.<br>
-   - To identify trends and anomalies in the financial transactions.<br>
-   - To provide actionable insights for better financial management.data.<br>
-  
-- **Description :** This project involves analyzing the State of Delaware's credit card transaction data. The dataset includes various fields such as fiscal year, fiscal period, department name, division name, merchant name, category description, transaction date, and transaction amount.<br>
-  
-- **Skills :** <br>
-***SQL :*** Proficiency in writing complex SQL queries to extract and analyze data.<br>
-***Data Analysis :*** Ability to interpret data, identify trends, and generate insights.<br>
-***Data Visualization :*** Expertise in visualizing data using tools like Power BI and Excel.<br>
-***Reporting :*** Capability to create detailed and comprehensive reports based on the analysis.<br>
+# 💰 State of Delaware Financial Analysis
 
-- **Technology :** <br>
-***SQL :*** Structured Query Language for querying and managing the database.<br>
-***Power BI :*** For creating interactive dashboards and visualizations.<br>
+## 🎯 Goal
+- **🔹 Analyze Spending Patterns**: Examine the State of Delaware's financial transactions to uncover trends and anomalies.
+- **🔹 Identify Financial Trends**: Highlight key spending behaviors across departments and vendors.
+- **🔹 Provide Actionable Insights**: Offer data-driven recommendations for improved financial management.
 
-- **Results :** <br>
-  - Detailed reports providing insights into spending patterns, departmental expenditures, and vendor relationships.<br>
-  - Interactive dashboards highlighting key financial metrics and trends.<br>
+## 📝 Description
+This project involves analyzing the State of Delaware's **credit card transaction data**, including:
+- Fiscal year and period
+- Department and division names
+- Merchant names and category descriptions
+- Transaction dates and amounts
+
+The analysis aims to:
+- Track departmental expenditures.
+- Identify high-spend vendors.
+- Detect irregularities or anomalies in transactions.
+
+---
+
+## 🛠 Skills
+| Skill                  | Application                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| **🔹 SQL**             | Querying and aggregating transaction data from relational databases.       |
+| **🔹 Data Analysis**   | Interpreting trends in spending and vendor relationships.                  |
+| **🔹 Data Visualization** | Creating interactive dashboards (Power BI/Excel) for stakeholders.        |
+| **🔹 Reporting**       | Generating detailed reports on financial metrics and anomalies.             |
+
+---
+
+## 💻 Technology Stack
+- **🔹 SQL**: For data extraction and transformation.
+- **🔹 Power BI**: For building interactive dashboards and visualizations.
+- **🔹 Excel**: For supplementary analysis and reporting.
+
+---
+
+## 📊 Expected Results
+1. **🔹 Detailed Reports**:
+   - Departmental spending breakdowns.
+   - Vendor expenditure trends.
+   - Anomaly detection (e.g., unusual transactions).
+2. **🔹 Interactive Dashboards**:
+   - Real-time spending metrics.
+   - Drill-down capabilities by department, vendor, or time period.
+3. **🔹 Actionable Insights**:
+   - Recommendations for cost-saving measures.
+   - Vendor negotiation opportunities.
+
+---
 
 ## GitHub Stats
 
