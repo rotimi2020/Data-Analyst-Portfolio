@@ -148,10 +148,6 @@ The queries range from **basic to advanced**, helping uncover trends to optimize
 
 ---
 
-### Project 3: [Delaware Credit Card Financial Records](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/delaware_credit_card_transaction)
-
-- **Code** : [SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/sql/delaware_checkbook.sql),[DAX](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/dax/powerbi_%20dax_formulas.txt)
- 
 # 💰 State of Delaware Financial Analysis
 ## 🚀 Project 3: [Delaware Credit Card Financial Records](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/delaware_credit_card_transaction)
 
