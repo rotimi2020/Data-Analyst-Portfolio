@@ -54,16 +54,6 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
 - **Store Performance Benchmarking**: Identified top/bottom performers by region
 - **Interactive Dashboards**: Power BI reports with drill-down capabilities
 
-### 🛠 Tech Stack
-```mermaid  
-graph LR  
-    A[SQL] --> B[Data Extraction]  
-    C[Python] --> D[ARIMA Forecasting]  
-    E[DAX] --> F[Power BI Metrics]  
-    B --> G[Analysis]  
-    D --> G  
-    F --> G
-
 ## 🎯 Goal
 - **Extract Meaningful Insights**: Use SQL queries to retrieve critical sales, customer, and promotional data from Rossmann’s database.
 - **Enhance Data Understanding**: Answer specific business questions to uncover trends in store performance, promotional impact, and customer behavior.
