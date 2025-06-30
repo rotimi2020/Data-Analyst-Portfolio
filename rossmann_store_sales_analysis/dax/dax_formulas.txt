@@ -11,7 +11,7 @@ This document contains all DAX Measures and Calculated Columns used in the Rossm
 
 ## ✅ DAX Formulas Used in Visuals
 
-1. Total Sales = SUM(Sales[SalesAmount])
+1. Total Sales = SUM(Sales[Sales])
 2. Best Store Name = 
 CALCULATE (
     VALUES(Sales[Store]),
