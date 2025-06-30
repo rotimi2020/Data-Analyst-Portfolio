@@ -36,11 +36,11 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
 
 
 ## Projects
+  
+# 📊 Rossmann Store Sales Analysis
 
 ### Project 1: [Rossmann Sales Forecasting and Analytics System](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/rossmann_store_sales_analysis)
 - **Code** : [SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/sql/rossmann_sales.sql) | [DAX](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/dax/dax_formulas.txt) | [PYTHON](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/rossmann_store_sales_analysis/notebooks)
-  
-# 📊 Rossmann Store Sales Analysis
 
 ## 🎯 Goal
 - **Extract Meaningful Insights**: Use SQL queries to retrieve critical sales, customer, and promotional data from Rossmann’s database.
