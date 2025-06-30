@@ -39,8 +39,30 @@ Welcome to my GitHub profile! I'm a B.Sc. graduate in Computer Science currently
   
 # 📊 Rossmann Store Sales Analysis
 
-### Project 1: [Rossmann Sales Forecasting and Analytics System](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/rossmann_store_sales_analysis)
-- **Code** : [SQL](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/sql/rossmann_sales.sql) | [DAX](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/dax/dax_formulas.txt) | [PYTHON](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/rossmann_store_sales_analysis/notebooks)
+## 🚀 Project 1: [Rossmann Sales Forecasting and Analytics System](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/rossmann_store_sales_analysis)
+
+### 📂 Code Components
+| Technology | Link |
+|------------|------|
+| **🔹 SQL** | [Sales Analysis Queries](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/sql/rossmann_sales.sql) |
+| **🔹 DAX** | [Power BI Measures](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/dax/dax_formulas.txt) |
+| **🔹 Python** | [Forecasting Notebooks](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/rossmann_store_sales_analysis/notebooks) |
+
+### 🌟 Key Features
+- **Sales Forecasting**: Time-series models predicting 6-8 weeks of future sales
+- **Promo Impact Analysis**: Measured lift from marketing campaigns
+- **Store Performance Benchmarking**: Identified top/bottom performers by region
+- **Interactive Dashboards**: Power BI reports with drill-down capabilities
+
+### 🛠 Tech Stack
+```mermaid  
+graph LR  
+    A[SQL] --> B[Data Extraction]  
+    C[Python] --> D[ARIMA Forecasting]  
+    E[DAX] --> F[Power BI Metrics]  
+    B --> G[Analysis]  
+    D --> G  
+    F --> G
 
 ## 🎯 Goal
 - **Extract Meaningful Insights**: Use SQL queries to retrieve critical sales, customer, and promotional data from Rossmann’s database.
