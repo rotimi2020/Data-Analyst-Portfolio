@@ -8,40 +8,35 @@ It combines data cleaning, feature engineering, machine learning, and dashboard 
 
 This project repository is organized into modular folders for better navigation and understanding. Each folder contains specific resources (SQL scripts, notebooks, DAX measures, Power BI files, etc.) related to the Rossmann Store Sales Forecasting project.
 
-rossmann_store_sales_analysis/
-│
-├── dax/
-│   ├── README.md
-│   └── dax_formulas.txt
-│
-├── er_diagram/
-│   ├── README.md
-│   └── entity_relationship_diagram.pdf
-│
-├── notebooks/
-│   ├── README.md
-│   ├── machine_learning_using_pycaret.ipynb
-│   ├── machine_learning_using_xgboost.ipynb
-│   ├── prophet_forecasting_with_adding_extra_regressors.ipynb
-│   ├── prophet_forecasting_with_holiday_effects.ipynb
-│   ├── prophet_forecasting_without_holidays_or_regressors.ipynb
-│   └── rossmann_sales.ipynb
-│
-├── powerbi/
-│   ├── README.md
-│   └── rossmann_sales.pbix
-│
-├── report_screenshots/
-│   ├── README.md
-│   ├── customer_behavior_reports.PNG
-│   ├── forecasting_reports.PNG
-│   ├── sales_analysis_reports.PNG
-│   ├── sales_overview_reports.PNG
-│   └── store_performance_analysis_reports.PNG
-│
-├── sql/
-│   ├── README.md
-│   └── rossmann_sales.sql
+| Folder / File                                                  | Description                                        |
+| -------------------------------------------------------------- | -------------------------------------------------- |
+| **`dax/`**                                                     | Contains DAX formulas and supporting documentation |
+| ├── `README.md`                                                | Overview of DAX KPIs used in Power BI              |
+| └── `dax_formulas.txt`                                         | List of all DAX calculations                       |
+| **`er_diagram/`**                                              | Entity Relationship Diagram                        |
+| ├── `README.md`                                                | Explanation of ER diagram design                   |
+| └── `entity_relationship_diagram.pdf`                          | PDF of ER diagram for data model                   |
+| **`notebooks/`**                                               | Jupyter notebooks for modeling and forecasting     |
+| ├── `README.md`                                                | Overview of the notebooks                          |
+| ├── `machine_learning_using_pycaret.ipynb`                     | ML modeling using PyCaret                          |
+| ├── `machine_learning_using_xgboost.ipynb`                     | XGBoost forecasting model                          |
+| ├── `prophet_forecasting_with_adding_extra_regressors.ipynb`   | Prophet model with extra regressors                |
+| ├── `prophet_forecasting_with_holiday_effects.ipynb`           | Prophet with holiday effect modeling               |
+| ├── `prophet_forecasting_without_holidays_or_regressors.ipynb` | Basic Prophet model                                |
+| └── `rossmann_sales.ipynb`                                     | Main notebook for full analysis workflow           |
+| **`powerbi/`**                                                 | Power BI file for dashboard and visual analytics   |
+| ├── `README.md`                                                | Description of Power BI report contents            |
+| └── `rossmann_sales.pbix`                                      | Power BI report file                               |
+| **`report_screenshots/`**                                      | Visual screenshots from Power BI dashboard         |
+| ├── `README.md`                                                | Overview of report images                          |
+| ├── `customer_behavior_reports.PNG`                            | Customer behavior dashboard                        |
+| ├── `forecasting_reports.PNG`                                  | Forecasting report dashboard                       |
+| ├── `sales_analysis_reports.PNG`                               | Sales analysis dashboard                           |
+| ├── `sales_overview_reports.PNG`                               | High-level sales overview                          |
+| └── `store_performance_analysis_reports.PNG`                   | Store performance report                           |
+| **`sql/`**                                                     | SQL scripts for data preparation                   |
+| ├── `README.md`                                                | SQL usage and structure explanation                |
+| └── `rossmann_sales.sql`                                       | SQL script used for preprocessing and analysis     |
 
 ---
 
