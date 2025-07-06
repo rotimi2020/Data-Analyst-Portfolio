@@ -824,14 +824,23 @@ The models and insights support business strategies to enhance sales performance
 
 ---
 
----
-
 ## 🙋‍♂️ Author
 
 **Rotimi Sheriff Omosewo**  
-📫 Email: [yourname@example.com](mailto:yourname@example.com)  
+📧 Email: [omoseworotimi@gmail.com](mailto:omoseworotimi@gmail.com)  
+📞 Contact: +234 903 441 1444  
 🔗 LinkedIn: [linkedin.com/in/rotimi-sheriff-omosewo-939a806b](https://www.linkedin.com/in/rotimi-sheriff-omosewo-939a806b)  
 📁 Project GitHub: [github.com/rotimi2020/Data-Analyst-Portfolio](https://github.com/rotimi2020/Data-Analyst-Portfolio)
 
-> This project was created as part of my data analytics portfolio to demonstrate business intelligence, forecasting, and machine learning capabilities.
+> This project is part of my Data Analytics Portfolio. It demonstrates business intelligence, forecasting, and machine learning skills using real-world data and modern tools.
+
+---
+
+## ⚙️ Installation
+
+To install the required dependencies, clone the repository and run:
+
+```bash
+pip install -r requirements.txt
+
 ---
