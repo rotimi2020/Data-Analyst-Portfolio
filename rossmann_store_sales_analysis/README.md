@@ -4,6 +4,47 @@ It combines data cleaning, feature engineering, machine learning, and dashboard 
 
 ---
 
+# 📁 Project Directory Structure
+
+This project repository is organized into modular folders for better navigation and understanding. Each folder contains specific resources (SQL scripts, notebooks, DAX measures, Power BI files, etc.) related to the Rossmann Store Sales Forecasting project.
+
+rossmann_store_sales_analysis/
+│
+├── dax/
+│   ├── README.md
+│   └── dax_formulas.txt
+│
+├── er_diagram/
+│   ├── README.md
+│   └── entity_relationship_diagram.pdf
+│
+├── notebooks/
+│   ├── README.md
+│   ├── machine_learning_using_pycaret.ipynb
+│   ├── machine_learning_using_xgboost.ipynb
+│   ├── prophet_forecasting_with_adding_extra_regressors.ipynb
+│   ├── prophet_forecasting_with_holiday_effects.ipynb
+│   ├── prophet_forecasting_without_holidays_or_regressors.ipynb
+│   └── rossmann_sales.ipynb
+│
+├── powerbi/
+│   ├── README.md
+│   └── rossmann_sales.pbix
+│
+├── report_screenshots/
+│   ├── README.md
+│   ├── customer_behavior_reports.PNG
+│   ├── forecasting_reports.PNG
+│   ├── sales_analysis_reports.PNG
+│   ├── sales_overview_reports.PNG
+│   └── store_performance_analysis_reports.PNG
+│
+├── sql/
+│   ├── README.md
+│   └── rossmann_sales.sql
+
+---
+
 ## 📑 Table of Contents
 
 - [Project Overview](#project-overview)
