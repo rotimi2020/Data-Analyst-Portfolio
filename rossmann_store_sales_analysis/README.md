@@ -849,7 +849,10 @@ cd Data-Analyst-Portfolio/rossmann_store_sales_analysis
 
 ### ✅ Step 2: Install Dependencies
 Make sure Python 3.8 or later is installed. Then run:
+
+```bash
 pip install -r requirements.txt
+```
 
 ---
 
