@@ -823,3 +823,15 @@ The models and insights support business strategies to enhance sales performance
 - Visualization dashboards created in Power BI for executive reporting.
 
 ---
+
+---
+
+## 🙋‍♂️ Author
+
+**Rotimi Sheriff Omosewo**  
+📫 Email: [yourname@example.com](mailto:yourname@example.com)  
+🔗 LinkedIn: [linkedin.com/in/rotimi-sheriff-omosewo-939a806b](https://www.linkedin.com/in/rotimi-sheriff-omosewo-939a806b)  
+📁 Project GitHub: [github.com/rotimi2020/Data-Analyst-Portfolio](https://github.com/rotimi2020/Data-Analyst-Portfolio)
+
+> This project was created as part of my data analytics portfolio to demonstrate business intelligence, forecasting, and machine learning capabilities.
+---
