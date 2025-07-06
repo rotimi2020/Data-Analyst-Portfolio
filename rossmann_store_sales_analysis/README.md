@@ -837,11 +837,8 @@ The models and insights support business strategies to enhance sales performance
 
 ---
 
-## ⚙️ Installation
 
-To install the required dependencies, clone the repository and run:
 
-```bash
-pip install -r requirements.txt
 
----
+
+
