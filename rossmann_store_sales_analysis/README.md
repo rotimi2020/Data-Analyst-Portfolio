@@ -1,4 +1,50 @@
 # Rossmann Store Sales Forecasting Project
+This project leverages SQL, Python (XGBoost, Prophet, PyCaret), and Power BI to forecast daily sales across Rossmann stores.  
+It combines data cleaning, feature engineering, machine learning, and dashboard visualization to support inventory planning, staffing, and promotion strategies.
+
+---
+
+## 📑 Table of Contents
+
+- [Project Overview](#project-overview)
+- [Objectives](#objectives)
+- [Problem Definition](#problem-definition)
+- [Problem Statement](#problem-statement)
+- [Dataset Description](#dataset-description)
+  - [Files Included](#files-included)
+  - [File Sizes](#file-sizes)
+  - [Important Notes](#important-notes)
+  - [Usage](#usage)
+- [Data Processing & Cleaning](#data-processing--cleaning)
+- [Tools & Technologies](#tools--technologies)
+- [Feature Engineering](#feature-engineering)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [SQL Overview](#sql-overview)
+  - [Sections of SQL Scripts](#sections-of-sql-scripts)
+  - [Summary of SQL Sections](#summary-of-sql-sections)
+- [Python Overview](#python-overview)
+  - [Python Data Analysis and Modeling](#python-data-analysis-and-modeling)
+  - [Notebooks and Resources](#notebooks-and-resources)
+- [Model Performance Comparison](#model-performance-comparison)
+- [Predictive Modeling](#predictive-modeling)
+- [Best Model Selection and Analysis](#best-model-selection-and-analysis)
+- [Explanation & Analysis](#explanation--analysis)
+- [Conclusion](#conclusion)
+- [Power BI Dashboard](#power-bi-dashboard)
+  - [Report Structure](#report-structure)
+  - [Page Details & Visuals](#page-details--visuals)
+  - [Sales Dashboard – Executive Summary](#sales-dashboard--executive-summary--key-insights-at-a-glance)
+  - [Detailed Dashboard Analysis](#detailed-dashboard-analysis--chart-level-insights)
+  - [Sales Dashboard Recommendations](#sales-dashboard-analysis--business-recommendations)
+  - [Visual Types Summary](#visual-types-summary)
+  - [Power BI Report Previews](#power-bi-report-previews)
+- [DAX Overview](#dax-overview-for-rossmann-store-sales-analysis)
+  - [Key DAX Measures](#key-dax-measures)
+- [Business Recommendations](#business-recommendations)
+- [Insights & Key Findings](#insights--key-findings)
+- [Export & Documentation](#export--documentation)
+
+---
 
 ## Project Overview
 This project involves analyzing the Rossmann Store Sales dataset to understand sales patterns, 
