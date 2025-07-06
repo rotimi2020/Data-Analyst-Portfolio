@@ -836,6 +836,22 @@ The models and insights support business strategies to enhance sales performance
 > This project is part of my Data Analytics Portfolio. It demonstrates business intelligence, forecasting, and machine learning skills using real-world data and modern tools.
 
 ---
+## ⚙️ Installation
+
+To set up the project environment on your local machine, follow these steps:
+
+### ✅ Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/rotimi2020/Data-Analyst-Portfolio.git
+cd Data-Analyst-Portfolio/rossmann_store_sales_analysis
+```
+
+### ✅ Step 2: Install Dependencies
+Make sure Python 3.8 or later is installed. Then run:
+pip install -r requirements.txt
+
+---
 
 
 
