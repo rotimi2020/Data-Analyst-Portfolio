@@ -37,6 +37,7 @@ This project repository is organized into modular folders for better navigation 
 | **`sql/`**                                                     | SQL scripts for data preparation                   |
 | ├── `README.md`                                                | SQL usage and structure explanation                |
 | └── `rossmann_sales.sql`                                       | SQL script used for preprocessing and analysis     |
+| **`requirements.txt`**                                         | Python libraries and package dependencies          |
 
 ---
 
