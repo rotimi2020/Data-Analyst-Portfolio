@@ -566,7 +566,7 @@ To set up the project environment on your local machine, follow these steps:
 
 ```bash
 git clone https://github.com/rotimi2020/Data-Analyst-Portfolio.git
-cd Data-Analyst-Portfolio/rossmann_store_sales_analysis
+cd Data-Analyst-Portfolio/delaware_credit_card_transaction
 ```
 
 ### ✅ Step 2: Install Dependencies
