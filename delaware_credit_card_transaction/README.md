@@ -1,9 +1,9 @@
-# Data cleaning and Visualization : Using SQL and Power BI
+# ✅ Data cleaning and Visualization : Using SQL and Power BI
 
-## Project Overview
+## 🌸 Project Overview
 The *"State of Delaware Checkbook"* project is an extensive analysis of the state’s credit card transactions. The goal is to derive meaningful insights from the data to enhance financial transparency and accountability.
 
-## Objectives 
+## 🌟 Objectives 
 The *primary objective* is to improve financial transparency and provide stakeholders with a comprehensive view of the state’s expenditures.
 
 ## 📌 Problem Definition
@@ -14,12 +14,12 @@ The *State of Delaware Checkbook dataset* contains financial transaction data fo
 The *primary goal* is to analyze this dataset to gain insights into financial transactions, identify spending patterns, and generate meaningful visualizations for better decision-making.
 
 
-## Dataset
+## 🔗 Dataset
 This dataset contains credit card transaction details for various departments within the State of Delaware. It includes a total of 1,539,693 records, with details about the fiscal year, department, vendor, transaction date, and amounts involved.
 You can download the dataset [here](https://data.delaware.gov/Government-and-Finance/Credit-Card-Spend-by-Merchant/8pzf-ge27) <br> <br>
 The Delaware checkbook dataset, which includes credit card transactions, is quite large—approximately 180 MB. This file size makes it challenging to upload directly to GitHub.<br>
 
-- **Summary Statistics**
+- **📑Summary Statistics**
   - Total Number of Rows: *1,539,693*
   - Total Number of Duplicate Rows: *102,500*
   - Total Number of Rows After Removing Duplicates: *1,437,193*
@@ -29,18 +29,18 @@ The Delaware checkbook dataset, which includes credit card transactions, is quit
 
 
 
-### Data Definition
+### 🟡 Data Definition
 The dataset contains the following columns:
 
-- **FISCAL_YEAR :** The fiscal year in which the transaction occurred.
-- **FISCAL_PERIOD :** The fiscal period (month) in which the transaction occurred. For example, 1 = July, 2 = August, 3 = September, 
+- **📌FISCAL_YEAR :** The fiscal year in which the transaction occurred.
+- **📌FISCAL_PERIOD :** The fiscal period (month) in which the transaction occurred. For example, 1 = July, 2 = August, 3 = September, 
                       7 =  January, 12 = June. 
-- **DEPT_NAME :** The name of the department responsible for the transaction.
-- **DIV_NAME :** The name of the division within the department responsible for the transaction.
-- **MERCHANT :** The name of the merchant or vendor involved in the transaction.
-- **CAT_DESCR :** The category description of the transaction.
-- **TRANS_DT :** The date on which the transaction occurred.
-- **MERCHANDISE_AMT :** The monetary amount of the transaction.
+- **📌DEPT_NAME :** The name of the department responsible for the transaction.
+- **📌DIV_NAME :** The name of the division within the department responsible for the transaction.
+- **📌MERCHANT :** The name of the merchant or vendor involved in the transaction.
+- **📌CAT_DESCR :** The category description of the transaction.
+- **📌TRANS_DT :** The date on which the transaction occurred.
+- **📌MERCHANDISE_AMT :** The monetary amount of the transaction.
 
 ## 🧾 Overview
 The provided SQL script includes a series of operations aimed at analyzing financial transaction data from the Delaware_Checkbook table. The queries cover data extraction, duplicate detection, data cleaning, the creation of new columns for categorization, and various analyses to assess expenditure trends.<br>
@@ -60,7 +60,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
 
    ```
 
-  - Count the total number of rows.
+  - 📊 Count the total number of rows.
    ```sql
    SELECT
    COUNT(*) AS [TOTAL ROW]
@@ -68,14 +68,14 @@ The provided SQL script includes a series of operations aimed at analyzing finan
    [dbo].[Delaware_Checkbook];
   ```
 
-- **Table Description**<br>
+- 📊 **Table Description**<br>
 
   - Execute sp_help to display the table structure and metadata.
   ```sql
   EXEC sp_help '[dbo].[Delaware_Checkbook]'
   ```
 
-- **Change Column Type**
+- 📊 **Change Column Type**
 
   - Change column's data type from SMALLINT to INT.
   ```sql
@@ -92,11 +92,11 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   
   ```
 
-- **Check for Null Values**
+-  📊 **Check for Null Values**
 
   - Perform distinct counts of records for several key columns (e.g., FISCAL_YEAR, FISCAL_PERIOD, DEPT_NAME) to identify any null entries.No Null values are found
 
-- **Remediate Data Issues**
+- 📊 **Remediate Data Issues**
 
   - Update MERCHANDISE_AMT to eliminate negative signs and round the values.
   ```sql
@@ -113,7 +113,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [COUNT ROWS] ASC 
   ```
 
-- **Create New Columns**
+- 📊 **Create New Columns**
 
   - Add a new column for FISCAL_PERIOD_MONTH representing the month corresponding to the fiscal period.
   - Populate this column based on the fiscal period values.
@@ -138,7 +138,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [dbo].[Delaware_Checkbook];
   ```
 
-- **Create a Season Column**
+- 📊 **Create a Season Column**
 
   - Add another column for FISCAL_PERIOD_SEASON and populate it with the corresponding season based on month values.
   ```sql
@@ -164,7 +164,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   ```
 
 
-- **Check for Duplicates**<br>
+- 📊 **Check for Duplicates**<br>
 
   - Use a Common Table Expression (CTE) to identify duplicate records based on multiple columns.
   - Select duplicates for review.
@@ -203,7 +203,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   row_num > 1 
   ```
 
-- **Remove Duplicate Rows**
+- 📊 **Remove Duplicate Rows**
 
   - Another CTE to find duplicates, followed by deleting them from the table.
   ```sql
@@ -238,8 +238,8 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   WHERE
   row_num > 1
   ```
-## Analysis
-- **Total number of transactions:** Count of all purchase transactions within the specified timeframe
+## 📌 Analysis
+-  📊 **Total number of transactions:** Count of all purchase transactions within the specified timeframe
   ```sql
   SELECT
     COUNT(*) AS [Nos_Of_Transaction]
@@ -247,7 +247,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
     [dbo].[Delaware_Checkbook_Analysis] 
   ```
 
-- **Total expenditure:** The aggregate amount spent across all transactions.
+-  📊 **Total expenditure:** The aggregate amount spent across all transactions.
   ```sql
   SELECT
   round(SUM([MERCHANDISE_AMT]), 2) AS [Total_Expenditure]
@@ -255,7 +255,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [dbo].[Delaware_Checkbook_Analysis] 
  
   ```
-- **Yearly and monthly expenditure reporting:** Breakdown of spending by month and year for trend identification.
+-  📊 **Yearly and monthly expenditure reporting:** Breakdown of spending by month and year for trend identification.
   ```sql
   SELECT
   [FISCAL_PERIOD_MONTH],
@@ -279,7 +279,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [FISCAL_YEAR]
   ``` 
   
-- **Seasonal expenditure trends:** Analysis of spending variations across different seasons.
+-  📊 **Seasonal expenditure trends:** Analysis of spending variations across different seasons.
   ```sql
   SELECT
   [FISCAL_PERIOD_SEASON],
@@ -292,7 +292,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [Season_Expenditure] desc 
   ```
 
-- **Departmental and divisional spend analysis:** Assessment of spending by individual departments or divisions to identify   areas of high expenditure.
+-  📊 **Departmental and divisional spend analysis:** Assessment of spending by individual departments or divisions to identify   areas of high expenditure.
   ```sql
   SELECT
   [DEPT_NAME],
@@ -307,7 +307,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [Dept_Div_Expenditure] desc;
   ```
 
-- **Top merchants and category expenditures:** Identification of the largest suppliers and highest spending categories for    strategic insights.
+-  📊 **Top merchants and category expenditures:** Identification of the largest suppliers and highest spending categories for    strategic insights.
   ```sql
   SELECT
   MERCHANT,
@@ -331,26 +331,26 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [CAT_DESCR_Expenditure] desc 
   ```
 
-# Power BI
-## Expenditure DAX Measures  
+#  📊 Power BI
+## 📑 Expenditure DAX Measures  
 
 This document outlines the key DAX measures used to calculate various expenditure metrics from the Delaware Checkbook data.  
 Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/dax/powerbi_%20dax_formulas.txt)
 
-  **1. Total Transactions**  
+  **📅1. Total Transactions**  
   ```DAX  
   Total_Transactions = COUNTROWS(Delaware_Checkbook)
   ```
-  **2. Average Expenditure**
+  **🧭2. Average Expenditure**
   ```DAX
   Average_Expenditure = AVERAGE(Delaware_Checkbook[MERCHANDISE_AMT])
   ```
 
-  **3. Total Expenditure**
+  **🧮3. Total Expenditure**
   ```DAX
   Total_Expenditure = SUM(Delaware_Checkbook[MERCHANDISE_AMT])
   ```
-  **4. Monthly Expenditure**
+  **🛒4. Monthly Expenditure**
   ```DAX
   Monthly_Expenditure =   
   CALCULATE(  
@@ -359,7 +359,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
            )
   ```
   
-  **5. Yearly Expenditure**
+  **🌸5. Yearly Expenditure**
   ```DAX
   Yearly_Expenditure =   
   CALCULATE(  
@@ -368,7 +368,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
            )  
   ```
 
-  **6. Seasonal Expenditure**
+  **🧪6. Seasonal Expenditure**
   ```DAX
   Seasonal_Expenditure =   
   CALCULATE(  
@@ -377,7 +377,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
            )   
   ```
 
-  **7. Department Expenditure**
+  **🔮7. Department Expenditure**
   ```DAX
   Dept_Expenditure =   
   CALCULATE(  
@@ -386,7 +386,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
            )  
   ```  
 
-  **8. Top Merchant Expenditure**
+  **👥8. Top Merchant Expenditure**
   ```DAX
   Top_Merchant_Expenditure =   
   CALCULATE(  
@@ -395,7 +395,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
   ) 
   ```
 
-  **9. Category Expenditure**
+  **🏬9. Category Expenditure**
   ```DAX
   Category_Expenditure =   
   CALCULATE(  
@@ -404,7 +404,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
            ) 
   ```
 
-  **10. Expenditure Trend**
+  **📦10. Expenditure Trend**
   ```DAX
   Expenditure_Trend =   
   CALCULATE(  
@@ -413,24 +413,24 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
            )
   ```
 
-## Power BI Visualization Report 
-### Expenditure Analysis Report
+## 📌 Power BI Visualization Report 
+### 📁 Expenditure Analysis Report
  <img src = "REPORT - Expenditure Analysis Report.PNG" width="500" alt="" /><br>
-### Time Based Expenditure Report
+### 📑 Time Based Expenditure Report
  <img src = "REPORT - Time Based Expenditure Report.PNG" width="500" alt="" />
 
 
 
 
-### Key Findings
+### ✅ Key Findings
 
-- **1. Total Expenditure:**
+- **🛒1. Total Expenditure:**
   - The **total recorded spending** is **$152.38 million**.
   - The a**verage transaction amount** is **$120.60**.
   - The dataset includes **over 1 million transactions**.
 
 
-- **2. Top Merchants Spending:**
+- **🌸2. Top Merchants Spending:**
   - **Grainger** - $2.9M
   - **Verizon** - $2.1M
   - **Canon Financial** - $1.9M
@@ -438,7 +438,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
   - **Comcast** - $1.0M
 
 
-- **3. Top Categories Spending:**
+- **📅3. Top Categories Spending:**
   - **Book Stores** - $12.7M
   - **Airline Expenses** - $8.59M 
   - **Lodging (Hotels)** - $7.86M
@@ -446,18 +446,18 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
   - **Telecom Services** - $3.94M
 
 
-- **4. Departmental Expenditure:**
+- **🧪4. Departmental Expenditure:**
   - The *highest spending department* recorded **$19M**.
   - Several departments have expenses over **$10M**, including *legal, executive, and state services*.
 
 
-- **5. Seasonal and Monthly Trends:**
+- **📑5. Seasonal and Monthly Trends:**
   - The *highest expenditures* were recorded in **Fall Season ($42M)** and **Spring Season ($40M)**.
   - **September, October, August, and March** each had over **$14M** in spending.
   - The *lowest spending* occurred in **June and January**.
  
 
-### Insights
+### ✅ Insights
 - **Heavy spending on books, airlines, and lodging** suggests significant travel and education-related costs.
 - **Telecom and office supply expenses** indicate a major investment in communication and administrative needs.
 - **Consistent high spending across seasons** suggests ongoing operations rather than seasonal projects.
@@ -465,48 +465,48 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
 
 
 
-### Potential Solutions
+### 🌟 Potential Solutions
 
- - **Budget Optimization:**
+ - **🟢Budget Optimization:**
 
    - Review high-spending categories like **travel**, **books**, and **telecom** to identify *cost-saving opportunities*.
 
    - Implement bulk purchasing strategies for office supplies and telecom services.
 
 
- - **Expense Justification:**
+ - **🟢Expense Justification:**
 
    - Large transactions should be audited for necessity and efficiency.
 
    - Departmental spending reports should highlight essential vs. discretionary costs.
 
 
- - **Seasonal Adjustments:**
+ - **🟢Seasonal Adjustments:**
 
    - Lower spending during **winter** suggests potential budget reallocation strategies to balance yearly expenses.
 
 
-### Conclusion
+### ✅ Conclusion
 
- - The **Delaware state budget** is significantly allocated to telecom, office supplies, books, and travel.
+ - 📌 The **Delaware state budget** is significantly allocated to telecom, office supplies, books, and travel.
 
- - Spending is fairly consistent throughout the year, with peaks in fall and spring.
+ - 📌 Spending is fairly consistent throughout the year, with peaks in fall and spring.
 
- - Key merchants and categories indicate ongoing operational costs rather than one-time expenditures.
+ - 📌 Key merchants and categories indicate ongoing operational costs rather than one-time expenditures.
 
 
-### Recommendations
+### ✅ Recommendations
 
- - **1. Audit Top Categories Spending:**
+ - **📌1. Audit Top Categories Spending:**
    - Focus on **travel, lodging, and telecom** expenses for potential reductions.
 
- - **2. Improve Procurement Strategies:**
+ - **📌2. Improve Procurement Strategies:**
    - Negotiate better deals with frequent vendors like Grainger and Verizon.
 
- - **3. Seasonal Budget Planning:**
+ - **📌3. Seasonal Budget Planning:**
    - Balance **fall and spring spending** by distributing expenses more evenly across the year.
 
- - **4. Transparency & Reporting:**
+ - **📌4. Transparency & Reporting:**
    - Publish **detailed reports** on high-value transactions to improve accountability.
 
 
