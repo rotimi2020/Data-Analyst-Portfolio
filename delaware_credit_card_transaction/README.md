@@ -441,6 +441,12 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
 ---
 
 ## 📌 Power BI Visualization Report 
+Below are preview images of the Power BI reports developed for this project. They illustrate key visualizations, insights, and the overall layout of the report. 
+Feel free to explore the visuals to understand the data story.
+
+| Expenditure Analysis Report | Time Based Expenditure Report |
+|----------------|----------------|
+| ![Expenditure Analysis Report](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/report_screenshots/expenditure_analysis_reports.PNG) | ![Time Based Expenditure Report](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/report_screenshots/time_based_expenditure_reports.PNG) |
 ### 📁 Expenditure Analysis Report
  <img src = "REPORT - Expenditure Analysis Report.PNG" width="500" alt="" /><br>
 ### 📑 Time Based Expenditure Report
