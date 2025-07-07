@@ -32,15 +32,15 @@ The Delaware checkbook dataset, which includes credit card transactions, is quit
 ### 🟡 Data Definition
 The dataset contains the following columns:
 
-- **📌FISCAL_YEAR :** The fiscal year in which the transaction occurred.
-- **📌FISCAL_PERIOD :** The fiscal period (month) in which the transaction occurred. For example, 1 = July, 2 = August, 3 = September, 
+- **FISCAL_YEAR :** The fiscal year in which the transaction occurred.
+- **FISCAL_PERIOD :** The fiscal period (month) in which the transaction occurred. For example, 1 = July, 2 = August, 3 = September, 
                       7 =  January, 12 = June. 
-- **📌DEPT_NAME :** The name of the department responsible for the transaction.
-- **📌DIV_NAME :** The name of the division within the department responsible for the transaction.
-- **📌MERCHANT :** The name of the merchant or vendor involved in the transaction.
-- **📌CAT_DESCR :** The category description of the transaction.
-- **📌TRANS_DT :** The date on which the transaction occurred.
-- **📌MERCHANDISE_AMT :** The monetary amount of the transaction.
+- **DEPT_NAME :** The name of the department responsible for the transaction.
+- **DIV_NAME :** The name of the division within the department responsible for the transaction.
+- **MERCHANT :** The name of the merchant or vendor involved in the transaction.
+- **CAT_DESCR :** The category description of the transaction.
+- **TRANS_DT :** The date on which the transaction occurred.
+- **MERCHANDISE_AMT :** The monetary amount of the transaction.
 
 ## 🧾 Overview
 The provided SQL script includes a series of operations aimed at analyzing financial transaction data from the Delaware_Checkbook table. The queries cover data extraction, duplicate detection, data cleaning, the creation of new columns for categorization, and various analyses to assess expenditure trends.<br>
