@@ -550,9 +550,45 @@ You can **download the complete Power BI report** in PDF format:
    - Publish **detailed reports** on high-value transactions to improve accountability.
 
 ---
-### ✅ Conclusion
 
-The Delaware Checkbook dataset analysis provides key insights into financial transactions, supporting better oversight and decision-making. These findings help optimize resource allocation and enhance transparency.
+## Export & Documentation
+- All code, queries, and analysis documented in Jupyter notebooks.
+- Data stored securely with links to external datasets for large files.
+- Visualization dashboards created in Power BI for executive reporting.
 
 ---
+
+## ⚙️ Installation
+
+To set up the project environment on your local machine, follow these steps:
+
+### ✅ Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/rotimi2020/Data-Analyst-Portfolio.git
+cd Data-Analyst-Portfolio/rossmann_store_sales_analysis
+```
+
+### ✅ Step 2: Install Dependencies
+Make sure Python 3.8 or later is installed. Then run:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🙋‍♂️ Author
+
+**Rotimi Sheriff Omosewo**  
+📧 Email: [omoseworotimi@gmail.com](mailto:omoseworotimi@gmail.com)  
+📞 Contact: +234 903 441 1444  
+🔗 LinkedIn: [linkedin.com/in/rotimi-sheriff-omosewo-939a806b](https://www.linkedin.com/in/rotimi-sheriff-omosewo-939a806b)  
+📁 Project GitHub: [github.com/rotimi2020/Data-Analyst-Portfolio](https://github.com/rotimi2020/Data-Analyst-Portfolio)
+
+> This project is part of my Data Analytics Portfolio. It demonstrates business intelligence, forecasting, and machine learning skills using real-world data and modern tools.
+
+---
+
+
 
