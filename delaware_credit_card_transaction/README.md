@@ -447,10 +447,13 @@ Feel free to explore the visuals to understand the data story.
 | Expenditure Analysis Report | Time Based Expenditure Report |
 |----------------|----------------|
 | ![Expenditure Analysis Report](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/report_screenshots/expenditure_analysis_reports.PNG) | ![Time Based Expenditure Report](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/report_screenshots/time_based_expenditure_reports.PNG) |
-### 📁 Expenditure Analysis Report
- <img src = "REPORT - Expenditure Analysis Report.PNG" width="500" alt="" /><br>
-### 📑 Time Based Expenditure Report
- <img src = "REPORT - Time Based Expenditure Report.PNG" width="500" alt="" />
+
+---
+
+### 📑 Download the Full Power BI Report as PDF
+
+You can **download the complete Power BI report** in PDF format:  
+**[Download PDF Report](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/reports/delaware_checkbook_reports.pdf)**
 
 ---
 
