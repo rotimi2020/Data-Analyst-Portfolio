@@ -6,10 +6,10 @@ The *"State of Delaware Checkbook"* project is an extensive analysis of the stat
 ## Objectives 
 The *primary objective* is to improve financial transparency and provide stakeholders with a comprehensive view of the state’s expenditures.
 
-## Problem Definition
+## 📌 Problem Definition
 The problem is to analyze a large dataset of credit card transactions to identify spending patterns and provide insights for better financial management.
 
-## Problem Statement
+## 🎯 Problem Statement
 The *State of Delaware Checkbook dataset* contains financial transaction data for various departments and divisions. This dataset includes key details such as the fiscal year, fiscal period, department and division names, merchant details, transaction dates, category descriptions, and transaction amounts.<br> <br>
 The *primary goal* is to analyze this dataset to gain insights into financial transactions, identify spending patterns, and generate meaningful visualizations for better decision-making.
 
@@ -42,13 +42,13 @@ The dataset contains the following columns:
 - **TRANS_DT :** The date on which the transaction occurred.
 - **MERCHANDISE_AMT :** The monetary amount of the transaction.
 
-## Overview
+## 🧾 Overview
 The provided SQL script includes a series of operations aimed at analyzing financial transaction data from the Delaware_Checkbook table. The queries cover data extraction, duplicate detection, data cleaning, the creation of new columns for categorization, and various analyses to assess expenditure trends.<br>
   Here's a concise summary of the SQL queries provided for analyzing the Delaware_Checkbook database.
   Get the full Code [here](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/sql/delaware_checkbook.sql)
 
-### Sections of the SQL Script
-- **View Data and Counts**<br>
+### 🔍 Sections of the SQL Script
+- 📊 **View Data and Counts**<br>
 
   - Retrieve all records from Delaware_Checkbook.
    ```sql
