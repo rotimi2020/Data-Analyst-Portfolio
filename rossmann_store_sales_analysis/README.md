@@ -804,17 +804,17 @@ Sales With Promo = CALCULATE(SUM(Sales[Sales]), Sales[Promo] = 1)
 
 ---
 
+## Conclusions
+This project successfully demonstrated the value of integrated SQL and Python workflows for large-scale retail sales analysis. 
+The models and insights support business strategies to enhance sales performance, optimize stock levels, and improve customer satisfaction.
+
+---
+
 ## Recommendations
 - Implement targeted marketing during peak seasons identified.
 - Use the sales forecast in inventory planning and staffing.
 - Continue monitoring external factors like holidays and competitions.
 - Regularly update models with new data for ongoing accuracy.
-
----
-
-## Conclusions
-This project successfully demonstrated the value of integrated SQL and Python workflows for large-scale retail sales analysis. 
-The models and insights support business strategies to enhance sales performance, optimize stock levels, and improve customer satisfaction.
 
 ---
 
