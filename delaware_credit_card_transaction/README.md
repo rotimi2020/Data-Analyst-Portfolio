@@ -104,13 +104,11 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   
   ```
 
----
 
 -  📊 **Check for Null Values**
 
   - Perform distinct counts of records for several key columns (e.g., FISCAL_YEAR, FISCAL_PERIOD, DEPT_NAME) to identify any null entries.No Null values are found
 
----
 
 - 📊 **Remediate Data Issues**
 
@@ -128,7 +126,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [MERCHANDISE_AMT],
   [COUNT ROWS] ASC 
   ```
----
+
 
 - 📊 **Create New Columns**
 
@@ -155,7 +153,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [dbo].[Delaware_Checkbook];
   ```
 
----
+
 
 - 📊 **Create a Season Column**
 
@@ -181,7 +179,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   FROM
   [dbo].[Delaware_Checkbook];
   ```
----
+
 
 
 - 📊 **Check for Duplicates**<br>
@@ -222,7 +220,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   WHERE
   row_num > 1 
   ```
----
+
 
 - 📊 **Remove Duplicate Rows**
 
