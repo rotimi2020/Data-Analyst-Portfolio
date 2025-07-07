@@ -1,18 +1,27 @@
 # ✅ Data cleaning and Visualization : Using SQL and Power BI
 
+---
+
 ## 🌸 Project Overview
 The *"State of Delaware Checkbook"* project is an extensive analysis of the state’s credit card transactions. The goal is to derive meaningful insights from the data to enhance financial transparency and accountability.
+
+---
 
 ## 🌟 Objectives 
 The *primary objective* is to improve financial transparency and provide stakeholders with a comprehensive view of the state’s expenditures.
 
+---
+
 ## 📌 Problem Definition
 The problem is to analyze a large dataset of credit card transactions to identify spending patterns and provide insights for better financial management.
+
+---
 
 ## 🎯 Problem Statement
 The *State of Delaware Checkbook dataset* contains financial transaction data for various departments and divisions. This dataset includes key details such as the fiscal year, fiscal period, department and division names, merchant details, transaction dates, category descriptions, and transaction amounts.<br> <br>
 The *primary goal* is to analyze this dataset to gain insights into financial transactions, identify spending patterns, and generate meaningful visualizations for better decision-making.
 
+---
 
 ## 🔗 Dataset
 This dataset contains credit card transaction details for various departments within the State of Delaware. It includes a total of 1,539,693 records, with details about the fiscal year, department, vendor, transaction date, and amounts involved.
@@ -26,8 +35,7 @@ The Delaware checkbook dataset, which includes credit card transactions, is quit
   - Total Number of Anomaly Rows: *173,518*
   - Total Number of Rows After Removing Anomalies: *1,263,675* <br>
 
-
-
+---
 
 ### 🟡 Data Definition
 The dataset contains the following columns:
@@ -42,10 +50,14 @@ The dataset contains the following columns:
 - **TRANS_DT :** The date on which the transaction occurred.
 - **MERCHANDISE_AMT :** The monetary amount of the transaction.
 
+---  
+
 ## 🧾 Overview
 The provided SQL script includes a series of operations aimed at analyzing financial transaction data from the Delaware_Checkbook table. The queries cover data extraction, duplicate detection, data cleaning, the creation of new columns for categorization, and various analyses to assess expenditure trends.<br>
   Here's a concise summary of the SQL queries provided for analyzing the Delaware_Checkbook database.
   Get the full Code [here](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/sql/delaware_checkbook.sql)
+
+---
 
 ### 🔍 Sections of the SQL Script
 - 📊 **View Data and Counts**<br>
@@ -92,9 +104,13 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   
   ```
 
+---
+
 -  📊 **Check for Null Values**
 
   - Perform distinct counts of records for several key columns (e.g., FISCAL_YEAR, FISCAL_PERIOD, DEPT_NAME) to identify any null entries.No Null values are found
+
+---
 
 - 📊 **Remediate Data Issues**
 
@@ -112,6 +128,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [MERCHANDISE_AMT],
   [COUNT ROWS] ASC 
   ```
+---
 
 - 📊 **Create New Columns**
 
@@ -138,6 +155,8 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [dbo].[Delaware_Checkbook];
   ```
 
+---
+
 - 📊 **Create a Season Column**
 
   - Add another column for FISCAL_PERIOD_SEASON and populate it with the corresponding season based on month values.
@@ -162,6 +181,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   FROM
   [dbo].[Delaware_Checkbook];
   ```
+---
 
 
 - 📊 **Check for Duplicates**<br>
@@ -202,6 +222,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   WHERE
   row_num > 1 
   ```
+---
 
 - 📊 **Remove Duplicate Rows**
 
@@ -238,6 +259,8 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   WHERE
   row_num > 1
   ```
+---
+
 ## 📌 Analysis
 -  📊 **Total number of transactions:** Count of all purchase transactions within the specified timeframe
   ```sql
@@ -331,7 +354,12 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   [CAT_DESCR_Expenditure] desc 
   ```
 
+---
+
 #  📊 Power BI
+
+---
+
 ## 📑 Expenditure DAX Measures  
 
 This document outlines the key DAX measures used to calculate various expenditure metrics from the Delaware Checkbook data.  
@@ -412,6 +440,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
     DATESYTD(Delaware_Checkbook[TRANS_DT])  
            )
   ```
+---
 
 ## 📌 Power BI Visualization Report 
 ### 📁 Expenditure Analysis Report
@@ -419,7 +448,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
 ### 📑 Time Based Expenditure Report
  <img src = "REPORT - Time Based Expenditure Report.PNG" width="500" alt="" />
 
-
+---
 
 
 ### ✅ Key Findings
@@ -456,6 +485,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
   - **September, October, August, and March** each had over **$14M** in spending.
   - The *lowest spending* occurred in **June and January**.
  
+---
 
 ### ✅ Insights
 - **Heavy spending on books, airlines, and lodging** suggests significant travel and education-related costs.
@@ -463,7 +493,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
 - **Consistent high spending across seasons** suggests ongoing operations rather than seasonal projects.
 - **Top merchants like Grainger and Verizon** imply recurring contracts for supplies and communication.
 
-
+---
 
 ### 🌟 Potential Solutions
 
@@ -486,6 +516,8 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
    - Lower spending during **winter** suggests potential budget reallocation strategies to balance yearly expenses.
 
 
+---
+
 ### ✅ Conclusion
 
  - 📌 The **Delaware state budget** is significantly allocated to telecom, office supplies, books, and travel.
@@ -494,6 +526,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
 
  - 📌 Key merchants and categories indicate ongoing operational costs rather than one-time expenditures.
 
+---
 
 ### ✅ Recommendations
 
@@ -509,6 +542,6 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
  - **📌4. Transparency & Reporting:**
    - Publish **detailed reports** on high-value transactions to improve accountability.
 
-
+---
 
 
