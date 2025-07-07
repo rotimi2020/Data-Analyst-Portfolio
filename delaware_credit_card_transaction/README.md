@@ -550,5 +550,9 @@ You can **download the complete Power BI report** in PDF format:
    - Publish **detailed reports** on high-value transactions to improve accountability.
 
 ---
+### ✅ Conclusion
 
+The Delaware Checkbook dataset analysis provides key insights into financial transactions, supporting better oversight and decision-making. These findings help optimize resource allocation and enhance transparency.
+
+---
 
