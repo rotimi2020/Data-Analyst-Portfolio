@@ -500,7 +500,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
   ```
 ---
 
-<h2 id="power_bi_visualization_report > 📌 Power BI Visualization Report </h2>
+<h2 id="power_bI_visualization_report" > 📌 Power BI Visualization Report </h2>
 Below are preview images of the Power BI reports developed for this project. They illustrate key visualizations, insights, and the overall layout of the report. 
 Feel free to explore the visuals to understand the data story.
 
