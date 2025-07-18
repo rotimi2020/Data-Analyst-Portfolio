@@ -7,7 +7,7 @@ The *"State of Delaware Checkbook"* project is an extensive analysis of the stat
 
 ---
 
-# 📁 Project Directory Structure
+<h2 id="project_irectory_tructure"> 📁 Project Directory Structure </h2>
 
 This project repository is organized into modular folders for better navigation and understanding. Each folder contains specific resources (SQL scripts, DAX measures, Power BI files, etc.) related to the **Delaware Checkbook Credit Card Transaction Analysis** project.
 
