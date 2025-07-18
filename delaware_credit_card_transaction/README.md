@@ -44,16 +44,20 @@ The dataset originally used was sourced from the [State of Delaware Open Data Po
 - [Project Directory Structure](#project_directory_structure)
 - [Objectives](#objectives)
 - [Problem Definition](#problem-definition)
-- [Dataset Description](#dataset-description)
-  - [Files Included](#files-included)
-  - [Data Source Disclaimer](#data-source-disclaimer)
-- [Data Processing & Cleaning](#data-processing--cleaning)
-- [SQL Overview](#sql-overview)
-  - [SQL Structure](#sql-structure)
-- [Entity Relationship Diagram (ERD)](#entity-relationship-diagram-erd)
-- [Power BI Dashboard](#power-bi-dashboard)
-  - [Dashboard Structure](#dashboard-structure)
-  - [Pages & Visuals](#pages--visuals)
+- [Dataset](#dataset)
+- [Data Definition](#data_definition)
+- [Overview](#overview)
+- [Analysis](#analysis)
+- [Power BI](#power_bI)
+  - [Expenditure DAX Measures](#expenditure_dAX_measures)
+  - [Power BI Visualization Report](#power_bI_visualization_report)
+  - [Download the Full Power BI Report as PDF](#download_the_full_power_bI_report_as_pDF)
+- [Key Findings](#key_findings)
+- [Insights](#insights
+- [Potential Solutions](#potential_solutions)
+- [Conclusion](#conclusion)
+- [Recommendations](#recommendations)
+- [Export & Documentation](#export__documentation)
   - [KPIs and Measures](#kpis-and-measures)
 - [DAX Measures Overview](#dax-measures-overview)
 - [Key Findings & Recommendations](#key-findings--recommendations)
@@ -79,7 +83,7 @@ The *primary goal* is to analyze this dataset to gain insights into financial tr
 
 ---
 
-## 🔗 Dataset
+<h2 id="dataset"> 🔗 Dataset </h2>
 This dataset contains credit card transaction details for various departments within the State of Delaware. It includes a total of 1,539,693 records, with details about the fiscal year, department, vendor, transaction date, and amounts involved.
 <br> <br>
 The Delaware checkbook dataset, which includes credit card transactions, is quite large—approximately 180 MB. This file size makes it challenging to upload directly to GitHub.<br>
@@ -98,7 +102,7 @@ The Delaware checkbook dataset, which includes credit card transactions, is quit
 
 ---
 
-### 🟡 Data Definition
+<h2 id="data_definition" >🟡 Data Definition </h2>
 The dataset contains the following columns:
 
 - **FISCAL_YEAR :** The fiscal year in which the transaction occurred.
@@ -113,7 +117,7 @@ The dataset contains the following columns:
 
 ---  
 
-## 🧾 Overview
+<h2 id="overview" > 🧾 Overview </h2>
 The provided SQL script includes a series of operations aimed at analyzing financial transaction data from the Delaware_Checkbook table. The queries cover data extraction, duplicate detection, data cleaning, the creation of new columns for categorization, and various analyses to assess expenditure trends.<br>
   Here's a concise summary of the SQL queries provided for analyzing the Delaware_Checkbook database.
   Get the full Code [here](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/sql/delaware_checkbook.sql)
@@ -320,7 +324,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
   ```
 ---
 
-## 📌 Analysis
+<h2 id="analysis" > 📌 Analysis </h2>
 -  📊 **Total number of transactions:** Count of all purchase transactions within the specified timeframe
   ```sql
   SELECT
@@ -415,11 +419,11 @@ The provided SQL script includes a series of operations aimed at analyzing finan
 
 ---
 
-#  📊 Power BI
+<h1 id="power_bI" >  📊 Power BI </h1>
 
 ---
 
-## 📑 Expenditure DAX Measures  
+<h1 id="expenditure_dAX_measures" > 📑 Expenditure DAX Measures </h1>  
 
 This document outlines the key DAX measures used to calculate various expenditure metrics from the Delaware Checkbook data.  
 Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/dax/powerbi_%20dax_formulas.txt)
@@ -501,7 +505,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
   ```
 ---
 
-## 📌 Power BI Visualization Report 
+<h2 id="power_bI_visualization_report > 📌 Power BI Visualization Report </h2>
 Below are preview images of the Power BI reports developed for this project. They illustrate key visualizations, insights, and the overall layout of the report. 
 Feel free to explore the visuals to understand the data story.
 
@@ -511,7 +515,7 @@ Feel free to explore the visuals to understand the data story.
 
 ---
 
-### 📑 Download the Full Power BI Report as PDF
+<h2 id="download_the_full_power_bI_report_as_pDF" > 📑 Download the Full Power BI Report as PDF </h2>
 
 You can **download the complete Power BI report** in PDF format:  
 **[Download PDF Report](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/delaware_credit_card_transaction/reports/delaware_checkbook_reports.pdf)**
@@ -519,7 +523,7 @@ You can **download the complete Power BI report** in PDF format:
 ---
 
 
-### ✅ Key Findings
+<h3 id="key_findings" > ✅ Key Findings </h3>
 
 - **🛒1. Total Expenditure:**
   - The **total recorded spending** is **$152.38 million**.
@@ -555,7 +559,7 @@ You can **download the complete Power BI report** in PDF format:
  
 ---
 
-### ✅ Insights
+<h3 id="insights" > ✅ Insights </h3>
 - **Heavy spending on books, airlines, and lodging** suggests significant travel and education-related costs.
 - **Telecom and office supply expenses** indicate a major investment in communication and administrative needs.
 - **Consistent high spending across seasons** suggests ongoing operations rather than seasonal projects.
@@ -563,7 +567,7 @@ You can **download the complete Power BI report** in PDF format:
 
 ---
 
-### 🌟 Potential Solutions
+<h3 id="potential_solutions" > 🌟 Potential Solutions </h3>
 
  - **🟢Budget Optimization:**
 
@@ -586,7 +590,7 @@ You can **download the complete Power BI report** in PDF format:
 
 ---
 
-### ✅ Conclusion
+<h3 id="conclusion" > ✅ Conclusion </h3>
 
  - 📌 The **Delaware state budget** is significantly allocated to telecom, office supplies, books, and travel.
 
@@ -596,7 +600,7 @@ You can **download the complete Power BI report** in PDF format:
 
 ---
 
-### ✅ Recommendations
+<h3 id="recommendations" > ✅ Recommendations </h3>
 
  - **📌1. Audit Top Categories Spending:**
    - Focus on **travel, lodging, and telecom** expenses for potential reductions.
@@ -612,7 +616,7 @@ You can **download the complete Power BI report** in PDF format:
 
 ---
 
-## Export & Documentation
+<h2 id="export--Documentation" > Export & Documentation </h2>
 - All code, queries, and analysis documented in Jupyter notebooks.
 - Data stored securely with links to external datasets for large files.
 - Visualization dashboards created in Power BI for executive reporting.
