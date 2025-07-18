@@ -1,0 +1,1 @@
+This Power BI report (delaware_checkbook.pbix) provides a visual and analytical overview of Delaware State Government credit card transactions. It helps uncover spending patterns, key merchants, departmental expenses, and seasonal trends using interactive dashboards powered by DAX formulas
