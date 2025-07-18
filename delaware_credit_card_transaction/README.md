@@ -25,7 +25,7 @@ The *primary goal* is to analyze this dataset to gain insights into financial tr
 
 ## 🔗 Dataset
 This dataset contains credit card transaction details for various departments within the State of Delaware. It includes a total of 1,539,693 records, with details about the fiscal year, department, vendor, transaction date, and amounts involved.
-You can download the dataset [here](https://data.delaware.gov/Government-and-Finance/Credit-Card-Spend-by-Merchant/8pzf-ge27) <br> <br>
+<br> <br>
 The Delaware checkbook dataset, which includes credit card transactions, is quite large—approximately 180 MB. This file size makes it challenging to upload directly to GitHub.<br>
 
 🔗 [Credit Card Spend by Merchant – Delaware](https://data.delaware.gov/Government-and-Finance/Credit-Card-Spend-by-Merchant/8pzf-ge27)
