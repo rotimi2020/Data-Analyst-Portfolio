@@ -1,1 +1,1 @@
-
+This project presents an Entity Relationship Diagram (ERD) for the Delaware State Government Credit Card Transactions dataset. The ERD visually models how key tables and attributes in the dataset are structured and related, helping to better understand the flow and organization of financial transaction data.
