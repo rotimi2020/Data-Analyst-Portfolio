@@ -41,6 +41,7 @@ The dataset originally used was sourced from the [State of Delaware Open Data Po
 ## 📑 Table of Contents
 
 - [Project Overview](#project-overview)
+- [Project Directory Structure](#project_directory_structure)
 - [Objectives](#objectives)
 - [Problem Definition](#problem-definition)
 - [Dataset Description](#dataset-description)
