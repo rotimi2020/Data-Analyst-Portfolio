@@ -67,7 +67,7 @@ The *primary objective* is to improve financial transparency and provide stakeho
 
 ---
 
-<h2 id="problem_definition"> 📌 Problem Definition </h2>
+<h2 id="problem-definition"> 📌 Problem Definition </h2>
 The problem is to analyze a large dataset of credit card transactions to identify spending patterns and provide insights for better financial management.
 
 ---
