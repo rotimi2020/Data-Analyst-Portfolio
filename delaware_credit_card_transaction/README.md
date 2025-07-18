@@ -583,8 +583,8 @@ pip install -r requirements.txt
 **Rotimi Sheriff Omosewo**  
 📧 Email: [omoseworotimi@gmail.com](mailto:omoseworotimi@gmail.com)  
 📞 Contact: +234 903 441 1444  
-🔗 LinkedIn: [linkedin.com/in/rotimi-sheriff-omosewo-939a806b](https://www.linkedin.com/in/rotimi-sheriff-omosewo-939a806b)  
-📁 Project GitHub: [github.com/rotimi2020/Data-Analyst-Portfolio](https://github.com/rotimi2020/Data-Analyst-Portfolio)
+🔗 LinkedIn: [linkedin.com/in/rotimi-sheriff-omosewo](https://www.linkedin.com/in/rotimi-sheriff-omosewo-939a806b)  
+📁 Project GitHub: [github.com/rotimi2020](https://github.com/rotimi2020/Data-Analyst-Portfolio)
 
 > This project is part of my Data Analytics Portfolio. It demonstrates business intelligence, forecasting, and machine learning skills using real-world data and modern tools.
 
