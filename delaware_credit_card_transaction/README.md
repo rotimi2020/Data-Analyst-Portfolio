@@ -38,6 +38,30 @@ The dataset originally used was sourced from the [State of Delaware Open Data Po
 
 --- 
 
+## 📑 Table of Contents
+
+- [📝 Project Overview](#-project-overview)
+- [🎯 Objectives](#-objectives)
+- [📌 Problem Definition](#-problem-definition)
+- [💾 Dataset Description](#-dataset-description)
+  - [📂 Files Included](#files-included)
+  - [⚠️ Data Source Disclaimer](#data-source-disclaimer)
+- [🧹 Data Processing & Cleaning](#-data-processing--cleaning)
+- [🛠 SQL Overview](#-sql-overview)
+  - [📄 SQL Structure](#sql-structure)
+- [🔗 Entity Relationship Diagram (ERD)](#-entity-relationship-diagram-erd)
+- [📊 Power BI Dashboard](#-power-bi-dashboard)
+  - [📋 Dashboard Structure](#dashboard-structure)
+  - [📈 Pages & Visuals](#pages--visuals)
+  - [📌 KPIs and Measures](#kpis-and-measures)
+- [🔢 DAX Measures Overview](#-dax-measures-overview)
+- [🔍 Key Findings & Recommendations](#-key-findings--recommendations)
+- [🧰 Tools & Technologies Used](#-tools--technologies-used)
+- [🗂 Export & Documentation](#-export--documentation)
+- [👤 Author](#-author)
+
+--- 
+
 ## 🌟 Objectives 
 The *primary objective* is to improve financial transparency and provide stakeholders with a comprehensive view of the state’s expenditures.
 
