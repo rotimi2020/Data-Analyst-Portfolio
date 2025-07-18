@@ -35,7 +35,6 @@ The dataset originally used was sourced from the [State of Delaware Open Data Po
 | **`sql/`**                                                     | SQL scripts for cleaning, transforming, and preparing the dataset           |
 | ├── `README.md`                                                | Explanation of SQL logic and database preparation steps                     |
 | └── `delaware_checkbook.sql`                                   | SQL queries used for data preprocessing and exploration                     |
-| **`requirements.txt`**                                         | List of Python libraries and dependencies used in any scripting (if needed) |
 
 --- 
 
