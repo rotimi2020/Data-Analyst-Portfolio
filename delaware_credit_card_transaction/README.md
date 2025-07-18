@@ -28,6 +28,11 @@ This dataset contains credit card transaction details for various departments wi
 You can download the dataset [here](https://data.delaware.gov/Government-and-Finance/Credit-Card-Spend-by-Merchant/8pzf-ge27) <br> <br>
 The Delaware checkbook dataset, which includes credit card transactions, is quite large—approximately 180 MB. This file size makes it challenging to upload directly to GitHub.<br>
 
+🔗 [Credit Card Spend by Merchant – Delaware](https://data.delaware.gov/Government-and-Finance/Credit-Card-Spend-by-Merchant/8pzf-ge27)
+
+⚠️ **Note**: As of [July 2025], the link appears to be broken or the dataset has been moved/removed from the portal. This project remains valid as a demonstration of SQL and Power BI data analysis skills using the originally available data.
+
+
 - **📑Summary Statistics**
   - Total Number of Rows: *1,539,693*
   - Total Number of Duplicate Rows: *102,500*
