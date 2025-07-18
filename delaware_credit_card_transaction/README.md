@@ -50,7 +50,7 @@ The dataset originally used was sourced from the [State of Delaware Open Data Po
 - [Analysis](#analysis)
 - [Power BI](#power_bI)
   - [Expenditure DAX Measures](#expenditure_dAX_measures)
-  - [Power BI Visualization Report](#power_bI_visualization_report)
+  - [Power BI Visualization Report](#power_bi_visualization_report)
   - [Download the Full Power BI Report as PDF](#download_the_full_power_bI_report_as_pDF)
 - [Key Findings](#key_findings)
 - [Insights](#insights)
@@ -500,7 +500,7 @@ Get the Power BI Dax [Code here](https://github.com/rotimi2020/Data-Analyst-Port
   ```
 ---
 
-<h2 id="power_bI_visualization_report > 📌 Power BI Visualization Report </h2>
+<h2 id="power_bi_visualization_report > 📌 Power BI Visualization Report </h2>
 Below are preview images of the Power BI reports developed for this project. They illustrate key visualizations, insights, and the overall layout of the report. 
 Feel free to explore the visuals to understand the data story.
 
