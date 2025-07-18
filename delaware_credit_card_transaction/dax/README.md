@@ -1,1 +1,1 @@
-
+This project provides a comprehensive analysis of Delaware state government credit card transactions using Power BI and DAX. The goal is to extract actionable insights from transaction data by analyzing expenditure trends, categories, and seasonal patterns.
