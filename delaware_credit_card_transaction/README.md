@@ -638,7 +638,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🙋‍♂️ Author
+<h2 id="author" > 🙋‍♂️ Author </h2>
 
 **Rotimi Sheriff Omosewo**  
 📧 Email: [omoseworotimi@gmail.com](mailto:omoseworotimi@gmail.com)  
