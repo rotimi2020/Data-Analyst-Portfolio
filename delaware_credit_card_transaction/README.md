@@ -7,6 +7,38 @@ The *"State of Delaware Checkbook"* project is an extensive analysis of the stat
 
 ---
 
+# 📁 Project Directory Structure
+
+This project repository is organized into modular folders for better navigation and understanding. Each folder contains specific resources (SQL scripts, DAX measures, Power BI files, etc.) related to the **Delaware Checkbook Credit Card Transaction Analysis** project.
+
+The dataset originally used was sourced from the [State of Delaware Open Data Portal](https://data.delaware.gov/Government-and-Finance/Credit-Card-Spend-by-Merchant/8pzf-ge27), under the title **“Credit Card Spend by Merchant”**.  
+> ⚠️ **Note:** This link is currently broken or the dataset has been removed from public access. A local copy has been preserved in the repository under the `data/` folder for reproducibility purposes.
+
+| Folder / File                                                  | Description                                                                 |
+| -------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| **`dax/`**                                                     | Contains DAX formulas and documentation used in Power BI for analysis       |
+| ├── `README.md`                                                | Overview of key DAX KPIs and calculations                                   |
+| └── `powerbi_dax_formulas.txt`                                 | Complete list of DAX expressions used for visuals and metrics               |
+| **`er_diagram/`**                                              | Entity Relationship Diagram used in Power BI and data modeling              |
+| ├── `README.md`                                                | Explanation of ER diagram components and structure                          |
+| └── `entity_relationship_diagram.pdf`                          | PDF version of the ER diagram                                               |
+| **`powerbi/`**                                                 | Power BI report files for visual analytics and reporting                    |
+| ├── `README.md`                                                | Description of the report layout, pages, and visual insights                |
+| └── `delaware_checkbook.pbix`                                  | Main Power BI report file                                                   |
+| **`report_screenshots/`**                                      | Exported images from Power BI dashboards and reports                        |
+| ├── `README.md`                                                | Overview of visual reports included                                         |
+| ├── `expenditure_analysis_reports.PNG`                         | Breakdown of expenditure by category and merchant                           |
+| ├── `time_based_expenditure_reports.PNG`                       | Time-based trends and forecasting insights                                  |
+| **`reports/`**                                                 | Packaged Power BI dashboards with performance insights                      |
+| ├── `README.md`                                                | High-level summary of insights and key findings                             |
+| └── `delaware_checkbook_reports.pbix`                          | Supplementary report on trends and analysis                                 |
+| **`sql/`**                                                     | SQL scripts for cleaning, transforming, and preparing the dataset           |
+| ├── `README.md`                                                | Explanation of SQL logic and database preparation steps                     |
+| └── `delaware_checkbook.sql`                                   | SQL queries used for data preprocessing and exploration                     |
+| **`requirements.txt`**                                         | List of Python libraries and dependencies used in any scripting (if needed) |
+
+--- 
+
 ## 🌟 Objectives 
 The *primary objective* is to improve financial transparency and provide stakeholders with a comprehensive view of the state’s expenditures.
 
