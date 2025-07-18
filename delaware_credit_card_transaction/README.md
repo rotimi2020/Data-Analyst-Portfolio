@@ -2,7 +2,7 @@
 
 ---
 
-## 🌸 Project Overview
+<h2 id="project-overview"> 🌸 Project Overview</h2>
 The *"State of Delaware Checkbook"* project is an extensive analysis of the state’s credit card transactions. The goal is to derive meaningful insights from the data to enhance financial transparency and accountability.
 
 ---
