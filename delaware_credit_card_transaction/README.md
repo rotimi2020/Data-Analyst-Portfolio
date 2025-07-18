@@ -53,15 +53,10 @@ The dataset originally used was sourced from the [State of Delaware Open Data Po
   - [Power BI Visualization Report](#power_bI_visualization_report)
   - [Download the Full Power BI Report as PDF](#download_the_full_power_bI_report_as_pDF)
 - [Key Findings](#key_findings)
-- [Insights](#insights
+- [Insights](#insights)
 - [Potential Solutions](#potential_solutions)
 - [Conclusion](#conclusion)
 - [Recommendations](#recommendations)
-- [Export & Documentation](#export__documentation)
-  - [KPIs and Measures](#kpis-and-measures)
-- [DAX Measures Overview](#dax-measures-overview)
-- [Key Findings & Recommendations](#key-findings--recommendations)
-- [Tools & Technologies Used](#tools--technologies-used)
 - [Export & Documentation](#export--documentation)
 - [Author](#author)
 
