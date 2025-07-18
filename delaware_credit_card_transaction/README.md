@@ -62,17 +62,17 @@ The dataset originally used was sourced from the [State of Delaware Open Data Po
 
 --- 
 
-## 🌟 Objectives 
+<h2 id="objectives"> 🌟 Objectives </h2>
 The *primary objective* is to improve financial transparency and provide stakeholders with a comprehensive view of the state’s expenditures.
 
 ---
 
-## 📌 Problem Definition
+<h2 id="problem_definition"> 📌 Problem Definition </h2>
 The problem is to analyze a large dataset of credit card transactions to identify spending patterns and provide insights for better financial management.
 
 ---
 
-## 🎯 Problem Statement
+<h2 id="problem_statement"> 🎯 Problem Statement </h2>
 The *State of Delaware Checkbook dataset* contains financial transaction data for various departments and divisions. This dataset includes key details such as the fiscal year, fiscal period, department and division names, merchant details, transaction dates, category descriptions, and transaction amounts.<br> <br>
 The *primary goal* is to analyze this dataset to gain insights into financial transactions, identify spending patterns, and generate meaningful visualizations for better decision-making.
 
