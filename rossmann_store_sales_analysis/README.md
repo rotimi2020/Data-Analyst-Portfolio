@@ -713,7 +713,7 @@ This section breaks down insights directly from the Power BI charts to show how 
 
 --- 
 
-## ✅ Insights & Key Findings
+<h2 id="nisights_key_findings"> ✅ Insights & Key Findings </h2>
 
 - 📌 Sales show strong seasonal patterns, especially around holidays like Easter and peak months such as March.
 - 📌 Store Type A is the dominant contributor to both sales and customer traffic; Store Type B performs poorly.
@@ -725,7 +725,7 @@ This section breaks down insights directly from the Power BI charts to show how 
 
 ---
 
-## ✅ Business Recommendations
+<h2 id="business_recommendations"> ✅ Business Recommendations </h2>
 
 - 📌 Replicate successful promotional strategies from March in lower-performing months like September.
 - 📌 Prioritize promotional campaigns during weekends and Q4 to maximize ROI.
