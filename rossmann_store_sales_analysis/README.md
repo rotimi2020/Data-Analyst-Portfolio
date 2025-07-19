@@ -98,12 +98,12 @@ The goal is to generate actionable insights and accurate sales predictions for s
 - Visualize insights and communicate findings effectively.
 
 ---
-## 📌 Problem Definition
+<h2 id="problem_definition"> 📌 Problem Definition </h2>
 Rossmann, a major drugstore chain, aims to optimize its inventory and staffing by accurately forecasting daily sales at individual stores. The challenge involves managing large datasets, addressing missing data and outliers, and capturing complex sales patterns influenced by promotions, holidays, and store-specific factors. Effective forecasting will help Rossmann improve operational efficiency and customer satisfaction.
 
 ---
 
-## 🎯 Problem Statement
+<h2 id="problem_statement"> 🎯 Problem Statement </h2>
 
 Rossmann, a leading drugstore chain, faces the challenge of ensuring optimal inventory levels and efficient staffing across its numerous store locations. To achieve this, the company seeks to develop a robust forecasting system capable of predicting daily sales at each individual store with high accuracy. 
 
@@ -191,7 +191,7 @@ Utilized SQL and Python to clean and transform data:
 
 ---
 
-## 🧪 Feature Engineering
+<h2 id="feature_engineering"> 🧪 Feature Engineering </h2>
 
 - **Date Features**: Year, Month, Day, IsWeekend, Season
 - **Lag Features**: `Sales_Lag_7`, `Sales_Lag_30`
@@ -213,7 +213,7 @@ Utilized SQL and Python to clean and transform data:
 
 ---
 
-## 🧾 SQL Overview
+<h2 id="sQL_overview"> 🧾 SQL Overview </h2>
 
 This project uses SQL to clean, transform, and extract insights from the Rossmann Store Sales dataset.  
 The SQL queries were used for data preprocessing, calculating key metrics, and preparing data for Power BI and forecasting models.
@@ -226,7 +226,7 @@ Key objectives:
 
 ---
 
-## 🔍 Sections of SQL Scripts
+<h2 id="sections_of_sQL_scripts"> 🔍 Sections of SQL Scripts </h2>
 
 Below are selected SQL snippets from the project on data cleaning.
 - Replacement of null values
@@ -313,7 +313,7 @@ group by
 
 ```
 ---
-## Summary of SQL Sections
+<h2 id="summary_of_sQL_sections"> Summary of SQL Sections </h2>
 This section covers essential SQL scripts used in the project for data cleaning and analysis. It includes techniques like null value replacement, type conversion, and aggregation of sales data—key steps for preparing and deriving insights from the Rossmann dataset.
 
 You can download the complete SQL script file from the link below:<br>
@@ -321,7 +321,7 @@ You can download the complete SQL script file from the link below:<br>
 
 ---
 
-## 🧾 Python Overview
+<h2 id="python_overview"> 🧾 Python Overview </h2>
 This project utilizes Python for extensive data analysis, feature engineering, and visualization tasks. The Python scripts and Jupyter notebooks facilitate exploration of the dataset, creation of new predictive features, handling missing data, and performing statistical checks such as multicollinearity analysis with VIF. Additionally, Python is used for visualizing sales trends and relationships within the data, which supports the development of accurate machine learning models for sales forecasting. This integration of Python modules enables a streamlined and efficient approach to preparing data for predictive modeling.
 
 ---
@@ -468,7 +468,7 @@ This selection ensures optimal performance for business intelligence, planning, 
 
 ---
 
-## 📊 Power BI Dashboard – Rossmann Store Sales Forecasting
+<h2 id="power_bI_dashboard"> 📊 Power BI Dashboard – Rossmann Store Sales Forecasting </h2>
 
 This Power BI report provides comprehensive sales and customer analytics for Rossmann stores. It consists of 5 pages focusing on sales trends, promotional impact, customer behavior, and forecasting, enabling business decisions on staffing, inventory, and marketing.
 
