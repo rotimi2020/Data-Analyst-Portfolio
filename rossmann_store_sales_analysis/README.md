@@ -713,7 +713,7 @@ This section breaks down insights directly from the Power BI charts to show how 
 
 --- 
 
-<h2 id="nisights_key_findings"> ✅ Insights & Key Findings </h2>
+<h2 id="insights_key_findings"> ✅ Insights & Key Findings </h2>
 
 - 📌 Sales show strong seasonal patterns, especially around holidays like Easter and peak months such as March.
 - 📌 Store Type A is the dominant contributor to both sales and customer traffic; Store Type B performs poorly.
