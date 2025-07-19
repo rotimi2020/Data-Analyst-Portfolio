@@ -74,7 +74,7 @@ This project repository is organized into modular folders for better navigation 
   - [Detailed Dashboard Analysis – Chart-Level Insights](#detailed_dashboard_analysis_chart_level_insights)
   - [Sales Dashboard Analysis – Business Recommendations](#sales_dashboard_analysis_business_recommendations)
   - [Visual Types Summary](#visual_types_summary)
-  - [Power BI Report Previews](#power_bi_report_previews)
+  - [Power BI Report Previews](#powerBI_report_previews)
 - [DAX Overview for Rossmann Store Sales Analysis](#dax_overview_for_rossmann_store_sales_analysis)
   - [Key DAX Measures](#key_dAX_measures)
 - [Business Recommendations](#business_recommendations)
