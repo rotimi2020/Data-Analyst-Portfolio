@@ -757,7 +757,7 @@ This section breaks down insights directly from the Power BI charts to show how 
 
 ---
 
-## 📷 PowerBI Report Previews
+<h2 id="powerBI_report_previews"> 📷 PowerBI Report Previews </h2>
 Below are preview images of the Power BI reports developed for this project. They illustrate key visualizations, insights, and the overall layout of the report. 
 Feel free to explore the visuals to understand the data story.
 
