@@ -70,8 +70,8 @@ This project repository is organized into modular folders for better navigation 
 - [Power bi Dashboard – Rossmann Store Sales Forecasting](#power_bi_dashboard_rossmann_store_sales_forecasting)
   - [Report Structure](#report-structure)
   - [Page Details & Visuals](#page-details--visuals)
-  - [Sales Dashboard – Executive Summary](#sales-dashboard--executive-summary--key-insights-at-a-glance)
-  - [Detailed Dashboard Analysis](#detailed-dashboard-analysis--chart-level-insights)
+  - [Sales Dashboard – Executive Summary – Key Insights at a Glance](#sales-dashboard--executive-summary--key-insights-at-a-glance)
+  - [Detailed Dashboard Analysis – Chart-Level Insights](#detailed-dashboard-analysis--chart-level-insights)
   - [Sales Dashboard Recommendations](#sales-dashboard-analysis--business-recommendations)
   - [Visual Types Summary](#visual-types-summary)
   - [Power BI Report Previews](#power-bi-report-previews)
@@ -474,7 +474,7 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 
 ---
 
-### 🧭 Report Structure
+<h2 id="report_structure"> 🧭 Report Structure </h2>
 
 | Page # | Title                     | Description                                                       |
 |--------|---------------------------|-------------------------------------------------------------------|
@@ -486,7 +486,7 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 
 ---
 
-### 🗂 Page Details & Visuals
+<h2 id="page_details_visual"> 🗂 Page Details & Visuals </h2>
 
 #### 🔹 Slicer Implementation Strategy  
 🔹 Slicers were added selectively on interactive pages (e.g., Store Performance & Time Series Forecasting) to allow user-driven filtering.  
@@ -562,7 +562,7 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 - *Support* data-driven decision-making for inventory planning and sales forecasting.
 ---
 
-## 📊 Sales Dashboard – Executive Summary – Key Insights at a Glance
+<h2 id="sales_dashboard_executive_summary_key_insights_at_a_glance"> 📊 Sales Dashboard – Executive Summary – Key Insights at a Glance </h2>
 
 This dashboard presents a high-level view of Rossmann store sales, customer behavior, store performance, and forecasting patterns. Below is a summarized breakdown of key insights for easier understanding:
 
@@ -604,7 +604,7 @@ This dashboard presents a high-level view of Rossmann store sales, customer beha
 
 ---
 
-## 📊 Detailed Dashboard Analysis – Chart-Level Insights
+<h2 id="detailed_dashboard_analysis_chart_level_insights"> 📊 Detailed Dashboard Analysis – Chart-Level Insights </h2>
 
 This section breaks down insights directly from the Power BI charts to show how key sales metrics were derived.
 
