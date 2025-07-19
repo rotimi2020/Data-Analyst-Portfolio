@@ -67,7 +67,7 @@ This project repository is organized into modular folders for better navigation 
 - [Best Model Selection and Analysis](#best-model-selection-and-analysis)
 - [Explanation & Analysis](#explanation--analysis)
 - [Conclusion](#conclusion)
-- [Power bi Dashboard – Rossmann Store Sales](#power_bi_dashboard_rossmann_store_sales)
+- [Power bi Dashboard – Rossmann Store Sales Forecasting](#power_bi_dashboard_rossmann_store_sales_forecasting)
   - [Report Structure](#report-structure)
   - [Page Details & Visuals](#page-details--visuals)
   - [Sales Dashboard – Executive Summary](#sales-dashboard--executive-summary--key-insights-at-a-glance)
@@ -468,7 +468,7 @@ This selection ensures optimal performance for business intelligence, planning, 
 
 ---
 
-<h2 id="power_bi_dashboard_rossmann_store_sales"> 📊 Power bi Dashboard – Rossmann Store Sales </h2>
+<h2 id="power_bi_dashboard_rossmann_store_sales_forecasting"> 📊 Power bi Dashboard – Rossmann Store Sales Forecasting </h2>
 
 This Power BI report provides comprehensive sales and customer analytics for Rossmann stores. It consists of 5 pages focusing on sales trends, promotional impact, customer behavior, and forecasting, enabling business decisions on staffing, inventory, and marketing.
 
