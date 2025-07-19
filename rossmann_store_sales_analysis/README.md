@@ -70,9 +70,9 @@ This project repository is organized into modular folders for better navigation 
 - [Power bi Dashboard – Rossmann Store Sales Forecasting](#power_bi_dashboard_rossmann_store_sales_forecasting)
   - [Report Structure](#report-structure)
   - [Page Details & Visuals](#page-details--visuals)
-  - [Sales Dashboard – Executive Summary – Key Insights at a Glance](#sales-dashboard--executive-summary--key-insights-at-a-glance)
+  - [Sales Dashboard – Executive Summary – Key Insights at a Glance](#sales_dashboard_executive_summary_key_insights_at_a_glance)
   - [Detailed Dashboard Analysis – Chart-Level Insights](#detailed_dashboard_analysis_chart_level_insights)
-  - [Sales Dashboard Recommendations](#sales-dashboard-analysis--business-recommendations)
+  - [Sales Dashboard Analysis – Business Recommendations](#sales_dashboard_analysis_business_recommendations)
   - [Visual Types Summary](#visual-types-summary)
   - [Power BI Report Previews](#power-bi-report-previews)
 - [DAX Overview](#dax-overview-for-rossmann-store-sales-analysis)
@@ -656,7 +656,7 @@ This section breaks down insights directly from the Power BI charts to show how 
 
 ---
 
-# 📊 Sales Dashboard Analysis – Business Recommendations 
+<h2 id="sales_dashboard_analysis_business_recommendations"> 📊 Sales Dashboard Analysis – Business Recommendations </h2>
 
 ## 📅 Sales Overview Page
 
