@@ -73,13 +73,13 @@ This project repository is organized into modular folders for better navigation 
   - [Sales Dashboard – Executive Summary – Key Insights at a Glance](#sales_dashboard_executive_summary_key_insights_at_a_glance)
   - [Detailed Dashboard Analysis – Chart-Level Insights](#detailed_dashboard_analysis_chart_level_insights)
   - [Sales Dashboard Analysis – Business Recommendations](#sales_dashboard_analysis_business_recommendations)
-  - [Visual Types Summary](#visual-types-summary)
-  - [Power BI Report Previews](#power-bi-report-previews)
-- [DAX Overview](#dax-overview-for-rossmann-store-sales-analysis)
-  - [Key DAX Measures](#key-dax-measures)
-- [Business Recommendations](#business-recommendations)
-- [Insights & Key Findings](#insights--key-findings)
-- [Export & Documentation](#export--documentation)
+  - [Visual Types Summary](#visual_types_summary)
+  - [Power BI Report Previews](#power_bi_report_previews)
+- [DAX Overview](#dax_overview_for_rossmann_store_sales_analysis)
+  - [Key DAX Measures](#key_dax_measures)
+- [Business Recommendations](#business_recommendations)
+- [Insights & Key Findings](#insights_key_findings)
+- [Export & Documentation](#export_documentation)
 
 ---
 
@@ -740,7 +740,7 @@ This section breaks down insights directly from the Power BI charts to show how 
 
 ---
 
-### 🧮 Visual Types Summary
+<h3 id="Visual_types_summary"> 🧮 Visual Types Summary </h3>
 
 | Visual Type         | Use Case                                     |
 |---------------------|----------------------------------------------|
