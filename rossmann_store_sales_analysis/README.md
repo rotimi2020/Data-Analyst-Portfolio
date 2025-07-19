@@ -67,7 +67,7 @@ This project repository is organized into modular folders for better navigation 
 - [Best Model Selection and Analysis](#best-model-selection-and-analysis)
 - [Explanation & Analysis](#explanation--analysis)
 - [Conclusion](#conclusion)
-- [Power BI Dashboard – Rossmann Store Sales Forecasting](#power-bI-dashboard--rossmann-store-sales-forecasting)
+- [Power BI Dashboard – Rossmann Store Sales Forecasting](#power-bi-dashboard--rossmann-store-sales-forecasting)
   - [Report Structure](#report-structure)
   - [Page Details & Visuals](#page-details--visuals)
   - [Sales Dashboard – Executive Summary](#sales-dashboard--executive-summary--key-insights-at-a-glance)
