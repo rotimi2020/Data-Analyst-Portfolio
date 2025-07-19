@@ -67,7 +67,7 @@ This project repository is organized into modular folders for better navigation 
 - [Best Model Selection and Analysis](#best-model-selection-and-analysis)
 - [Explanation & Analysis](#explanation--analysis)
 - [Conclusion](#conclusion)
-- [Power Bi Dashboard](#power-bi-dashboard)
+- [Power Bi Dashboard](#power_bi_dashboard)
   - [Report Structure](#report-structure)
   - [Page Details & Visuals](#page-details--visuals)
   - [Sales Dashboard – Executive Summary](#sales-dashboard--executive-summary--key-insights-at-a-glance)
