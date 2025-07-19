@@ -47,6 +47,7 @@ The dataset originally used was sourced from the [State of Delaware Open Data Po
 - [Dataset](#dataset)
 - [Data Definition](#data_definition)
 - [Overview](#overview)
+  - [Sections of the SQL Script](#sections_of_the_sQL_script)
 - [Analysis](#analysis)
 - [Power BI](#power_bI)
   - [Expenditure DAX Measures](#expenditure_dAX_measures)
@@ -58,6 +59,7 @@ The dataset originally used was sourced from the [State of Delaware Open Data Po
 - [Conclusion](#conclusion)
 - [Recommendations](#recommendations)
 - [Export & Documentation](#export--documentation)
+- [Installation](#installation)
 - [Author](#author)
 
 --- 
@@ -119,7 +121,7 @@ The provided SQL script includes a series of operations aimed at analyzing finan
 
 ---
 
-### 🔍 Sections of the SQL Script
+<h3 id="sections_of_the_sQL_script" > 🔍 Sections of the SQL Script </h3>
 - 📊 **View Data and Counts**<br>
 
   - Retrieve all records from Delaware_Checkbook.
@@ -618,7 +620,7 @@ You can **download the complete Power BI report** in PDF format:
 
 ---
 
-## ⚙️ Installation
+<h2 id="installation" > ⚙️ Installation </h2>
 
 To set up the project environment on your local machine, follow these steps:
 
