@@ -468,7 +468,7 @@ This selection ensures optimal performance for business intelligence, planning, 
 
 ---
 
-<h2 id="power_bi_dashboard_rossmann_store"> 📊 Power bi Dashboard – Rossmann Store </h2>
+<h2 id="power_bi_dashboard_rossmann_store_sales"> 📊 Power bi Dashboard – Rossmann Store Sales </h2>
 
 This Power BI report provides comprehensive sales and customer analytics for Rossmann stores. It consists of 5 pages focusing on sales trends, promotional impact, customer behavior, and forecasting, enabling business decisions on staffing, inventory, and marketing.
 
