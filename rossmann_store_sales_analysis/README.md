@@ -76,7 +76,7 @@ This project repository is organized into modular folders for better navigation 
   - [Visual Types Summary](#visual_types_summary)
   - [Power BI Report Previews](#power_bi_report_previews)
 - [DAX Overview for Rossmann Store Sales Analysis](#dax_overview_for_rossmann_store_sales_analysis)
-  - [Key DAX Measures](#key_dax_measures)
+  - [Key DAX Measures](#key_dAX_measures)
 - [Business Recommendations](#business_recommendations)
 - [Insights & Key Findings](#insights_key_findings)
 - [Export & Documentation](#export_documentation)
@@ -774,13 +774,13 @@ You can **download the complete Power BI report** in PDF format:
 
 ---
 
-# DAX Overview for Rossmann Store Sales Analysis
+<h1 id="dAX_overview_for_rossmann_store_sales_analysis"> DAX Overview for Rossmann Store Sales Analysis </h1>
 
 **Data Analysis Expressions (DAX)** are formulas used in Power BI to create dynamic measures and calculated columns, enabling sophisticated data analysis and reporting.
 
 In this project, DAX was essential for calculating key metrics such as total sales, customer counts, and promotional impacts, which are visualized in our Power BI dashboard.
 
-## Key DAX Measures
+<h2 id="key_dAX_measures"> Key DAX Measures </h2>
 Here are some of the core measures used:
 
 - **Total Sales:** Calculates the sum of all sales amount.
