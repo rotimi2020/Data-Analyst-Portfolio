@@ -62,7 +62,7 @@ This project repository is organized into modular folders for better navigation 
 - [Python Overview](#python-overview)
   - [Python Data Analysis and Modeling](#python-data-analysis-and-modeling)
   - [Notebooks and Resources](#notebooks-and-resources)
-- [Model Performance Comparison](#model-performance-comparison)
+- [Model Performance Comparison on the Rossmann Dataset](#model_performance_comparison_on_the_rossmann_dataset)
 - [Predictive Modeling](#predictive-modeling)
 - [Best Model Selection and Analysis](#best-model-selection-and-analysis)
 - [Explanation & Analysis](#explanation--analysis)
@@ -382,7 +382,7 @@ Below are the key Jupyter notebooks developed as part of this project. You can d
   Showcases a baseline Prophet model without special regressors to compare forecast performance.  
 
 ---  
-# Model Performance Comparison on the Rossmann Dataset
+<h1 id="model_performance_comparison_on_the_rossmann_dataset"> Model Performance Comparison on the Rossmann Dataset </h1>
 
 This table presents a comparison of various machine learning and forecasting models evaluated on the Rossmann dataset. The primary metric used for comparison is RMSE (Root Mean Square Error), which helps identify the most accurate models in terms of forecast error. The table is divided into two categories: **Machine Learning** and **Forecasting**. The models are ranked and evaluated to highlight the best performing algorithms within each category based on their RMSE values.
 
