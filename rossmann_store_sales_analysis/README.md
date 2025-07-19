@@ -71,7 +71,7 @@ This project repository is organized into modular folders for better navigation 
   - [Report Structure](#report-structure)
   - [Page Details & Visuals](#page-details--visuals)
   - [Sales Dashboard – Executive Summary – Key Insights at a Glance](#sales-dashboard--executive-summary--key-insights-at-a-glance)
-  - [Detailed Dashboard Analysis – Chart-Level Insights](#detailed-dashboard-analysis--chart-level-insights)
+  - [Detailed Dashboard Analysis – Chart-Level Insights](#detailed-dashboard-analysis-chart-level-insights)
   - [Sales Dashboard Recommendations](#sales-dashboard-analysis--business-recommendations)
   - [Visual Types Summary](#visual-types-summary)
   - [Power BI Report Previews](#power-bi-report-previews)
