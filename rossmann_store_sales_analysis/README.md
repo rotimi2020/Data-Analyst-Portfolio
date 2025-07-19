@@ -68,8 +68,8 @@ This project repository is organized into modular folders for better navigation 
 - [Explanation & Analysis](#explanation--analysis)
 - [Conclusion](#conclusion)
 - [Power bi Dashboard – Rossmann Store Sales Forecasting](#power_bi_dashboard_rossmann_store_sales_forecasting)
-  - [Report Structure](#report-structure)
-  - [Page Details & Visuals](#page-details--visuals)
+  - [Report Structure](#report_structure)
+  - [Page Details & Visuals](#page_details_visuals)
   - [Sales Dashboard – Executive Summary – Key Insights at a Glance](#sales_dashboard_executive_summary_key_insights_at_a_glance)
   - [Detailed Dashboard Analysis – Chart-Level Insights](#detailed_dashboard_analysis_chart_level_insights)
   - [Sales Dashboard Analysis – Business Recommendations](#sales_dashboard_analysis_business_recommendations)
@@ -486,7 +486,7 @@ This Power BI report provides comprehensive sales and customer analytics for Ros
 
 ---
 
-<h2 id="page_details_visual"> 🗂 Page Details & Visuals </h2>
+<h2 id="page_details_visuals"> 🗂 Page Details & Visuals </h2>
 
 #### 🔹 Slicer Implementation Strategy  
 🔹 Slicers were added selectively on interactive pages (e.g., Store Performance & Time Series Forecasting) to allow user-driven filtering.  
@@ -674,7 +674,7 @@ This section breaks down insights directly from the Power BI charts to show how 
 
 ---
 
-## 📦 Sales Analysis
+<h2 id="sales_analysis"> 📦 Sales Analysis </h2>
 
 ### 📆 Day of Week vs. Total Sales (Line or Bar Chart)
 - Pilot “Sunday Specials” or family events to improve weekend foot traffic.
