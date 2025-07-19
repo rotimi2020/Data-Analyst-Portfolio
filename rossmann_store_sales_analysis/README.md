@@ -79,7 +79,11 @@ This project repository is organized into modular folders for better navigation 
   - [Key DAX Measures](#key_dAX_measures)
 - [Business Recommendations](#business_recommendations)
 - [Insights & Key Findings](#insights_key_findings)
+- [Conclusions](#conclusions)
+- [Recommendations](#recommendations)
 - [Export & Documentation](#export_documentation)
+- [Installation](#installation)
+- [Author](#Author)
 
 ---
 
@@ -804,13 +808,13 @@ Sales With Promo = CALCULATE(SUM(Sales[Sales]), Sales[Promo] = 1)
 
 ---
 
-## Conclusions
+<h2 id="conclusions"> Conclusions </h2>
 This project successfully demonstrated the value of integrated SQL and Python workflows for large-scale retail sales analysis. 
 The models and insights support business strategies to enhance sales performance, optimize stock levels, and improve customer satisfaction.
 
 ---
 
-## Recommendations
+<h2 id="Recommendations"> Recommendations </h2>
 - Implement targeted marketing during peak seasons identified.
 - Use the sales forecast in inventory planning and staffing.
 - Continue monitoring external factors like holidays and competitions.
@@ -825,7 +829,7 @@ The models and insights support business strategies to enhance sales performance
 
 ---
 
-## ⚙️ Installation
+<h2 id="installation"> ⚙️ Installation </h2>
 
 To set up the project environment on your local machine, follow these steps:
 
@@ -845,7 +849,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🙋‍♂️ Author
+<h2 id="author"> 🙋‍♂️ Author </h2>
 
 **Rotimi Sheriff Omosewo**  
 📧 Email: [omoseworotimi@gmail.com](mailto:omoseworotimi@gmail.com)  
