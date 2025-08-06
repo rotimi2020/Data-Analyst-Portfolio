@@ -1,28 +1,161 @@
-# Library Management System using SQL
+# Library Management System Using SQL
+
+This project showcases the use of **SQL** to manage and analyze data within a Library Management System (LMS). It focuses on extracting meaningful insights from various tables such as books, members, book issues, fines, and suppliers.
+
+Key SQL operations include:
+
+- Data cleaning and transformation  
+- Complex joins and subqueries  
+- Aggregations and metrics for decision-making  
+- Answering business questions with structured queries
+
+The SQL scripts are modular, well-organized, and aligned with real-world library operations—providing a solid foundation for further analysis using Python and Power BI. This project highlights how relational databases can power efficient and insightful library data management.
+
+---
+
+## Project Directory Structure
+
+| Folder / File                                                  | Description                                              |
+| -------------------------------------------------------------- | -------------------------------------------------------- |
+| **`data/`**                                                    | Contains the final merged and cleaned dataset used for Power BI |
+| ├── `README.md`                                                | Overview of datasets used in the project                 |
+| └── `Lms_Analysis.csv`                                         | Main cleaned dataset with all tables merged              |
+| **`dax/`**                                                     | DAX measures and calculated columns used in Power BI     |
+| ├── `README.md`                                                | Overview of DAX KPIs and logic                           |
+| └── `dax_formulas.txt`                                         | Full list of DAX formulas used in the dashboard          |
+| **`er_diagram/`**                                              | Entity Relationship Diagram for LMS data model           |
+| ├── `README.md`                                                | Explanation of ER diagram design                         |
+| └── `entity_relationship_diagram.pdf`                          | PDF of ER diagram showing data relationships             |
+| **`notebooks/`**                                               | Jupyter notebooks for data cleaning, exploration, and analysis |
+| ├── `README.md`                                                | Purpose and summary of each notebook                     |
+| ├── `book_details.ipynb`                                       | Book metadata analysis                                   |
+| ├── `book_issue.ipynb`                                         | Borrowing and return behavior                            |
+| ├── `fine_details.ipynb`                                       | Fine distribution and delay patterns                     |
+| ├── `lms_final_analysis.ipynb`                                 | Combined notebook with final insights                    |
+| ├── `lms_members.ipynb`                                        | Member segmentation and trends                           |
+| └── `suppliers_details.ipynb`                                  | Supplier contribution and trends                         |
+| **`powerbi/`**                                                 | Power BI dashboards and reports                          |
+| ├── `README.md`                                                | Overview of Power BI report contents                     |
+| └── `library_management_system.pbix`                           | Interactive LMS Power BI dashboard                       |
+| **`report_screenshots/`**                                      | PNG images of Power BI report visuals                    |
+| ├── `README.md`                                                | Description of the included dashboard screenshots        |
+| ├── `fine_and_return_analysis_reports.PNG`                     | Fines and return behavior dashboard                      |
+| ├── `library_management_dashboard_reports.PNG`                 | General LMS overview dashboard                           |
+| ├── `member_insights_reports.PNG`                              | Member activity and segmentation visuals                 |
+| ├── `supplier_overview_reports.PNG`                            | Supplier stats dashboard                                 |
+| └── `top_performing_book_reports.PNG`                          | Top books and high-value category insights               |
+| **`reports/`**                                                 | Final PDF exports of notebooks and dashboard summaries   |
+| ├── `README.md`                                                | Overview of reports and export files                     |
+| └── `lms_analysis_reports.pdf`                                 | Compiled analysis from Jupyter in PDF format             |
+| **`sql/`**                                                     | SQL scripts used for data extraction and transformation  |
+| ├── `README.md`                                                | Guide to SQL file usage and query structure              |
+| └── `library_management_system.sql`                            | Full SQL query set (basic to advanced)                   |
+| **`requirements.txt`**                                         | Python packages required to run Jupyter notebooks        |
+
+
+---
+
+## 📚 Table of Contents
+- [📌 Project Overview](#project-overview)
+- [📁 Project Directory Structure](#project-directory-structure)
+- [🎯 Objectives](#objectives)
+- [❓ Business Questions](#business-questions)
+- [🧩 Problem Statement](#problem-statement)
+- [📂 Dataset](#dataset)
+- [🧹 Data Processing & Cleaning](#data-processing--cleaning)
+- [🛠️ Tools & Technologies](#tools--technologies)
+- [🧠 Skills Used](#skills-used)
+- [🔍 SQL Section](#sql-overview)
+- [🐍 Python Section](#python-overview)
+- [📊 Power BI Section](#power-bi-dashboard)
+- [🧮 DAX Section](#dax-overview)
+- [📘 Project Summary](#project-summary)
+- [🙋‍♂️ Author](#author)
+
+---
 
 ## Project Overview
-This project demonstrates the implementation of a Library Management System using SQL. The project involves performing a comprehensive data analysis for a client who owns a library using a Library Management System (LMS). The client has provided database access and a set of 30 queries ranging from basic to advanced levels. The goal is to retrieve, analyze, and present data that will provide valuable insights into the library's operations, inventory, and user behavior.
+This project explores the design and analysis of a **Library Management System (LMS)** using SQL. It's based on a real-world scenario where a local library manager provided access to their database and shared business questions ranging from basic lookups to complex insights.
 
-## Objectives 
-**Extract Meaningful Insights :** Use SQL queries to extract important information from the LMS database.<br>
-**Enhance Data Understanding :** Answer specific questions posed by the library owner to gain a deeper understanding of the library's data.<br>
-**Advanced SQL Queries :** Develop complex queries to analyze and retrieve specific data.<br>
-**Provide Comprehensive Reports :** Generate detailed reports that summarize key metrics and trends to support the library owner's decision-making.
+---
 
-## Problem Definition
-The library owner needs a thorough analysis of the library's data to better understand various aspects such as book inventory, user activities, and financial metrics. The current system collects extensive data, but it lacks the insights needed to make data-driven decisions.
+## Objectives
+- **Extract Meaningful Insights**  
+  Write SQL queries to retrieve valuable data from the LMS database
+- **Answer Real Business Questions**  
+  Tackle specific problems raised by the library owner
+- **Apply Advanced SQL Skills**  
+  Use joins, CTEs, subqueries, and window functions
+- **Deliver Actionable Reports**  
+  Summarize key findings to support data-driven decisions
+
+---
+
+## Business Questions
+1. **How do borrowing trends change over time?**  
+   Understand daily/seasonal borrowing patterns
+2. **Which book categories hold the most value?**  
+   Identify high-value books based on usage and cost
+3. **Who are the most active members?**  
+   Explore member behavior by type and region
+4. **What's the relationship between fines and borrowing habits?**  
+   Analyze fine categories and delay patterns
+5. **Which books are borrowed most frequently?**  
+   Measure popularity and link to supplier performance
+
+---
 
 ## Problem Statement
-Develop a series of SQL queries to extract and analyze data from the Library Management System database. The queries will cover basic, intermediate, and advanced levels of complexity and will address various aspects of the library's operations.
+Run SQL queries to explore and analyze data from an LMS database, focusing on book borrowing trends, member engagement, fine history, and supplier performance.
+
+---
 
 ## Dataset
-The dataset includes various tables from the Library Management System database, such as:
-- **Book Details:** Information about books in the library, including book IDs, titles, authors, categories, prices, and publication dates.
-- **Members:** Information about library members, including member IDs, names, registration dates, and contact details.
-- **Fine Details:** Records of book loans, including Fine Range, return dates, and fine amounts.
-- **Suppliers:** Details about book suppliers, including supplier IDs, names, and contact information.
-- **Book Issue:** Information about member IDs,Book Code,Date Issue,Date Return,Date Returned and Fine Range.
+Core tables include:
+- 📘 **Book Details**: Book ID, title, author, category, price
+- 👤 **Members**: Member ID, name, contact info, registration date
+- 💰 **Fine Details**: Member fines based on late returns
+- 🚚 **Suppliers**: Supplier ID, name, contact details
+- 📦 **Book Issue**: Borrowings with issue/return dates
 
+> ⚠️ **Note**: Dataset shared informally for portfolio purposes
+
+---
+
+## Data Processing & Cleaning
+- ✅ **Handled Missing Values** - Replaced missing entries
+- ✅ **Standardized Data Types** - Converted to proper datetime format
+- ✅ **Feature Engineering**:
+  - Merged all source tables into Lms_Analysis.csv
+
+---
+
+### Tools & Technologies
+- **SQL** - Joining tables and generating metrics
+- **Python** - Pandas for data transformation
+- **Power BI** - Dashboards with DAX measures
+- **Jupyter Notebook** - Documentation and transformation
+
+---
+
+## Skills Used
+- SQL (JOINs, GROUP BY, CTEs, Window Functions)
+- Data Cleaning & Exploration
+- Logical Query Building
+- Database Relationships & Keys
+- Business Insight Communication
+- Git & GitHub Version Control
+
+---
+
+## SQL Overview {#sql-overview}
+This SQL script is a structured collection of queries for analyzing library data, organized into **Basic**, **Intermediate**, and **Advanced** sections.
+
+### SQL Queries
+#### **Basic Queries (1-10)**
+[Click to Expand...]
+<details>
+<summary>View Queries</summary>
 
 **--------------------------------*Basic Queries (1-10)*-------------------------------------**
 
@@ -151,6 +284,13 @@ FROM
 group by
   MEMBER_NAME;
 ```
+</details>
+
+
+### **Intermediate Queries (11–20)**  
+[Click to Expand...]
+<details>
+<summary>View Queries</summary>
 
 **--------------------------------*Intermediate Queries (11-20)*-------------------------------------**
 - **QUESTION 11 :** Write a query to display book titles along with their supplier names. 
@@ -302,8 +442,16 @@ FROM
 WHERE
   [BOOK_ISSUE_NO] IS NULL;
 ```
+</details>
+
+
+### **Advanced Queries (21–30)**  
+[Click to Expand...]
+<details>
+<summary>View Queries</summary>
+
 **--------------------------------*Advanced Queries (21-30)*-------------------------------------**
-- **QUESTION 21 :** Write a query to list all overdue books along with the member names who borrowed them. 
+- **QUESTION 1 :** Write a query to list all overdue books along with the member names who borrowed them. 
 ```sql
 SELECT
   B.BOOK_ISSUE_NO,
@@ -383,7 +531,38 @@ FROM
 ```
 
 - **QUESTION 25 :** Write a recursive query to find all books under a specific category and its subcategories. 
-
+```sql
+-- Replace 'Data Science' with the target category
+WITH
+  RECURSIVE Category_Hierarchy AS (
+    -- Start with the main category
+    SELECT
+      DISTINCT CATEGORY,
+      PARENT_CATEGORY
+    FROM
+      [dbo].[LMS_BOOK_DETAILS]
+    WHERE
+      CATEGORY = 'Data Science'
+    UNION ALL
+    -- Recursively find subcategories
+    SELECT
+      b.CATEGORY,
+      b.PARENT_CATEGORY
+    FROM
+      [dbo].[LMS_BOOK_DETAILS] b
+      INNER JOIN Category_Hierarchy ch ON b.PARENT_CATEGORY = ch.CATEGORY
+  ) 
+ 
+ -- Select all books that fall under this hierarchy
+SELECT
+  DISTINCT b.BOOK_CODE,
+  b.BOOK_TITLE,
+  b.CATEGORY,
+  b.PRICE
+FROM
+  [dbo].[LMS_BOOK_DETAILS] b
+  INNER JOIN Category_Hierarchy ch ON b.CATEGORY = ch.CATEGORY;
+```
 - **QUESTION 26 :** Write a query to calculate the total fine amount collected for overdue books. 
 ```sql
 WITH
@@ -457,47 +636,363 @@ GROUP BY
   CATEGORY;
 
 ```
+</details>
 
-## Reports
-**Basic Reports:**
+---
 
-- List of all book titles and their corresponding author names.
-- Books published after the year 2015.
-- Members sorted by their registration date.
-- Total number of books in the library.
-- Book titles and their categories.
-- Details of the book titled "Data Science for Beginners."
-- Members who registered in the last 6 months.
-- Number of distinct authors.
-- Books priced above 1000 INR.
-- Member names and the total fine amount they owe.
-  
-**Intermediate Reports:**
+## Summary of SQL Sections
 
-- titles along with their supplier names.
-- Total number of books issued per member.
-- Books where the price is between 500 and 1000 INR.
-- Group books by category and calculate the total number of books in each category.
-- Suppliers who have supplied more than 20 books.
-- Details of the book with the highest price.
-- Members who have issued at least one book.
-- Book titles that have been issued more than 5 times.
-- Name and contact details of members who issued books in the last 30 days.
-- Books that have never been issued.
+Here’s a quick look at the SQL scripts used in the **Library Management System (LMS)** project.
 
-  
-**Advanced Reports:**
-- Overdue books along with the member names who borrowed them.
--  books based on their price in descending order using window functions.
-- Total number of books issued per category using a CTE.
-- Book titles and a new column "Price Range" (Low, Medium, High) based on their price.
-- Recursive query to find all books under a specific category and its subcategories.
-- Total fine amount collected for overdue books.
-- Top 3 members who have issued the most books.
-- Suppliers who have supplied books in multiple categories.
-- Members who issued the same book multiple times.
-- Average price of books per category.
+They’re grouped into:
+
+- **Basic**
+- **Intermediate**
+- **Advanced**
+
+The queries cover things like filtering, joins, totals, CTEs, and even ranking.  
+Each one helps answer real questions about books, members, fines, and suppliers in the library.
+
+Simple, clear, and straight to the point.
+
+You can download the complete SQL script file from the link below:<br>
+ **[Download the SQL script here](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/sql/rossmann_sales.sql)**
+
+---
+
+<h2 id="python_overview"> 🧾 Python Overview </h2>
+
+This project leverages **Python** and **Jupyter Notebook** for in-depth analysis, feature engineering, and data visualization tasks related to the Library Management System (LMS). Python scripts were used to:
+
+- Explore and understand the structure and behavior of library data  
+- Handle missing values by imputing or replacing null entries  
+- Convert object-type date columns to proper `datetime` format for accurate time-based analysis  
+- Perform initial statistical validation and sanity checks on return delays, fines, and member activity  
+- Visualize key patterns in borrowing trends, late returns, member activity, and supplier performance
+
+Python enabled a smooth and efficient transformation pipeline that prepared the cleaned dataset (`Lms_Analysis.csv`) for visualization in Power BI. It supported logical consistency checks and helped validate the relationships between books, members, and fines before dashboard development.
+
+---
 
 
-**Conclusion**
-The data analysis of the Library Management System will provide valuable insights into user behavior, inventory management, and overall library operations. By addressing the 30 queries provided by the library owner, we can uncover important trends and metrics that can help optimize library services, enhance user satisfaction, and support strategic decision-making. The comprehensive reports generated from the SQL queries will serve as a foundation for ongoing monitoring and improvement of the library's operations.
+### Python Data Analysis and Modeling
+
+The script `lms_analysis.ipynb` is a Python notebook developed to analyze and explore the **Library Management System (LMS)** dataset.  
+The data was sourced and merged from multiple CSV files after initial extraction from SQL Server.
+
+Key steps in the notebook include:
+
+- **Data Exploration:**  
+  Reviewing the structure of the data, checking value distributions, and getting a feel for trends across books, members, and fines.
+
+- **Data Preparation:**  
+  Merging different tables (books, members, issues, fines, suppliers), formatting date fields, and ensuring the dataset is analysis-ready.
+
+- **Feature Engineering:**  
+  Creating useful columns like delay status, fine categories, month/year of issue, and calculating total counts and monetary values.
+
+- **KPI Calculation:**  
+  Deriving key metrics like average fine, total books issued, late returns, and member activity to support decision-making.
+
+- **Visualization:**  
+  Using charts to show book circulation, fine trends, member engagement, and supplier contributions.
+
+This notebook acts as a solid base for generating insights and building visual dashboards in tools like Power BI.
+
+
+---
+
+### Notebooks and Resources  
+
+Below are the key Jupyter notebooks developed as part of this project. You can download them directly using the links provided:
+
+- **book_details.ipynb**: [Download Book Details Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/book_details.ipynb)  
+  Analyzes book metadata including titles, authors, categories, and pricing. Useful for understanding the diversity and value of the library collection.
+
+- **book_issue.ipynb**: [Download Book Issue Trends](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/book_issue.ipynb)  
+  Tracks borrowing patterns, return behavior, and identifies high-demand books or peak borrowing periods.
+
+- **fine_details.ipynb**: [Download Fine Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/fine_details.ipynb)  
+  Explores fine distribution, delay durations, and common late return patterns.
+
+- **lms_members.ipynb**: [Download Member Insights](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/lms_members.ipynb)  
+  Segments library members by activity level, joining period, and borrowing history.
+
+- **suppliers_details.ipynb**: [Download Supplier Overview](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/suppliers_details.ipynb)  
+  Evaluates supplier performance, sourcing frequency, and cost contributions.
+
+- **lms_final_analysis.ipynb**: [Download Final LMS Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/lms_final_analysis.ipynb)  
+  A comprehensive notebook combining all tables for end-to-end analysis and visual storytelling.
+ 
+
+---  
+
+##  Power BI Dashboard 
+
+This Power BI report delivers a complete analysis of a Library Management System (LMS), covering book circulation, 
+member activity, fines, and supplier performance. It includes 5 dashboard pages that highlight borrowing trends, member engagement, 
+late return patterns, and book acquisition insights—supporting smarter decisions around library operations, inventory, and user services.
+
+---
+
+<h2 id="report_structure"> Report Structure </h2>
+
+This Power BI report explores a **Library Management System (LMS)** using five interactive dashboards. Each page uncovers meaningful insights into book circulation, member behavior, fines, and supplier contributions—turning raw data into actionable visual stories.
+
+
+| Page # | Dashboard Title     | Description                                                                 |
+|--------|---------------------|-----------------------------------------------------------------------------|
+| 1️⃣     | 📚 Library Dashboard | Overview of book movement, top titles, and book value by category          |
+| 2️⃣     | 👥 Member Insights    | Member distribution, activity level, fine impact, and borrowing behavior   |
+| 3️⃣     | ⭐ Top Books Overview | Highlights of high-value books and most valuable book categories           |
+| 4️⃣     | 🔁 Fines & Returns    | Fine category breakdown, late vs. on-time returns                          |
+| 5️⃣     | 🏢 Supplier Stats     | Supplier contributions, most borrowed books, and monthly trends           |
+
+---
+
+This dashboard helps visualize how the LMS operates on a daily and strategic level—empowering data-driven decisions about book acquisition, member engagement, and library performance optimization.
+
+---
+
+<h2 id="page_details_visuals"> Page Details & Visuals </h2>
+
+
+#### 1️⃣ Library Management Dashboard
+
+Focuses on overall book circulation and value trends:
+
+- 📈 **Line Chart:** Daily Book Issue Trend – shows how book borrowing changes over time.  
+- 📊 **Bar Chart:** Total Book Value by Title – highlights which book titles hold the most value.  
+- 📊 **Column Chart:** Total Book Value by Category – compares value across categories like Python, Data Science, etc.
+
+🌟 **Purpose:**  
+- *Track* borrowing activity over time.  
+- *Identify* high-value books in the collection.  
+- *Compare* value by book category.
+
+---
+
+#### 2️⃣ Member Insights Dashboard
+
+Explores member demographics and activity:
+
+- 🗺️ **Bar Chart:** Member Distribution by City – shows where members are located.  
+- 🍩 **Donut Chart:** Total Books Issued by Membership Type – compares temporary, permanent, and trial users.  
+- 💸 **Bar Chart:** Total Fine Collected by Member – ranks members by fine amounts.  
+- 📊 **Pie Chart:** Book Issues by Fine Range – shows how fines relate to borrowing habits.
+
+🌟 **Purpose:**  
+- *Understand* where members come from.  
+- *Analyze* member behavior based on membership status.  
+- *Monitor* fine-related borrowing patterns.
+
+---
+
+#### 3️⃣ Top Performing Books
+
+Highlights top contributors to the library’s value:
+
+- 📚 **Bar Chart:** Total Book Value by Title – lists the highest-value titles.  
+- 📘 **Column Chart:** Total Book Value by Category – evaluates top genres or subjects.
+
+🌟 **Purpose:**  
+- *Recognize* high-impact books.  
+- *Evaluate* which topics or categories add the most value.
+
+---
+
+#### 4️⃣ Fine & Return Analysis
+
+Reviews late returns and penalties:
+
+- 📊 **Column Chart:** Book Issues by Fine Category – visualizes books across different fine levels.  
+- 🔁 **Bar Chart:** Book Issues by Return Status – compares on-time vs. delayed returns.
+
+🌟 **Purpose:**  
+- *Track* late return trends.  
+- *Link* fines to return patterns.
+
+---
+
+#### 5️⃣ Supplier Overview
+
+Analyzes book suppliers’ contributions:
+
+- 🍩 **Donut Chart:** Total Book Value by Supplier – shows value contributed by each supplier.  
+- 📊 **Bar Chart:** Book Issues by Supplier – reveals borrowing frequency per supplier.  
+- 📈 **Column Chart:** Monthly Book Arrivals and Issues – tracks monthly trends in book supply and usage.
+
+🌟 **Purpose:**  
+- *Measure* supplier impact.  
+- *Track* supply trends over time.
+
+---
+
+
+## Insights & Key Findings – Library Management System (LMS)
+
+- 📌 **Book borrowing shows clear monthly and seasonal patterns**, with peak activity during academic seasons and holidays.
+- 📌 **Technical and academic books (e.g., Python, Data Science)** are among the most borrowed and highest-value categories.
+- 📌 **Permanent members** borrow the most books and incur the highest fines, indicating deeper engagement with the library.
+- 📌 **Members from certain cities consistently borrow more books**, showing strong regional engagement patterns.
+- 📌 **Top 5 books and suppliers contribute a disproportionate value and circulation**, while several books remain underutilized.
+- 📌 **Fines are primarily incurred by a small group of users**, suggesting the need for targeted communication or policy reviews.
+- 📌 **Books returned late are often linked to higher fine ranges**, which could guide better return policies or reminders.
+
+
+---
+
+## Business Recommendations
+
+- 📌 **Encourage borrowing in low-activity months** (e.g., September) by replicating strategies used during peak periods like March or exam seasons.
+- 📌 **Introduce themed reading programs or events on weekends** to boost engagement when borrowing typically drops.
+- 📌 **Analyze underperforming books and suppliers**, and consider replacing or promoting them through curated reading lists or discounts.
+- 📌 **Adopt successful practices from top-performing suppliers** (e.g., book variety, delivery timeliness) across other vendors.
+- 📌 **Target high-fine members with friendly reminders or grace periods**, to improve return behavior and member satisfaction.
+- 📌 **Optimize inventory planning around academic seasons and holidays**, ensuring popular books are in stock ahead of demand.
+- 📌 **Launch digital borrowing options or renewals** during peak physical traffic periods to reduce congestion and increase satisfaction.
+- 📌 **Segment members by behavior (e.g., late returns, high borrowing)** to tailor communication, promotions, or access privileges.
+- 📌 **Use insights from book category trends** to expand high-demand topics and phase out rarely borrowed materials.
+- 📌 **Implement feedback mechanisms** to regularly gather input from members on book preferences, services, and improvements.
+
+---
+
+### 🧮 Visual Types Summary – LMS Dashboard
+
+| Visual Type         | Use Case                                                                 |
+|---------------------|--------------------------------------------------------------------------|
+| Line Chart          | Track book borrowing or return trends over time                          |
+| Stacked Bar Chart   | Compare book issues or values across categories or membership types      |
+| Clustered Column    | Visualize top books, fines, or supplier contributions side-by-side       |
+| Pie/Donut Chart     | Show proportional breakdowns (e.g., by fine category or member type)     |
+| Matrix Table        | Cross-tab insights (e.g., Book Category × Supplier or Month × Status)    |
+| Slicers             | Let users filter by year, month, member type, or supplier dynamically    |
+
+
+---
+
+## LMS Power BI Report Previews
+
+Below are sample preview images from the Power BI reports developed for the LMS project. These visuals highlight key insights, patterns in book borrowing, member behavior, fines, and supplier statistics.  
+Each report page is designed to help users easily navigate and understand the library data story.
+
+| Library Overview | Member Insights |
+|------------------|------------------|
+| ![Library Overview](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/library_overview_report.png) | ![Member Insights](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/member_insights_report.png) |
+
+| Top Books & Suppliers | Fines & Returns | Supplier Stats |
+|------------------------|------------------|----------------|
+| ![Top Books](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/top_books_suppliers_report.png) | ![Fines and Returns](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/fines_returns_report.png) | ![Supplier Stats](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/supplier_stats_report.png) |
+
+---
+
+### Download the Full Power BI Report as PDF
+
+You can **download the complete Power BI report** in PDF format:  
+**[Download PDF Report](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/reports/rossmann_sale_reports.pdf)**
+
+---
+
+# DAX Overview – Library Management System (LMS) Power BI Project
+
+This project uses Power BI and DAX to analyze a Library Management System. We created custom measures and columns to track book issues, late returns, fines, member activities, and supplier insights. Average Days Delayed = AVERAGE(Book_Issue[Days_Delayed])
+
+---
+
+## Key DAX Measures
+
+Total Book Issued = COUNT(Book_Issue[Book_Code])  
+Total Members = DISTINCTCOUNT(Lms_Members[Member_ID])  
+Total Fine Amount = SUM(Fine_Details[Fine_Amount])  
+Total Late Returns = CALCULATE(COUNT(Book_Issue[Issue_ID]), Book_Issue[Days_Delayed] > 0)  
+Total Price Of Book = SUM(Book_Details[Price])  
+Average Days Delayed = AVERAGE(Book_Issue[Days_Delayed])
+
+---
+
+## Key Calculated Columns
+
+Delayed Status = IF(Book_Issue[Days_Delayed] > 0, "Late", "On Time")  
+Fine Category = SWITCH(TRUE(), Fine_Details[Fine_Amount] = 0, "No Fine", Fine_Details[Fine_Amount] <= 100, "Low", Fine_Details[Fine_Amount] <= 200, "Medium", "High")  
+Month Name = FORMAT(Book_Issue[Issue_Date], "MMMM")  
+Year Issued = YEAR(Book_Issue[Issue_Date])
+
+---
+
+## 📊 Visuals & Dashboard Summary
+
+- Line and bar charts show trends in book issues, returns, fines, and supplier activities.  
+- KPI cards summarize total books issued, total members, fine amounts, and late returns.  
+- Slicers provide interactivity by filtering data across book titles, members, suppliers, and date ranges.
+
+---
+
+📂 **Full DAX Code File**:  
+[View on GitHub](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/dax/dax_formulas.txt)
+
+---
+
+# LMS Power BI Analysis – Summary & Documentation
+
+This project analyzes Library Management System (LMS) data using Power BI, DAX, Python, and SQL to uncover trends in book usage, member behavior, late returns, fines, and supplier performance. It provides actionable insights through interactive dashboards and calculated metrics.
+
+---
+
+## 📈 Conclusions
+
+This LMS project shows how Power BI and DAX can turn raw library data into actionable insights. 
+It helps library administrators monitor usage patterns, 
+improve member accountability, optimize book stock, and evaluate supplier contributions.
+
+---
+
+## ✅ Recommendations
+
+- Send reminders a few days before due dates to minimize delays and fines.
+- Increase availability of high-demand categories and top-requested books.
+- Reward members with good return history to encourage responsibility.
+- Monitor supplier performance and prioritize those with high-demand books.
+- Use borrowing trends to guide future book purchases and stocking decisions.
+
+---
+
+## 📝 Export & Documentation
+
+- All DAX measures and calculated columns are documented in the `.txt` file
+- Data transformation and analysis done using Jupyter Notebooks and Power BI
+- Cleaned dataset stored as `Lms_Analysis.csv`, with links to original raw files
+- Dashboards include slicers, KPIs, matrix views, and charts for interactivity
+
+---
+
+<h2 id="installation"> ⚙️ Installation </h2>
+
+To set up the project environment on your local machine, follow these steps:
+
+### ✅ Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/rotimi2020/Data-Analyst-Portfolio.git
+cd Data-Analyst-Portfolio/LMS_PowerBI_Analysis
+```
+
+### ✅ Step 2: Install Dependencies
+Make sure Python 3.8 or later is installed. Then run:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+<h2 id="author"> 🙋‍♂️ Author </h2>
+
+**Rotimi Sheriff Omosewo**  
+📧 Email: [omoseworotimi@gmail.com](mailto:omoseworotimi@gmail.com)  
+📞 Contact: +234 903 441 1444  
+🔗 LinkedIn: [linkedin.com/in/rotimi-sheriff-omosewo-939a806b](https://www.linkedin.com/in/rotimi-sheriff-omosewo-939a806b)  
+📁 Project GitHub: [github.com/rotimi2020/Data-Analyst-Portfolio](https://github.com/rotimi2020/Data-Analyst-Portfolio)
+
+> 📌 **Note:** This Library Management System (LMS) project is part of my Data Analytics Portfolio. It demonstrates core skills in business intelligence and data modeling using a sample library dataset. Tools used include Power BI, SQL, and Python.
+
+---
