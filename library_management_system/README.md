@@ -71,7 +71,7 @@ The SQL scripts are modular, well-organized, and aligned with real-world library
   - [🐍 Python Data Cleaning and Preparation](#python-data-cleaning-and-preparation)
   - [🐍 Notebooks and Resources](#notebooks-and-resources)
 - [📊 Power BI Dashboard](#power-bi-dashboard)
-  - [📊 Library Management Dashboard](#library-management-dashboard)
+  - [📊 Page Details & Visuals](#page-details--visuals)
   - [📊 Insights & Key Findings](#insights--key-findings)
   - [📊 Business Recommendations](#business-recommendations)
   - [📊 Visual Types Summary](#visual-types-summary)
@@ -820,7 +820,7 @@ This dashboard helps visualize how the LMS operates on a daily and strategic lev
 
 ---
 
-<h2 id="page_details_visuals"> Page Details & Visuals </h2>
+## Page Details & Visuals 
 
 
 #### 1️⃣ Library Management Dashboard
@@ -895,7 +895,7 @@ Analyzes book suppliers’ contributions:
 ---
 
 
-## Insights & Key Findings – Library Management System (LMS)
+## Insights & Key Findings 
 
 - 📌 **Book borrowing shows clear monthly and seasonal patterns**, with peak activity during academic seasons and holidays.
 - 📌 **Technical and academic books (e.g., Python, Data Science)** are among the most borrowed and highest-value categories.
