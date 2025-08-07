@@ -849,7 +849,7 @@ You can **download the complete Power BI report** in PDF format:
 
 # DAX Overview – Library Management System (LMS) Power BI Project
 
-This project uses Power BI and DAX to analyze a Library Management System. We created custom measures and columns to track book issues, late returns, fines, member activities, and supplier insights. Average Days Delayed = AVERAGE(Book_Issue[Days_Delayed])
+This project uses Power BI and DAX to analyze a Library Management System. We created custom measures and columns to track book issues, late returns, fines, member activities, and supplier insights. 
 
 ---
 
