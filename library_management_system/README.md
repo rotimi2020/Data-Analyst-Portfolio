@@ -954,7 +954,7 @@ This project uses Power BI and DAX to analyze a Library Management System. We cr
 
 ## Key DAX 
 
-```dax
+```sql
 # Total Books Issued
 Total Book Issued = COUNT(Book_Issue[Book_Code])  
 ```
