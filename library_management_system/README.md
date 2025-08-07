@@ -127,15 +127,7 @@ Core tables include:
 - ✅ **Standardized Data Types** - Converted to proper datetime format
 - ✅ **Feature Engineering**:
   - Merged all source tables into Lms_Analysis.csv
-
----
-## Feature Engineering (via DAX in Power BI)
-Created new calculated columns and measures to support analysis, including:
-
-- Delay Status (Late / On Time)
-- Fine Category (No Fine / Low / Medium / High)
-- Month Name and Year Issued from issue dates
-- Total fines, average delay, and books issued metrics
+  - Created new calculated columns and measures to support analysis
 
 ---
 
