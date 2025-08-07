@@ -853,11 +853,13 @@ This project uses Power BI and DAX to analyze a Library Management System. We cr
 
 ---
 
-## Key DAX Measures
+## Key DAX 
 
+ - Total Books Issued
 ```sql
 Total Book Issued = COUNT(Book_Issue[Book_Code])  
 ```
+ - Total Books Issued
 ```sql
 Total Members = DISTINCTCOUNT(Lms_Members[Member_ID]) 
 ```
