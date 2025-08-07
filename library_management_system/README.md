@@ -644,10 +644,7 @@ Key steps in the notebook include:
 
 - **Data Preparation:**  
   Merging different tables (books, members, issues, fines, suppliers), formatting date fields, and ensuring the dataset is analysis-ready.
-
-- **Feature Engineering:**  
-  Creating useful columns like delay status, fine categories, month/year of issue, and calculating total counts and monetary values.
-
+  
 - **KPI Calculation:**  
   Deriving key metrics like average fine, total books issued, late returns, and member activity to support decision-making.
 
