@@ -615,7 +615,7 @@ You can download the complete SQL script file from the link below:<br>
 
 ---
 
-<h2 id="python_overview"> 🧾 Python Overview </h2>
+<h2 id="python_overview"> Python Overview </h2>
 
 This project leverages **Python** and **Jupyter Notebook** for in-depth analysis, feature engineering, and data visualization tasks related to the Library Management System (LMS). Python scripts were used to:
 
