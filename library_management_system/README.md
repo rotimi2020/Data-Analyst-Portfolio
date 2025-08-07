@@ -76,7 +76,7 @@ The SQL scripts are modular, well-organized, and aligned with real-world library
   - [📊 Business Recommendations](#business-recommendations)
   - [📊 Visual Types Summary](#visual-types-summary)
   - [📊 LMS Power BI Report Previews](#lms-power-bi-report-previews)
-  - [📊 Download the Full Power BI Report as PDF](download-the-full-power-bi-report-as-pdf)
+  - [📊 Download the Full Power BI Report](download-the-full-power-bi-report)
 - [🧮 DAX Overview](#dax-overview)
   - [🧮 Key DAX](#key-dax)
   - [🧮 Key Calculated Columns](#key-calculated-columns)
@@ -923,7 +923,7 @@ Analyzes book suppliers’ contributions:
 
 ---
 
-### 🧮 Visual Types Summary – LMS Dashboard
+### 🧮 Visual Types Summary
 
 | Visual Type         | Use Case                                                                 |
 |---------------------|--------------------------------------------------------------------------|
@@ -952,7 +952,7 @@ Each report page is designed to help users easily navigate and understand the li
 
 ---
 
-### Download the Full Power BI Report as PDF
+### Download the Full Power BI Report
 
 You can **download the complete Power BI report** in PDF format:  
 **[Download PDF Report](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/reports/rossmann_sale_reports.pdf)**
