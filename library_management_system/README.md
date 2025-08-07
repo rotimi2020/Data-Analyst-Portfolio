@@ -655,6 +655,237 @@ This notebook acts as a solid base for generating insights and building visual d
 
 
 ---
+## Full Python Code: lms_analysis.ipynb
+
+```sql
+# Import Libraries
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from pandas import read_csv, set_option
+from pandas.plotting import scatter_matrix
+from datetime import datetime
+import warnings
+warnings.filterwarnings("ignore")
+
+set_option('display.max_rows', 500)
+set_option('display.max_columns', 500)
+
+# Load Data
+Book_Details = pd.read_csv("Book_Details.csv")
+Book_Issue = pd.read_csv("Book_Issue.csv")
+Fine_Details = pd.read_csv("Fine_Details.csv")
+Lms_Members = pd.read_csv("Lms_Members.csv")
+Suppliers_Details = pd.read_csv("Suppliers_Details.csv")
+```
+
+---
+
+## 🔍 Exploratory Data Analysis (EDA)
+
+```sql
+# Merge all tables
+lms = Book_Issue.merge(Book_Details, on="BOOK_CODE", how="left")\
+                .merge(Lms_Members, on="MEMBER_ID", how="left")\
+                .merge(Suppliers_Details, on="SUPPLIER_ID", how="left")\
+                .merge(Fine_Details, on="FINE_RANGE", how="left")
+
+# Fill missing values
+lms['MAX_DAYS_DELAYED'] = lms['MAX_DAYS_DELAYED'].fillna(0)
+lms['FINE_AMOUNT'] = lms['FINE_AMOUNT'].fillna(0)
+
+# Convert to datetime
+date_cols = ['PUBLISH_DATE', 'DATE_ARRIVAL', 'DATE_ISSUE', 'DATE_RETURN', 
+             'DATE_RETURNED', 'DATE_REGISTER', 'DATE_EXPIRE']
+lms[date_cols] = lms[date_cols].apply(pd.to_datetime)
+
+# Export cleaned data
+lms.to_csv("Lms_Analysis.csv", index=False)
+```
+
+---
+
+## 📈 Data Aggregation & Summary
+
+```sql
+# Total Price by Book Title
+lms.groupby('BOOK_TITLE')['PRICE'].sum().sort_values(ascending=False)
+
+# Total Fine by Category
+lms.groupby('CATEGORY')['FINE_AMOUNT'].sum().sort_values(ascending=False)
+
+# Fine Amount by City
+lms.groupby('CITY')['FINE_AMOUNT'].sum().sort_values(ascending=False)
+
+# Top 10 Most Issued Books
+lms['BOOK_TITLE'].value_counts().head(10)
+```
+
+---
+
+## 📊 Visualizations
+
+```sql
+# Book Category Histogram
+plt.figure(figsize=(8, 6))
+sns.histplot(Book_Details['CATEGORY'], kde=True)
+plt.title('📚 Distribution of Book Categories')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+
+# Publisher Bar Plot
+plt.figure(figsize=(6, 4))
+Book_Details['PUBLICATION'].value_counts().plot(kind='bar')
+plt.title('🏢 Books by Publisher')
+plt.tight_layout()
+plt.show()
+
+# Supplier Pie Chart
+plt.figure(figsize=(5, 5))
+Book_Details['SUPPLIER_ID'].value_counts().plot(kind='pie', autopct='%1.1f%%')
+plt.title('🚚 Supplier Contribution')
+plt.ylabel('')
+plt.tight_layout()
+plt.show()
+
+# Correlation Heatmap
+plt.figure(figsize=(10,6))
+sns.heatmap(lms.corr(numeric_only=True), annot=True, cmap='coolwarm')
+plt.title("Correlation Heatmap")
+plt.tight_layout()
+plt.show()
+```
+
+---
+
+## 🔍 Key Insights & Recommendations
+
+### 1️⃣ Days Delayed (Return Delay Analysis)
+
+📌 **Insight:**  
+Most delays are under 10 days. About 33% of books are returned late, yet not all incur fines.
+
+✅ **Recommendation:**  
+- Set automated reminders before due dates  
+- Enforce consistent fine policies  
+- Display return history to members
+
+---
+
+### 2️⃣ Book Popularity
+
+📌 **Insight:**  
+Top books: *Programming in ANSI C*, *Let Us C*, *Learning Python*, *Effective Modern C++*
+
+✅ **Recommendation:**  
+- Stock multiple copies of popular titles  
+- Add books on JavaScript, Data Structures, Machine Learning  
+- Create a “Most Popular” section
+
+---
+
+### 3️⃣ Fine per Member
+
+📌 **Insight:**  
+Few members (e.g., *Amruta*, *Ashish*) contribute disproportionately to total fines.
+
+✅ **Recommendation:**  
+- Engage frequent offenders  
+- Offer fine payment options  
+- Introduce a member points system
+
+---
+
+### 4️⃣ Fine per City
+
+📌 **Insight:**  
+CHENNAI records the highest fine total
+
+✅ **Recommendation:**  
+- Audit return process in Chennai  
+- Train local staff  
+- Run city-specific awareness campaigns
+
+---
+
+### 5️⃣ Fine per Book Category
+
+📌 **Insight:**  
+**C PROGRAMMING** and **PYTHON PROGRAMMING** have the highest fine totals
+
+✅ **Recommendation:**  
+- Adjust return periods for these books  
+- Increase stock to reduce waiting  
+- Add category-based return reminders
+
+---
+
+### 6️⃣ Membership Type & Fines
+
+📌 **Insight:**  
+Permanent members have higher average fines than temporary ones.
+
+✅ **Recommendation:**  
+- Train permanent members on policies  
+- Consider loyalty incentives  
+- Adjust borrowing limits
+
+---
+
+### 7️⃣ Supplier Value
+
+📌 **Insight:**  
+**Singapore Shoppee** and **Rose Book Store** supply highest value books
+
+✅ **Recommendation:**  
+- Reward top suppliers  
+- Use volume contracts  
+- Evaluate supplier delivery performance
+
+---
+
+## 📊 Final Summary Insight
+
+📌 **Key Takeaway:**  
+- Programming books (C/C++/Python) are in highest demand  
+- 1 in 3 books is returned late  
+- Not all late returns trigger fines (policy inconsistency)  
+- Chennai has most fines  
+- Permanent members incur higher fines  
+- Supplier relationships are critical to book quality
+
+✅ **Action Plan:**  
+- Add more copies of popular titles  
+- Automate return reminders  
+- Standardize fine enforcement  
+- Improve processes in high-fine areas  
+- Nurture top supplier partnerships
+
+---
+
+## 💡 Final Recommendations
+
+- 📚 Stock more programming books
+- 🔔 Set SMS/email reminders for due dates
+- 🏙️ Investigate high fines in Chennai
+- 👥 Support frequent fine-payers
+- 📦 Reward top suppliers
+
+---
+
+## 📞 Contact
+
+**Rotimi Sheriff Omosewo**  
+📧 [omoseworotimi@gmail.com]  
+🌐 [https://github.com/rotimi2020]  
+💼 [https://www.linkedin.com/in/rotimi-sheriff-omosewo-939a806b/]  
+📍 Nigeria
+
+---
+
+
 
 ### Notebooks and Resources  
 
