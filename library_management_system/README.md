@@ -66,9 +66,9 @@ The SQL scripts are modular, well-organized, and aligned with real-world library
 - [🛠️ Tools & Technologies](#tools--technologies)
 - [🧠 Skills Used](#skills-used)
 - [🔍 SQL Section](#sql-overview)
-- [🐍 Python Section](#python-overview)
+- [🐍 Python Overview](#python-overview)
 - [📊 Power BI Section](#power-bi-dashboard)
-- [🧮 DAX Section](#dax-overview)
+- [🧮 DAX Overview](#dax-overview)
 - [📘 Project Summary](#project-summary)
 - [🙋‍♂️ Author](#author)
 
@@ -947,7 +947,7 @@ You can **download the complete Power BI report** in PDF format:
 
 ---
 
-# DAX Overview – Library Management System (LMS) Power BI Project
+# DAX Overview 
 
 This project uses Power BI and DAX to analyze a Library Management System. We created custom measures and columns to track book issues, late returns, fines, member activities, and supplier insights. 
 
@@ -1003,7 +1003,7 @@ Year Issued = YEAR(Book_Issue[Issue_Date])
 ```
 ---
 
-## 📊 Visuals & Dashboard Summary
+## Visuals & Dashboard Summary
 
 - Line and bar charts show trends in book issues, returns, fines, and supplier activities.  
 - KPI cards summarize total books issued, total members, fine amounts, and late returns.  
