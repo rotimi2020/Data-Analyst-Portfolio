@@ -655,7 +655,7 @@ This notebook acts as a solid base for generating insights and building visual d
 ## Python Code Overview: lms_analysis.ipynb
 
 > 📌 This section shows all core data loading, cleaning, merging, and KPI preparation code used in `lms_analysis.ipynb`.  
-> Please note: It does **not include all code cells**, and **business insights and recommendations are excluded**.  
+> Please note: It does **not include all code cells**, and **business insights and recommendations are excluded**.  <br>
 > For the complete notebook with full analysis and visualizations, view the original file:  
 > 👉 [lms_analysis.ipynb](path-to-notebook)
 
@@ -686,7 +686,7 @@ Suppliers_Details = pd.read_csv("Suppliers_Details.csv")
 
 ## 🔍 Exploratory Data Analysis (EDA)
 
-```sql
+```python
 # Merge all tables
 lms = Book_Issue.merge(Book_Details, on="BOOK_CODE", how="left")\
                 .merge(Lms_Members, on="MEMBER_ID", how="left")\
@@ -710,7 +710,7 @@ lms.to_csv("Lms_Analysis.csv", index=False)
 
 ## 📈 Data Aggregation & Summary
 
-```sql
+```python
 # Total Price by Book Title
 lms.groupby('BOOK_TITLE')['PRICE'].sum().sort_values(ascending=False)
 
@@ -728,7 +728,7 @@ lms['BOOK_TITLE'].value_counts().head(10)
 
 ## 📊 Visualizations
 
-```sql
+```python
 # Book Category Histogram
 plt.figure(figsize=(8, 6))
 sns.histplot(Book_Details['CATEGORY'], kde=True)
@@ -954,7 +954,7 @@ This project uses Power BI and DAX to analyze a Library Management System. We cr
 
 ## Key DAX 
 
-```sql
+```dax
 # Total Books Issued
 Total Book Issued = COUNT(Book_Issue[Book_Code])  
 ```
