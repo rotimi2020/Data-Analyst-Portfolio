@@ -153,9 +153,6 @@ This SQL script is a structured collection of queries for analyzing library data
 
 ### SQL Queries
 #### **Basic Queries (1-10)**
-[Click to Expand...]
-<details>
-<summary>View Queries</summary>
 
 **--------------------------------*Basic Queries (1-10)*-------------------------------------**
 
@@ -268,7 +265,7 @@ FROM Fine_CTE
 GROUP BY MEMBER_NAME;
 
 ```
-</details>
+
 
 
 ### **Intermediate Queries (11–20)**  
