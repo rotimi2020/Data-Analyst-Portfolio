@@ -860,28 +860,25 @@ This project uses Power BI and DAX to analyze a Library Management System. We cr
 Total Book Issued = COUNT(Book_Issue[Book_Code])  
 ```
 ```sql
-# Total Books Issued
+# Total Members
 Total Members = DISTINCTCOUNT(Lms_Members[Member_ID]) 
 ```
 ```sql
+# Total Fine Amount
 Total Fine Amount = SUM(Fine_Details[Fine_Amount])  
 ```
 ```sql
+# Total Late Returns
 Total Late Returns = CALCULATE(COUNT(Book_Issue[Issue_ID]), Book_Issue[Days_Delayed] > 0)    
 ```
 ```sql
+# Total Price Of Book
 Total Price Of Book = SUM(Book_Details[Price])  
 ```
 ```sql
+# Average Days Delayed
 Average Days Delayed = AVERAGE(Book_Issue[Days_Delayed])
 ```
-Total Book Issued = COUNT(Book_Issue[Book_Code])  
-Total Members = DISTINCTCOUNT(Lms_Members[Member_ID])  
-Total Fine Amount = SUM(Fine_Details[Fine_Amount])  
-Total Late Returns = CALCULATE(COUNT(Book_Issue[Issue_ID]), Book_Issue[Days_Delayed] > 0)  
-Total Price Of Book = SUM(Book_Details[Price])  
-Average Days Delayed = AVERAGE(Book_Issue[Days_Delayed])
-
 ---
 
 ## Key Calculated Columns
