@@ -764,24 +764,19 @@ plt.show()
 
 Below are the key Jupyter notebooks developed as part of this project. You can download them directly using the links provided:
 
-- **book_details.ipynb**: [Download Book Details Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/book_details.ipynb)  
-  Analyzes book metadata including titles, authors, categories, and pricing. Useful for understanding the diversity and value of the library collection.
+- **book_details.ipynb**(https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/book_details.ipynb) – Book metadata and pricing insights  
 
-- **book_issue.ipynb**: [Download Book Issue Trends](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/book_issue.ipynb)  
-  Tracks borrowing patterns, return behavior, and identifies high-demand books or peak borrowing periods.
+- **book_issue.ipynb**(https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/book_issue.ipynb) – Borrowing trends and demand patterns 
+  
 
-- **fine_details.ipynb**: [Download Fine Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/fine_details.ipynb)  
-  Explores fine distribution, delay durations, and common late return patterns.
+- **fine_details.ipynb**(https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/fine_details.ipynb) – Fine distributions and delay behavior 
 
-- **lms_members.ipynb**: [Download Member Insights](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/lms_members.ipynb)  
-  Segments library members by activity level, joining period, and borrowing history.
 
-- **suppliers_details.ipynb**: [Download Supplier Overview](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/suppliers_details.ipynb)  
-  Evaluates supplier performance, sourcing frequency, and cost contributions.
+- **lms_members.ipynb**(https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/lms_members.ipynb) – Member segmentation and activity levels
+  
 
-- **lms_final_analysis.ipynb**: [Download Final LMS Analysis](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/lms_final_analysis.ipynb)  
-  A comprehensive notebook combining all tables for end-to-end analysis and visual storytelling.
- 
+- **suppliers_details.ipynb**(https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/suppliers_details.ipynb)  – Supplier performance and cost breakdown
+
 
 ---  
 
