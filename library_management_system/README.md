@@ -148,7 +148,7 @@ Core tables include:
 
 ---
 
-## SQL Overview {#sql-overview}
+## SQL Overview
 This SQL script is a structured collection of queries for analyzing library data, organized into **Basic**, **Intermediate**, and **Advanced** sections.
 
 ### SQL Queries
@@ -883,11 +883,24 @@ Average Days Delayed = AVERAGE(Book_Issue[Days_Delayed])
 
 ## Key Calculated Columns
 
+```sql
+# Delayed Status 
 Delayed Status = IF(Book_Issue[Days_Delayed] > 0, "Late", "On Time")  
-Fine Category = SWITCH(TRUE(), Fine_Details[Fine_Amount] = 0, "No Fine", Fine_Details[Fine_Amount] <= 100, "Low", Fine_Details[Fine_Amount] <= 200, "Medium", "High")  
-Month Name = FORMAT(Book_Issue[Issue_Date], "MMMM")  
-Year Issued = YEAR(Book_Issue[Issue_Date])
+```
 
+```sql
+# Fine Category 
+Fine Category = SWITCH(TRUE(), Fine_Details[Fine_Amount] = 0, "No Fine", Fine_Details[Fine_Amount] <= 100, "Low", Fine_Details[Fine_Amount] <= 200, "Medium", "High") 
+```
+
+```sql
+# Month Name 
+Month Name = FORMAT(Book_Issue[Issue_Date], "MMMM") 
+```
+```sql
+# Year Issued 
+Year Issued = YEAR(Book_Issue[Issue_Date])
+```
 ---
 
 ## 📊 Visuals & Dashboard Summary
