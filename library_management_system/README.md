@@ -914,38 +914,6 @@ Year Issued = YEAR(Book_Issue[Issue_Date])
 
 ---
 
-# LMS Power BI Analysis – Summary & Documentation
-
-This project analyzes Library Management System (LMS) data using Power BI, DAX, Python, and SQL to uncover trends in book usage, member behavior, late returns, fines, and supplier performance. It provides actionable insights through interactive dashboards and calculated metrics.
-
----
-
-## 📈 Conclusions
-
-This LMS project shows how Power BI and DAX can turn raw library data into actionable insights. 
-It helps library administrators monitor usage patterns, 
-improve member accountability, optimize book stock, and evaluate supplier contributions.
-
----
-
-## ✅ Recommendations
-
-- Send reminders a few days before due dates to minimize delays and fines.
-- Increase availability of high-demand categories and top-requested books.
-- Reward members with good return history to encourage responsibility.
-- Monitor supplier performance and prioritize those with high-demand books.
-- Use borrowing trends to guide future book purchases and stocking decisions.
-
----
-
-## 📝 Export & Documentation
-
-- All DAX measures and calculated columns are documented in the `.txt` file
-- Data transformation and analysis done using Jupyter Notebooks and Power BI
-- Cleaned dataset stored as `Lms_Analysis.csv`, with links to original raw files
-- Dashboards include slicers, KPIs, matrix views, and charts for interactivity
-
----
 
 <h2 id="installation"> ⚙️ Installation </h2>
 
