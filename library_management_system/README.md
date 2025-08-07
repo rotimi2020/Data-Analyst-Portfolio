@@ -80,7 +80,7 @@ The SQL scripts are modular, well-organized, and aligned with real-world library
 - [🧮 DAX Overview](#dax-overview)
   - [🧮 Key DAX](#key-dax)
   - [🧮 Key Calculated Columns](#key-calculated-columns)
-- [📘 Visuals And Dashboard Summary](#visuals-and-dashboard-summaryy)
+- [📘 Visuals And Dashboard Summary](#visuals-and_dashboard-summary)
 - [📘 Installation](#installation)
 - [🙋‍♂️ Author](#author)
 
@@ -1015,7 +1015,9 @@ Year Issued = YEAR(Book_Issue[Issue_Date])
 ```
 ---
 
+
 ## Visuals And Dashboard Summary
+
 
 - Line and bar charts show trends in book issues, returns, fines, and supplier activities.  
 - KPI cards summarize total books issued, total members, fine amounts, and late returns.  
