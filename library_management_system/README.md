@@ -909,9 +909,7 @@ Year Issued = YEAR(Book_Issue[Issue_Date])
 - KPI cards summarize total books issued, total members, fine amounts, and late returns.  
 - Slicers provide interactivity by filtering data across book titles, members, suppliers, and date ranges.
 
----
-
-📂 **Full DAX Code File**:  
+📂 **Download Full DAX Code File**:  
 [View on GitHub](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/dax/dax_formulas.txt)
 
 ---
