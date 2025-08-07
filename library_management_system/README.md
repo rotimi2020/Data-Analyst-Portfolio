@@ -652,11 +652,14 @@ This notebook acts as a solid base for generating insights and building visual d
 
 
 ---
-## Full Python Code: lms_analysis.ipynb
+## Python Code Overview: lms_analysis.ipynb
 
-> 📌 This section shows all core data loading, cleaning, merging, and KPI preparation code used in `lms_analysis.ipynb`.
+> 📌 This section shows all core data loading, cleaning, merging, and KPI preparation code used in `lms_analysis.ipynb`.  
+> Please note: It does **not include all code cells**, and **business insights and recommendations are excluded**.  
+> For the complete notebook with full analysis and visualizations, view the original file:  
+> 👉 [lms_analysis.ipynb](path-to-notebook)
 
-```sql
+```python
 # Import Libraries
 import numpy as np
 import pandas as pd
