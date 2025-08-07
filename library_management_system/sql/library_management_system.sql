@@ -87,9 +87,6 @@ SELECT
   [CATEGORY]
 FROM
   [dbo].[LMS_BOOK_DETAILS]
-GROUP BY
-  [BOOK_TITLE],
-  [CATEGORY]
 ORDER BY
   [CATEGORY];
 
@@ -107,34 +104,22 @@ WHERE
 /* QUESTION 7 : Write a query to fetch all members who registered in the last 6 months. */
 
 SELECT
-  MAX([DATE_REGISTER]) AS MAX_DATE
-FROM
-  [dbo].[LMS_MEMBERS] ---MAX DATE IS '2020-08-02'
-  
---------
- 
-SELECT
-  DATEADD(MONTH, -6, '2020-08-02') --Date For Last 6 Month
-  
---------
-  
-SELECT
   *
 FROM
   [dbo].[LMS_MEMBERS]
 WHERE
-  [DATE_REGISTER] BETWEEN '2020-02-02' AND '2020-08-02' 
+  [DATE_REGISTER] >= DATEADD(MONTH, -6, GETDATE());
+
+--------
+ 
   
 --------------------------------*Basic Queries (1-10)*-------------------------------------
   /* QUESTION 8 : Write a query to count the number of distinct authors in the library. */
   
 SELECT
-  [AUTHOR],
-  COUNT(DISTINCT([AUTHOR])) AS DISTINCT_COUNT
+  COUNT(DISTINCT [AUTHOR]) AS DISTINCT_AUTHOR_COUNT
 FROM
-  [dbo].[LMS_BOOK_DETAILS]
-GROUP BY
-  [AUTHOR];
+  [dbo].[LMS_BOOK_DETAILS];
 
 --------------------------------*Basic Queries (1-10)*-------------------------------------
 /* QUESTION 9 : Write a query to list all books priced above 1000 INR. */
@@ -149,39 +134,35 @@ WHERE
 --------------------------------*Basic Queries (1-10)*-------------------------------------
 /* QUESTION 10 : Write a query to display member names and the total fine amount they owe. */
 
-WITH
-  MEMBER_NAME AS (
+WITH Fine_CTE AS (
     SELECT
-      A.MEMBER_ID,
-      C.MEMBER_NAME,
-      B.FINE_AMOUNT
+        A.MEMBER_ID,
+        C.MEMBER_NAME,
+        B.FINE_AMOUNT
     FROM
-      [dbo].[LMS_BOOK_ISSUE] A
-      LEFT JOIN [dbo].[LMS_FINE_DETAILS] B ON A.[FINE_RANGE] = B.[FINE_RANGE]
-      LEFT JOIN [dbo].[LMS_MEMBERS] C ON A.MEMBER_ID = C.MEMBER_ID
-  )
+        [dbo].[LMS_BOOK_ISSUE] A
+        LEFT JOIN [dbo].[LMS_FINE_DETAILS] B ON A.FINE_RANGE = B.FINE_RANGE
+        LEFT JOIN [dbo].[LMS_MEMBERS] C ON A.MEMBER_ID = C.MEMBER_ID
+)
 SELECT
-  MEMBER_NAME,
-  SUM(FINE_AMOUNT) AS TOTAL_FINE_MONEY
-FROM
-  MEMBER_NAME
-group by
-  MEMBER_NAME;
+    MEMBER_NAME,
+    SUM(FINE_AMOUNT) AS TOTAL_FINE_MONEY
+FROM Fine_CTE
+GROUP BY MEMBER_NAME;
+
 
 --------------------------------*Intermediate Queries (11-20)*-------------------------------------
 /* QUESTION 11 : Write a query to display book titles along with their supplier names. */
 
 SELECT
-  A.BOOK_TITLE AS [Book Title],
-  B.SUPPLIER_NAME AS [Supplier Name]
-FROM
-  [dbo].[LMS_BOOK_DETAILS] A
-  LEFT JOIN [dbo].[LMS_SUPPLIERS_DETAILS] B ON A.[SUPPLIER_ID] = B.[SUPPLIER_ID]
-GROUP BY
   A.BOOK_TITLE,
   B.SUPPLIER_NAME
+FROM
+  [dbo].[LMS_BOOK_DETAILS] A
+  LEFT JOIN [dbo].[LMS_SUPPLIERS_DETAILS] B ON A.SUPPLIER_ID = B.SUPPLIER_ID
 ORDER BY
   B.SUPPLIER_NAME;
+
 
 --------------------------------*Intermediate Queries (11-20)*-------------------------------------
 /* QUESTION 12 : Write a query to calculate the total number of books issued per member. */
@@ -210,24 +191,14 @@ WHERE
 --------------------------------*Intermediate Queries (11-20)*-------------------------------------
 /* QUESTION 14 : Write a query to group books by category and calculate the total number of books in each category. */
 
-WITH
-  Group_Book AS(
-    SELECT
-      CATEGORY AS [Category],
-      COUNT(Category) AS [Total Books]
-    FROM
-      [dbo].[LMS_BOOK_DETAILS]
-    GROUP BY
-      CATEGORY
-  )
 SELECT
-  [Category],
-  [Total Books]
+  CATEGORY AS [Category],
+  COUNT(*) AS [Total Books]
 FROM
-  Group_Book
+  [dbo].[LMS_BOOK_DETAILS]
 GROUP BY
-  [Category],
-  [Total Books];
+  CATEGORY;
+
 
 --------------------------------*Intermediate Queries (11-20)*-------------------------------------
 /* QUESTION 15 : Write a query to find suppliers who have supplied more than 20 books. */
@@ -263,7 +234,7 @@ FROM
 group by
   B.MEMBER_NAME
 having
-  count(B.MEMBER_NAME) = 1 
+  count(B.MEMBER_NAME) >= 1 
   
 --------------------------------*Intermediate Queries (11-20)*-------------------------------------
   /* QUESTION 18 : Write a query to fetch book titles that have been issued more than 5 times. */
@@ -310,11 +281,12 @@ WHERE
 /* QUESTION 20 : Write a query to find books that have never been issued. */
   
 SELECT
-  COUNT(BOOK_ISSUE_NO) AS [Nos Of Book Not Issued]
+  BD.BOOK_TITLE
 FROM
-  [dbo].[LMS_BOOK_ISSUE]
+  [dbo].[LMS_BOOK_DETAILS] BD
+LEFT JOIN [dbo].[LMS_BOOK_ISSUE] BI ON BD.BOOK_CODE = BI.BOOK_CODE
 WHERE
-  [BOOK_ISSUE_NO] IS NULL;
+  BI.BOOK_CODE IS NULL;
 
 --------------------------------*Advanced Queries (21-30)*-------------------------------------
 /* QUESTION 21 : Write a query to list all overdue books along with the member names who borrowed them. */
@@ -397,6 +369,22 @@ FROM
 
 --------------------------------*Advanced Queries (21-30)*-------------------------------------
 /* QUESTION 25 : Write a recursive query to find all books under a specific category and its subcategories. */
+
+WITH Category_Hierarchy (CATEGORY, PARENT_CATEGORY) AS (
+  SELECT CATEGORY, PARENT_CATEGORY
+  FROM [dbo].[LMS_BOOK_DETAILS]
+  WHERE CATEGORY = 'Data Science'
+
+  UNION ALL
+
+  SELECT b.CATEGORY, b.PARENT_CATEGORY
+  FROM [dbo].[LMS_BOOK_DETAILS] b
+  INNER JOIN Category_Hierarchy ch ON b.PARENT_CATEGORY = ch.CATEGORY
+)
+SELECT DISTINCT b.BOOK_CODE, b.BOOK_TITLE, b.CATEGORY, b.PRICE
+FROM [dbo].[LMS_BOOK_DETAILS] b
+INNER JOIN Category_Hierarchy ch ON b.CATEGORY = ch.CATEGORY;
+
 --------------------------------*Advanced Queries (21-30)*-------------------------------------
 /* QUESTION 26 : Write a query to calculate the total fine amount collected for overdue books. */
 
@@ -435,14 +423,12 @@ order by
 
 SELECT
   B.SUPPLIER_NAME,
-  COUNT(B.SUPPLIER_NAME) AS [Nos Of Book Supplied]
-FROM
-  [dbo].[LMS_BOOK_DETAILS] A
-  LEFT JOIN [dbo].[LMS_SUPPLIERS_DETAILS] B ON A.SUPPLIER_ID = B.SUPPLIER_ID
-GROUP BY
-  B.SUPPLIER_NAME
-order by
-  [Nos Of Book Supplied] desc 
+  COUNT(DISTINCT A.CATEGORY) AS [Distinct Categories]
+FROM [dbo].[LMS_BOOK_DETAILS] A
+LEFT JOIN [dbo].[LMS_SUPPLIERS_DETAILS] B ON A.SUPPLIER_ID = B.SUPPLIER_ID
+GROUP BY B.SUPPLIER_NAME
+HAVING COUNT(DISTINCT A.CATEGORY) > 1;
+
   
 --------------------------------*Advanced Queries (21-30)*-------------------------------------
   /* QUESTION 29 : Write a query to find members who issued the same book multiple times. */
@@ -469,3 +455,4 @@ FROM
   [dbo].[LMS_BOOK_DETAILS]
 GROUP BY
   CATEGORY;
+
