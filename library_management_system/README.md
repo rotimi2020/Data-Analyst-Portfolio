@@ -80,7 +80,7 @@ The SQL scripts are modular, well-organized, and aligned with real-world library
 - [🧮 DAX Overview](#dax-overview)
   - [🧮 Key DAX](#key-dax)
   - [🧮 Key Calculated Columns](#key-calculated-columns)
-- [📘 Visuals & Dashboard Summary](#visuals--dashboard-summaryy)
+- [📘 Visuals And Dashboard Summary](#visuals-and-dashboard-summaryy)
 - [📘 Installation](#installation)
 - [🙋‍♂️ Author](#author)
 
@@ -923,7 +923,7 @@ Analyzes book suppliers’ contributions:
 
 ---
 
-### 🧮 Visual Types Summary
+### Visual Types Summary
 
 | Visual Type         | Use Case                                                                 |
 |---------------------|--------------------------------------------------------------------------|
@@ -1015,7 +1015,7 @@ Year Issued = YEAR(Book_Issue[Issue_Date])
 ```
 ---
 
-## Visuals & Dashboard Summary
+## Visuals And Dashboard Summary
 
 - Line and bar charts show trends in book issues, returns, fines, and supplier activities.  
 - KPI cards summarize total books issued, total members, fine amounts, and late returns.  
