@@ -76,11 +76,11 @@ The SQL scripts are modular, well-organized, and aligned with real-world library
   - [📊 Business Recommendations](#business-recommendations)
   - [📊 Visual Types Summary](#visual-types-summary)
   - [📊 LMS Power BI Report Previews](#lms-power-bi-report-previews)
-  - [📊 Download the Full Power BI Report](download-the-full-power-bi-report)
+  - [📊 Download the Full Power BI Report](#download-the-full-power-bi-report)
 - [🧮 DAX Overview](#dax-overview)
   - [🧮 Key DAX](#key-dax)
   - [🧮 Key Calculated Columns](#key-calculated-columns)
-- [📘 Visuals & Dashboard Summary](#visuals--Dashboard-summaryy)
+- [📘 Visuals & Dashboard Summary](#visuals--dashboard-summaryy)
 - [📘 Installation](#installation)
 - [🙋‍♂️ Author](#author)
 
