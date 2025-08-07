@@ -632,7 +632,7 @@ Python enabled a smooth and efficient transformation pipeline that prepared the 
 ---
 
 
-### Python Data Analysis and Modeling
+### Python Data Cleaning and Preparation
 
 The script `lms_analysis.ipynb` is a Python notebook developed to analyze and explore the **Library Management System (LMS)** dataset.  
 The data was sourced and merged from multiple CSV files after initial extraction from SQL Server.
