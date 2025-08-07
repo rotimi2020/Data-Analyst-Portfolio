@@ -764,18 +764,18 @@ plt.show()
 
 Below are the key Jupyter notebooks developed as part of this project. You can download them directly using the links provided:
 
-- **book_details.ipynb**(https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/book_details.ipynb) – Book metadata and pricing insights  
+- [**book_details.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/book_details.ipynb) – Book metadata and pricing insights  
 
-- **book_issue.ipynb**(https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/book_issue.ipynb) – Borrowing trends and demand patterns 
+- [**book_issue.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/book_issue.ipynb) – Borrowing trends and demand patterns 
   
 
-- **fine_details.ipynb**(https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/fine_details.ipynb) – Fine distributions and delay behavior 
+- [**fine_details.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/fine_details.ipynb) – Fine distributions and delay behavior 
 
 
-- **lms_members.ipynb**(https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/lms_members.ipynb) – Member segmentation and activity levels
+- [**lms_members.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/lms_members.ipynb) – Member segmentation and activity levels
   
 
-- **suppliers_details.ipynb**(https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/suppliers_details.ipynb)  – Supplier performance and cost breakdown
+- [**suppliers_details.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/suppliers_details.ipynb)  – Supplier performance and cost breakdown
 
 
 ---  
