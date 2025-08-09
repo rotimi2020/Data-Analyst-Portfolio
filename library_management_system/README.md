@@ -641,7 +641,7 @@ Each one helps answer real questions about books, members, fines, and suppliers 
 Simple, clear, and straight to the point.
 
 You can download the complete SQL script file from the link below:<br>
- **[Download the SQL script here](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/sql/rossmann_sales.sql)**
+ **[Download the SQL script here](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/sql/library_management_system.sql)**
 
 ---
 
@@ -795,18 +795,18 @@ plt.show()
 
 Below are the key Jupyter notebooks developed as part of this project. You can download them directly using the links provided:
 
-- [**book_details.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/book_details.ipynb) – Book metadata and pricing insights  
+- [**book_details.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/notebooks/book_details.ipynb) – Book metadata and pricing insights  
 
-- [**book_issue.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/book_issue.ipynb) – Borrowing trends and demand patterns 
+- [**book_issue.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/notebooks/book_issue.ipynb) – Borrowing trends and demand patterns 
   
 
-- [**fine_details.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/fine_details.ipynb) – Fine distributions and delay behavior 
+- [**fine_details.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/notebooks/fine_details.ipynb) – Fine distributions and delay behavior 
 
 
-- [**lms_members.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/lms_members.ipynb) – Member segmentation and activity levels
+- [**lms_members.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/notebooks/lms_members.ipynb) – Member segmentation and activity levels
   
 
-- [**suppliers_details.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/lms_powerbi_analysis/notebooks/suppliers_details.ipynb)  – Supplier performance and cost breakdown
+- [**suppliers_details.ipynb**](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/notebooks/suppliers_details.ipynb)  – Supplier performance and cost breakdown
 
 
 ---  
@@ -816,6 +816,7 @@ Below are the key Jupyter notebooks developed as part of this project. You can d
 This Power BI report delivers a complete analysis of a Library Management System (LMS), covering book circulation, 
 member activity, fines, and supplier performance. It includes 5 dashboard pages that highlight borrowing trends, member engagement, 
 late return patterns, and book acquisition insights—supporting smarter decisions around library operations, inventory, and user services.
+[**Download the Power BI (.pbix) template**](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/library_management_system/powerbi) 
 
 ---
 
@@ -962,18 +963,18 @@ Each report page is designed to help users easily navigate and understand the li
 
 | Library Overview | Member Insights |
 |------------------|------------------|
-| ![Library Overview](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/library_overview_report.png) | ![Member Insights](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/member_insights_report.png) |
+| ![Library Overview](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/library_management_dashboard_reports.PNG) | ![Member Insights](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/Member_insights_reports.PNG) |
 
 | Top Books & Suppliers | Fines & Returns | Supplier Stats |
 |------------------------|------------------|----------------|
-| ![Top Books](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/top_books_suppliers_report.png) | ![Fines and Returns](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/fines_returns_report.png) | ![Supplier Stats](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/supplier_stats_report.png) |
+| ![Top Books](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/top_performing_book_reports.PNG) | ![Fines and Returns](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/fine_and_return_analysis_reports.PNG) | ![Supplier Stats](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/report_screenshots/supplier_overview_reports.PNG) |
 
 ---
 
 ### Download the Full Power BI Report
 
 You can **download the complete Power BI report** in PDF format:  
-**[Download PDF Report](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/rossmann_store_sales_analysis/reports/rossmann_sale_reports.pdf)**
+**[Download PDF Report](https://github.com/rotimi2020/Data-Analyst-Portfolio/blob/main/library_management_system/reports/lms_analysis_reports.pdf)**
 
 ---
 
