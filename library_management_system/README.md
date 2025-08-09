@@ -131,7 +131,7 @@ Core tables include:
 - 🚚 **Suppliers**: Supplier ID, name, contact details
 - 📦 **Book Issue**: Borrowings with issue/return dates
 
-- [**Download the dataset (.csv) here**](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/library_management_system/data) 
+[**Download the dataset (.csv) here**](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/library_management_system/data) 
 
 > ⚠️ **Note**: Dataset shared informally for portfolio purposes
 
