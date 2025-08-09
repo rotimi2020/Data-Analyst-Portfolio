@@ -516,20 +516,32 @@ FROM
 
 - **QUESTION 25 :** Write a recursive query to find all books under a specific category and its subcategories. 
 ```sql
-WITH Category_Hierarchy (CATEGORY, PARENT_CATEGORY) AS (
-  SELECT CATEGORY, PARENT_CATEGORY
-  FROM [dbo].[LMS_BOOK_DETAILS]
-  WHERE CATEGORY = 'Data Science'
+WITH
+  Category_Hierarchy (CATEGORY, PARENT_CATEGORY) AS (
+    SELECT
+      CATEGORY,
+      PARENT_CATEGORY
+    FROM
+      [dbo].[LMS_BOOK_DETAILS]
+    WHERE
+      CATEGORY = 'Data Science'
+    UNION ALL
+    SELECT
+      b.CATEGORY,
+      b.PARENT_CATEGORY
+    FROM
+      [dbo].[LMS_BOOK_DETAILS] b
+      INNER JOIN Category_Hierarchy ch ON b.PARENT_CATEGORY = ch.CATEGORY
+  )
+SELECT
+  DISTINCT b.BOOK_CODE,
+  b.BOOK_TITLE,
+  b.CATEGORY,
+  b.PRICE
+FROM
+  [dbo].[LMS_BOOK_DETAILS] b
+  INNER JOIN Category_Hierarchy ch ON b.CATEGORY = ch.CATEGORY;
 
-  UNION ALL
-
-  SELECT b.CATEGORY, b.PARENT_CATEGORY
-  FROM [dbo].[LMS_BOOK_DETAILS] b
-  INNER JOIN Category_Hierarchy ch ON b.PARENT_CATEGORY = ch.CATEGORY
-)
-SELECT DISTINCT b.BOOK_CODE, b.BOOK_TITLE, b.CATEGORY, b.PRICE
-FROM [dbo].[LMS_BOOK_DETAILS] b
-INNER JOIN Category_Hierarchy ch ON b.CATEGORY = ch.CATEGORY;
 
 ```
 - **QUESTION 26 :** Write a query to calculate the total fine amount collected for overdue books. 
@@ -570,10 +582,13 @@ order by
 SELECT
   B.SUPPLIER_NAME,
   COUNT(DISTINCT A.CATEGORY) AS [Distinct Categories]
-FROM [dbo].[LMS_BOOK_DETAILS] A
-LEFT JOIN [dbo].[LMS_SUPPLIERS_DETAILS] B ON A.SUPPLIER_ID = B.SUPPLIER_ID
-GROUP BY B.SUPPLIER_NAME
-HAVING COUNT(DISTINCT A.CATEGORY) > 1;
+FROM
+  [dbo].[LMS_BOOK_DETAILS] A
+  LEFT JOIN [dbo].[LMS_SUPPLIERS_DETAILS] B ON A.SUPPLIER_ID = B.SUPPLIER_ID
+GROUP BY
+  B.SUPPLIER_NAME
+HAVING
+  COUNT(DISTINCT A.CATEGORY) > 1;
 
  ``` 
 
