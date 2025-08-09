@@ -4,7 +4,6 @@ This project showcases the use of **SQL** to manage and analyze data within a Li
 
 Key SQL operations include:
 
-- Data cleaning and transformation  
 - Complex joins and subqueries  
 - Aggregations and metrics for decision-making  
 - Answering business questions with structured queries
@@ -123,12 +122,16 @@ Run SQL queries to explore and analyze data from an LMS database, focusing on bo
 ---
 
 ## Dataset
+The dataset originates from **SQL**, where initial analysis was performed. It was then exported to **CSV** for additional analysis, cleaning, and merging.
+
 Core tables include:
 - 📘 **Book Details**: Book ID, title, author, category, price
 - 👤 **Members**: Member ID, name, contact info, registration date
 - 💰 **Fine Details**: Member fines based on late returns
 - 🚚 **Suppliers**: Supplier ID, name, contact details
 - 📦 **Book Issue**: Borrowings with issue/return dates
+
+- [**Download the dataset (.csv) here**](https://github.com/rotimi2020/Data-Analyst-Portfolio/edit/main/library_management_system/README.md) 
 
 > ⚠️ **Note**: Dataset shared informally for portfolio purposes
 
