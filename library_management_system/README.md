@@ -61,7 +61,7 @@ The SQL scripts are modular, well-organized, and aligned with real-world library
 - [❓ Business Questions](#business-questions)
 - [🧩 Problem Statement](#problem-statement)
 - [📂 Dataset](#dataset)
-  - [📂 Data Dictionary](#data_dictionary)
+  - [📂 Data Dictionary](#data-dictionary)
 - [🧹 Data Processing & Cleaning](#data-processing--cleaning)
 - [🛠️ Tools & Technologies](#tools--technologies)
 - [🧠 Skills Used](#skills-used)
@@ -137,7 +137,7 @@ Core tables include:
 > ⚠️ **Note**: Dataset shared informally for portfolio purposes
 
 ---
-# Data Dictionary 
+## Data Dictionary 
 
 The following tables and columns describe the **merged and cleaned dataset** used for analysis, visualization, and reporting in the LMS project.
 
