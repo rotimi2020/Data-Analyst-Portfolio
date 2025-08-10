@@ -61,6 +61,7 @@ The SQL scripts are modular, well-organized, and aligned with real-world library
 - [❓ Business Questions](#business-questions)
 - [🧩 Problem Statement](#problem-statement)
 - [📂 Dataset](#dataset)
+  - [📂 Data Dictionary](#data_dictionary)
 - [🧹 Data Processing & Cleaning](#data-processing--cleaning)
 - [🛠️ Tools & Technologies](#tools--technologies)
 - [🧠 Skills Used](#skills-used)
@@ -134,6 +135,95 @@ Core tables include:
 [**Download the dataset (.csv) here**](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/library_management_system/data) 
 
 > ⚠️ **Note**: Dataset shared informally for portfolio purposes
+
+---
+# Data Dictionary 
+
+The following tables and columns describe the **merged and cleaned dataset** used for analysis, visualization, and reporting in the LMS project.
+
+---
+
+## 1. **Book Details (`books`)**
+| Column Name       | Data Type    | Description |
+|-------------------|--------------|-------------|
+| `BookID`          | INT          | Unique identifier for each book. |
+| `Title`           | VARCHAR      | Title of the book. |
+| `Author`          | VARCHAR      | Author's full name. |
+| `Category`        | VARCHAR      | Genre or category of the book (e.g., Fiction, Science). |
+| `Price`           | DECIMAL(10,2)| Price of the book in local currency. |
+| `SupplierID`      | INT          | Foreign key referencing the supplier who provided the book. |
+| `BookCode`        | VARCHAR      | Unique code or ISBN assigned to the book. |
+
+---
+
+## 2. **Members (`members`)**
+| Column Name       | Data Type    | Description |
+|-------------------|--------------|-------------|
+| `MemberID`        | INT          | Unique identifier for each library member. |
+| `MemberName`      | VARCHAR      | Full name of the member. |
+| `ContactNumber`   | VARCHAR      | Member's phone number. |
+| `Email`           | VARCHAR      | Member's email address. |
+| `RegistrationDate`| DATE         | Date when the member registered. |
+| `MembershipType`  | VARCHAR      | Type of membership (e.g., Regular, Premium). |
+
+---
+
+## 3. **Book Issues (`book_issues`)**
+| Column Name       | Data Type    | Description |
+|-------------------|--------------|-------------|
+| `IssueID`         | INT          | Unique identifier for each book issue transaction. |
+| `MemberID`        | INT          | Foreign key referencing the borrowing member. |
+| `BookID`          | INT          | Foreign key referencing the borrowed book. |
+| `IssueDate`       | DATE         | Date when the book was issued. |
+| `ReturnDate`      | DATE         | Expected return date of the book. |
+| `ActualReturnDate`| DATE         | Actual date when the book was returned. |
+| `DaysDelayed`     | INT          | Number of days delayed beyond the expected return date (0 if returned on time). |
+
+---
+
+## 4. **Fine Details (`fines`)**
+| Column Name       | Data Type    | Description |
+|-------------------|--------------|-------------|
+| `FineID`          | INT          | Unique identifier for each fine transaction. |
+| `MemberID`        | INT          | Foreign key referencing the fined member. |
+| `BookID`          | INT          | Foreign key referencing the book that incurred the fine. |
+| `DaysDelayed`     | INT          | Number of days the book was returned late. |
+| `FineAmount`      | DECIMAL(10,2)| Amount charged as a fine. |
+| `FineCategory`    | VARCHAR      | Categorization of the fine (e.g., Low, Medium, High). |
+
+---
+
+## 5. **Suppliers (`suppliers`)**
+| Column Name       | Data Type    | Description |
+|-------------------|--------------|-------------|
+| `SupplierID`      | INT          | Unique identifier for each supplier. |
+| `SupplierName`    | VARCHAR      | Name of the supplier. |
+| `ContactNumber`   | VARCHAR      | Supplier's phone number. |
+| `Email`           | VARCHAR      | Supplier's email address. |
+| `Address`         | VARCHAR      | Physical address of the supplier. |
+| `City`            | VARCHAR      | City where the supplier is located. |
+| `Country`         | VARCHAR      | Country of the supplier. |
+
+---
+
+## 6. **Calculated Fields (DAX / Derived Columns)**
+These columns are **calculated in Power BI** or during Python preprocessing:
+
+| Column Name        | Data Type    | Description |
+|--------------------|--------------|-------------|
+| `DelayedStatus`    | VARCHAR      | Indicates whether a book was returned **On Time** or **Late**. |
+| `MonthIssued`      | VARCHAR      | Month name extracted from `IssueDate`. |
+| `YearIssued`       | INT          | Year extracted from `IssueDate`. |
+| `TotalPriceOfBook` | DECIMAL(10,2)| Total price for a given book category or supplier, used for KPI calculations. |
+
+---
+
+**Note:**  
+- All **foreign keys** (`MemberID`, `BookID`, `SupplierID`) establish relationships between tables in the LMS data model.  
+- Dates follow the `YYYY-MM-DD` format.  
+- Prices and fine amounts are stored in **decimal format** to maintain currency precision.
+
+
 
 ---
 
