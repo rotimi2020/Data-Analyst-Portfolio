@@ -1,4 +1,4 @@
-# Library Management System Using SQL
+# Library Data Analytics with SQL, Python & Power BI
 
 This project showcases the use of **SQL** to manage and analyze data within a Library Management System (LMS). It focuses on extracting meaningful insights from various tables such as books, members, book issues, fines, and suppliers.
 
@@ -134,7 +134,13 @@ Core tables include:
 
 [**Download the dataset (.csv) here**](https://github.com/rotimi2020/Data-Analyst-Portfolio/tree/main/library_management_system/data) 
 
-> ⚠️ **Note**: Dataset shared informally for portfolio purposes
+> ⚠️ **Dataset Origin**: This proprietary dataset was shared by an industry data analyst who discovered it in their professional archive.  
+> It was provided **exclusively for skill development purposes** to:
+> - Practice real-world data processing techniques  
+> - Develop analytical solutions for library operations  
+> - Build portfolio projects demonstrating full analytics workflows  
+>  
+> The dataset simulates authentic library management scenarios but is **not publicly available for download** outside this repository.
 
 ---
 ## Data Dictionary 
