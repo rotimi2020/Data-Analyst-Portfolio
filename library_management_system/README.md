@@ -1,6 +1,6 @@
 # Library Data Analytics with SQL, Python & Power BI
 
-## 🚀 Project Highlights
+## Project Highlights
 - **30+ SQL queries** across beginner, intermediate, and advanced levels  
 - **5 Power BI dashboards** with DAX measures for actionable insights  
 - End-to-end pipeline: **SQL extraction → Python cleaning → Power BI visualization**  
