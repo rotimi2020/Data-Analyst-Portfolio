@@ -1,5 +1,15 @@
 # Library Data Analytics with SQL, Python & Power BI
 
+## 🚀 Project Highlights
+- **30+ SQL queries** across beginner, intermediate, and advanced levels  
+- **5 Power BI dashboards** with DAX measures for actionable insights  
+- End-to-end pipeline: **SQL extraction → Python cleaning → Power BI visualization**  
+- Real-world library operations simulated (books, members, issues, fines, suppliers)  
+- Demonstrates **joins, CTEs, window functions, recursive queries**  
+- Professional documentation: ERD, data dictionary, and modular scripts  
+
+---
+
 This project showcases the use of **SQL** to manage and analyze data within a Library Management System (LMS). It focuses on extracting meaningful insights from various tables such as books, members, book issues, fines, and suppliers.
 
 Key SQL operations include:
